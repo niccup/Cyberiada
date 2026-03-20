@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cv74w5igteoxc"]
+
+[node name="mainmenu" type="MarginContainer" unique_id=671295817]
+offset_right = 40.0
+offset_bottom = 40.0
