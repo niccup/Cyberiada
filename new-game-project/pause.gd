@@ -80,6 +80,7 @@ func get_text(mode):
 			var aspect_names = {
 			Window.CONTENT_SCALE_ASPECT_IGNORE: "Stretch",
 			Window.CONTENT_SCALE_ASPECT_KEEP: "Keep",
+			# USUN PATODEWELOPERKE Z SERWERA PLs
 			Window.CONTENT_SCALE_ASPECT_KEEP_WIDTH: "Keep Width",
 			Window.CONTENT_SCALE_ASPECT_KEEP_HEIGHT: "Keep Height",
 			Window.CONTENT_SCALE_ASPECT_EXPAND: "Expand"
@@ -148,7 +149,7 @@ func _on_resx_value_changed(value: float) -> void:
 	get_tree().root.content_scale_size.x=%resx.value
 	#DisplayServer.window_set_size(Vector2(%resx.value, %resy.value))
 
-
+# pozdrawiam
 
 func _on_resy_value_changed(value: float) -> void:
 	get_tree().root.content_scale_size.y=%resy.value

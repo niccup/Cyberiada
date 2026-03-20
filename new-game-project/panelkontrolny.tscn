@@ -699,13 +699,13 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ttnnh")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_ttnnh"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_uwgir"]
 viewport_path = NodePath("../mainscreen")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1dc7"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_04kjf"]
 resource_local_to_scene = true
 shading_mode = 0
-albedo_texture = SubResource("ViewportTexture_ttnnh")
+albedo_texture = SubResource("ViewportTexture_uwgir")
 refraction_scale = 1.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tyoq3"]
@@ -1133,7 +1133,7 @@ mesh = SubResource("ArrayMesh_85hli")
 
 [node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=2048421587]
 mesh = SubResource("ArrayMesh_4tp86")
-surface_material_override/0 = SubResource("StandardMaterial3D_p1dc7")
+surface_material_override/0 = SubResource("StandardMaterial3D_04kjf")
 
 [node name="ekrany_przod" parent="statekfixed" index="13" unique_id=894526804]
 transform = Transform3D(1.0000012, 0, 0, 0, 1.0000012, 0, 0, 0, 1, 0, 0, 0)
