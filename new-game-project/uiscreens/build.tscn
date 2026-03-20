@@ -36,6 +36,8 @@ shader_parameter/vignette_opacity = 0.5
 script = ExtResource("1_tqes5")
 
 [node name="TextureRect" type="ColorRect" parent="." unique_id=978765914]
+offset_left = -1.0
+offset_top = 82.0
 offset_right = 900.0
 offset_bottom = 600.0
 color = Color(0.05000019, 0, 1, 1)
@@ -45,10 +47,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -211.5
-offset_top = 3.0
-offset_right = 212.5
-offset_bottom = 30.0
+offset_left = -214.0
+offset_top = 40.0
+offset_right = 215.0
+offset_bottom = 67.0
 grow_horizontal = 2
 text = "- - - - - - - - - - - - build - - - - - - - - - - - -"
 label_settings = SubResource("LabelSettings_l6ari")
@@ -60,7 +62,7 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 12.0
-offset_top = 35.0
+offset_top = 100.0
 offset_right = -12.0
 offset_bottom = -13.0
 grow_horizontal = 2
@@ -68,6 +70,7 @@ grow_vertical = 2
 columns = 4
 
 [node name="ColorRect" type="ColorRect" parent="TextureRect" unique_id=1826882007]
+visible = false
 material = SubResource("ShaderMaterial_0ifyo")
 layout_mode = 1
 anchors_preset = 15

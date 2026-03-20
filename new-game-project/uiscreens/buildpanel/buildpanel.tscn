@@ -18,7 +18,7 @@ font_color = Color(0.050980393, 0, 1, 1)
 font = ExtResource("3_u172j")
 
 [node name="ColorRect" type="ColorRect" unique_id=344363497]
-custom_minimum_size = Vector2(200, 240)
+custom_minimum_size = Vector2(150, 200)
 offset_right = 100.0
 offset_bottom = 117.0
 script = ExtResource("1_fdp73")
@@ -31,9 +31,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -40.0
-offset_top = -102.0
+offset_top = -94.0
 offset_right = 40.0
-offset_bottom = -22.0
+offset_bottom = -14.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_1opg2")
