@@ -228,14 +228,73 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ttnnh")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_57x7v"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_ttnnh"]
 viewport_path = NodePath("../mainscreen")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1dc7"]
 resource_local_to_scene = true
 shading_mode = 0
-albedo_texture = SubResource("ViewportTexture_57x7v")
+albedo_texture = SubResource("ViewportTexture_ttnnh")
 refraction_scale = 1.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tyoq3"]
+load_path = "res://.godot/imported/statekfixed_statek_re_UV_szyby_base-statek_re_UV_szyby_opacity.png-9985f3fa056d8c19eb1d7ec72c6f0b06.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vo4y7"]
+load_path = "res://.godot/imported/statekfixed_statek_re_UV_szyby_metallic-statek_re_UV_szyby_roughness.jpg-02d7da19d3eb468cb849ab9868f93b8c.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qr1pr"]
+load_path = "res://.godot/imported/statekfixed_statek_re_UV_szyby_height.jpg-1c68344377f98dec7fef7b5988367483.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8b6km"]
+load_path = "res://.godot/imported/statekfixed_statek_re_UV_szyby_metallic-statek_re_UV_szyby_roughness.jpg-02d7da19d3eb468cb849ab9868f93b8c.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lha7w"]
+resource_name = "szyby"
+transparency = 4
+cull_mode = 2
+albedo_texture = SubResource("CompressedTexture2D_tyoq3")
+metallic = 1.0
+metallic_texture = SubResource("CompressedTexture2D_vo4y7")
+metallic_texture_channel = 2
+roughness_texture = SubResource("CompressedTexture2D_8b6km")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_qr1pr")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_j30jj"]
+_surfaces = [{
+"aabb": AABB(-2.0170758, 0.09932318, -3.8000002, 4.5819793, 2.908944, 4.596569),
+"format": 34896613377,
+"index_count": 132,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABgAEABAABAAFABAAEAARAAYABgARAAoACgARAA4ADwAKAA4ADgARAA0AEQASAA0AEgARABAADQASAAwADAASAAsAEwASABAACwASABMAEAAFABMABwALABMABQAIABMAEwAIAAcABwAIAAkAFAAVABYAFgAVABcAFQAYABcAFwAYABkAGAAaABkAGQAaABsAGgAcABsAGwAcAB0AHAAeAB0AHQAeAB8AHgAgAB8AHwAgACEAIAAiACEAIQAiACMAIgAkACMAIwAkACUAJAAmACUAJQAmACcAJgAoACcAJwAoACkAKAAqACkAKQAqACsAKgAsACsALAAtACsA"),
+"lods": [0.4792708, PackedByteArray("AAABAAIAAgABAAMABAAFAAYABgAFAAcABQAIAAcABwAIAAkABwAKAAYACwAKAAcADAAKAAsADQAKAAwADgAKAA0ADwAKAA4A")],
+"name": "szyby",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 46,
+"vertex_data": PackedByteArray("///sYVGnAAD//+xh8v8AAP//AABFpwAA//8AAP//AAAAADheGYAAAPQA6XwZgAAAszk4XgAAAAAyQtzIYDEAABAFs6VZgQAA9RCDyv2EAACupzheAAAAADOf3MhgMQAAb9CDyv2EAABV3LOlWYEAAHDg6XwZgAAAYeE4XhmAAACzOUF7JAsAAK6nQXskCwAAhKUMpFwaAADhOwykXBoAALBw//+RnQAAd2r4/yGeAADudvj/IZ4AALp87P/NnwAApmTs/82fAAC2gdn/eaIAAKpf2f95ogAAioW//+2lAADXW7//7aUAAPCHoP/5qQAAcVmg//mpAADEiID/Tq4AAKFYgP9OrgAAxIgI/wq/AAChWAj/Cr8AAPCH6P5ewwAAcVno/l7DAACKhcn+ascAANdbyf5qxwAAtoGv/uLKAACqX6/+4soAALp8nf6KzQAApmSd/orNAADudpD+Ns8AAHdqkP42zwAAsHCK/sbPAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1vbcp"]
+resource_name = "statekfixed_Plane_004"
+_surfaces = [{
+"aabb": AABB(-2.0170758, 0.09932318, -3.8000002, 4.5819793, 2.908944, 4.596569),
+"attribute_data": PackedByteArray("Xz7I/V8+IL2ba9j9m2sgvTQCKwJSESsCNAImTRk8Jk0IJisCGTwrAhk8zo00As6NGTwmTTQCJk00AsjYNALOjVIRyNgIJsjYGTzI2Bk8zo1SESZNCCYmTQgmJk0IJs6NUhEmTVIRzo1SEc6NCCbOjS1RWZahTPqVulX6ledZv5RzSL+U51m/lHNIv5SIXciSc0i/lNNEyJKIXciSiF3IktNEyJJbYEOQ/0FDkEdAUI0UYlCNW2BDkBRiUI1HQFCNsWItiqk/LYqxYi2KqT8tirFi8n2pP/J9sWLyfak/8n0UYsB6R0DAehRiwHpHQMB6W2DNd/9BzXdbYM13/0HNd4hdSHXTREh1iF1IddNESHXnWWBzc0hgc+dZYHNzSGBzulUmcqFMJnItUbdx"),
+"format": 34896613399,
+"index_count": 132,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABgAEABQABAAFABQAFAAFABUABQAIABUAFQAIAAcABwAIAAkADAAKABYACgAXABYAFgAXABgAFwAZABgAGAAZAA0ADQAZAAsADgAPABAADwAaABAAEAAaABEAGgAbABEAEQAbABIAEgAbABMAHAAdAB4AHgAdAB8AHQAgAB8AIQAiACMAJAAlACYAJwAoACkAKAAqACkAKgArACwALQAqACwALgAvADAALwAxADAAMgAzADQAMwA1ADQANgA3ADgANwA5ADgAOgA7ADwAOwA9ADwAPgA/AEAAPwBBAEAAQgBDAEQAQwBFAEQARgBHAEgARwBJAEgASQBKAEgA"),
+"lods": [0.4792708, PackedByteArray("AAABAAIAAgABAAMABAAFAAYABgAFAAcABQAIAAcABwAIAAkACgALAAwADAALAA0ADgAPABAAEAAPABEAEQAPABIAEgAPABMA")],
+"material": SubResource("StandardMaterial3D_lha7w"),
+"name": "szyby",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 75,
+"vertex_data": PackedByteArray("///sYVGnUNX//+xh8v9Q1f//AABFp1DV//8AAP//T9UAADheGYAAyvQA6XwZgFvIszk4XgAAhdgyQtzIYDH4zxAFs6VZgX7E9RCDyv2Evr8zn9zIYDE5yq6nOF4AAPTCMkLcyGAxTL+zOTheAAD1wmHhOF4ZgIXPrqc4XgAAYsJw4Ol8GYCfz1Xcs6VZgTDUb9CDyv2ErdYzn9zIYDEDxrM5QXskC0zW4TsMpFwazNLhOwykXBrhwISlDKRcGkvIszlBeyQLBcKup0F7JAs2xK6nQXskC0rChKUMpFwaU8WwcP//kZ25wHdq+P8hnrzA7nb4/yGevMC6fOz/zZ+7wKZk7P/Nn7vAunzs/82fucCmZOz/zZ+5wLaB2f95ornApmTs/82ftcCqX9n/eaK1wLaB2f95orXAtoHZ/3mivMCqX9n/eaK8wIqFv//tpbzA11u//+2lvMBxWaD/+am8wPCHoP/5qbzAioW//+2lu8Dwh6D/+am7wHFZoP/5qbvAxIiA/06uu8ChWID/Tq67wMSIgP9OrrfAoViA/06ut8DEiAj/Cr+3wKFYCP8Kv7fAxIgI/wq/u8ChWAj/Cr+7wPCH6P5ew7vAcVno/l7Du8Dwh+j+XsO8wHFZ6P5ew7zAioXJ/mrHvMDXW8n+ase8wIqFyf5qx7vA11vJ/mrHu8C2ga/+4sq7wKpfr/7iyrvAtoGv/uLKtsCqX6/+4sq2wLp8nf6KzbbApmSd/orNtsC6fJ3+is28wKZknf6KzbvA7naQ/jbPvMB3apD+Ns+7wLBwiv7Gz7nAV1WuqldVr6pXVa6qV1Wvqr8fCCmNHlgqIhR2LKcFHjjEGFcxNRZzN6AdxuX0Fgrpjxuh3vYWCOlP2aHgwszO5gXYzeJ11HXpntBy76HBCfzhE/AsNQ6BMSQZj+QpGqfoqBbS6OQW5OnFy7joQcnV7wAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_j30jj")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afoto"]
 albedo_color = Color(1, 0, 0, 1)
@@ -270,7 +329,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.890703, -1.6574965, 9.1156
 script = ExtResource("1_7rxlg")
 
 [node name="Camera3D" type="Camera3D" parent="player" unique_id=353376000]
-transform = Transform3D(1, -2.1242048e-11, -3.1863958e-12, 2.1479705e-11, 0.98893577, 0.14834449, 0, -0.14834449, 0.98893577, 3.3553452, 0.58984077, 5.9603243)
+transform = Transform3D(0.9996851, -0.008101717, 0.02374952, 0.00094883936, 0.95797336, 0.28685582, -0.02507543, -0.28674296, 0.9576794, 3.9399517, 1.4674834, 4.5379715)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1235908708]
 environment = SubResource("Environment_4ejwq")
@@ -459,16 +518,42 @@ texture = ExtResource("8_2j56q")
 libraries/ = SubResource("AnimationLibrary_uwgir")
 autoplay = &"new_animation"
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1170512938]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0584826, 3.330934, 11.986551)
-light_color = Color(0.8924508, 0.8234973, 0.82291156, 1)
-light_energy = 1.76
+[node name="swiatlo_main_2" type="SpotLight3D" parent="." unique_id=1774868990]
+transform = Transform3D(0.95635575, 0.090640545, 0.27779117, -0.2922048, 0.29665703, 0.9091815, 0, -0.95067286, 0.31019527, 0.9198992, 3.330934, 11.986551)
+light_color = Color(0.24633878, 0.65219384, 0.7209942, 1)
+light_energy = 8.068
+light_indirect_energy = 8.223
+light_volumetric_fog_energy = 1.58
+spot_range = 14.921
+spot_attenuation = 0.81
+spot_angle = 68.91
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=273199981]
+transform = Transform3D(0.8032005, -0.32699034, -0.49794215, -0.057136454, -0.8743147, 0.48198465, -0.5929625, -0.3586796, -0.7209331, -12.102382, 6.7234225, -14.149477)
+light_color = Color(0.8907958, 0.8533171, 0.7180635, 1)
+light_energy = 7.058
+spot_range = 37.17597
+spot_angle = 33.241714
+
+[node name="swiatlo_main_1" type="SpotLight3D" parent="." unique_id=573686630]
+transform = Transform3D(0.8386718, -0.53192985, -0.11696281, 0.26417357, 0.20950268, 0.94144624, -0.4762793, -0.82046294, 0.31622577, -9.606541, 1.8261366, 14.680061)
+light_color = Color(0.4060828, 0.73644465, 0.6900951, 1)
+light_energy = 1.888
+light_indirect_energy = 9.699
+spot_range = 18.259178
+spot_angle = 46.97931
+
+[node name="swiatlo_statek_kable" type="OmniLight3D" parent="." unique_id=1170512938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.21963, -7.3327136, 3.1894085)
+light_color = Color(0.84311986, 0.34959364, 0.46496236, 1)
+light_energy = 0.673
 light_indirect_energy = 6.699
 shadow_enabled = true
 shadow_transmittance_bias = -4.087
 shadow_opacity = 0.46
 shadow_blur = 4.905
 omni_range = 59.704
+omni_attenuation = 3.136
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=1754005881]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.555582, 0.4839692, -0.14339542)
@@ -480,27 +565,28 @@ omni_range = 7.065
 [node name="statekfixed" parent="." unique_id=1971047331 instance=ExtResource("10_afoto")]
 transform = Transform3D(3.9999447, -0.02101367, 0, 0.02101367, 3.9999447, 0, 0, 0, 4, -3.8482609, -8.004439, 7.7203426)
 
-[node name="Cube" parent="statekfixed" index="0" unique_id=1321521215]
+[node name="Cube" parent="statekfixed" index="0" unique_id=1827854200]
 visible = false
 
-[node name="STATEK" parent="statekfixed" index="2" unique_id=464177134]
+[node name="STATEK" parent="statekfixed" index="2" unique_id=541619985]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_57x7v")
 
-[node name="KONSOLA" parent="statekfixed" index="8" unique_id=1215684656]
+[node name="KONSOLA" parent="statekfixed" index="8" unique_id=1229369099]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=966312807]
+[node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=2048421587]
 mesh = SubResource("ArrayMesh_4tp86")
 surface_material_override/0 = SubResource("StandardMaterial3D_p1dc7")
 
-[node name="ekrany_przod" parent="statekfixed" index="13" unique_id=1705450940]
+[node name="ekrany_przod" parent="statekfixed" index="13" unique_id=894526804]
 transform = Transform3D(1.0000012, 0, 0, 0, 1.0000012, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="szyby" parent="statekfixed" index="16" unique_id=1423323697]
+[node name="szyby" parent="statekfixed" index="16" unique_id=1321832081]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_1vbcp")
 
-[node name="zasilanie_maszyna" parent="statekfixed" index="23" unique_id=829633134]
+[node name="zasilanie_maszyna" parent="statekfixed" index="23" unique_id=1409005897]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, -4.440546e-05, -0.0008831024, 2.0742416e-05)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1668559536]
