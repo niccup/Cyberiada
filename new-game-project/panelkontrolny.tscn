@@ -866,7 +866,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.890703, -1.6574965, 9.1156
 script = ExtResource("1_7rxlg")
 
 [node name="Camera3D" type="Camera3D" parent="player" unique_id=353376000]
-transform = Transform3D(0.9996851, -0.008101717, 0.02374952, 0.00094883936, 0.95797336, 0.28685582, -0.02507543, -0.28674296, 0.9576794, 3.9399517, 1.4674834, 4.5379715)
+transform = Transform3D(0.9996851, -0.008101718, 0.02374952, -0.009418005, 0.7561186, 0.6543669, -0.023258947, -0.65438455, 0.7558042, 3.9399517, 1.4674834, 2.3055964)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1235908708]
 environment = SubResource("Environment_4ejwq")
