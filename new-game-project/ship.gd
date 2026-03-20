@@ -4,6 +4,9 @@ var raycast_result = null
 var scene = "city"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
+	
+	
 	var savefolder = DirAccess.make_dir_absolute("user://save") 
 	if FileAccess.file_exists("user://save/settings"):
 		pass

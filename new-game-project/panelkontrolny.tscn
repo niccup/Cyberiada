@@ -12,9 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://clx3ephuibsfl" path="res://assets/statek2/statekfixed.glb" id="10_afoto"]
 [ext_resource type="Texture2D" uid="uid://b7ec4hglv5ode" path="res://assets/statek2/statekfixed_statek_re_UV_statek_metallic-statek_re_UV_statek_roughness.jpg" id="11_ttnnh"]
 [ext_resource type="Texture2D" uid="uid://ym0txoqp7org" path="res://assets/statek2/statekfixed_statek_re_UV_statek_height.jpg" id="12_4tp86"]
-[ext_resource type="Texture2D" uid="uid://dxxjmsyhkvdi3" path="res://assets/statek2/statekfixed_statek_re_UV_konsola ekran_emission.jpg" id="13_peu4i"]
 [ext_resource type="Script" uid="uid://d30sp6khb01ur" path="res://pause.gd" id="13_ttnnh"]
-[ext_resource type="Texture2D" uid="uid://ct1ot0ma4max" path="res://assets/statek2/statekfixed_statek_re_UV_konsola ekran_normal.jpg" id="14_57x7v"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2j56q"]
 panorama = ExtResource("3_oaijq")
@@ -187,20 +185,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_qb5sk")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_p1dc7"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4tp86"]
+resource_local_to_scene = true
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_peu4i"]
 viewport_path = NodePath("../mainscreen")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyoq3"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57x7v"]
 resource_local_to_scene = true
-resource_name = "konsola ekran"
-cull_mode = 2
-albedo_texture = SubResource("ViewportTexture_p1dc7")
-roughness = 0.5
-emission = Color(0.9999999, 0.9999999, 0.9999999, 1)
-emission_operator = 1
-emission_texture = ExtResource("13_peu4i")
-normal_enabled = true
-normal_texture = ExtResource("14_57x7v")
+albedo_texture = SubResource("ViewportTexture_peu4i")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vo4y7"]
 _surfaces = [{
@@ -208,6 +201,7 @@ _surfaces = [{
 "format": 34896613377,
 "index_count": 30,
 "index_data": PackedByteArray("AAABAAIAAgABAAMAAQAEAAMAAwAEAAUABAAGAAUABQAGAAcABgAIAAcABwAIAAkACAAKAAkACwAKAAgA"),
+"material": SubResource("StandardMaterial3D_57x7v"),
 "name": "konsola ekran",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -224,7 +218,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 30,
 "index_data": PackedByteArray("AAABAAIAAgABAAMAAQAEAAMAAwAEAAUABAAGAAUABQAGAAcABgAIAAcABwAIAAkACAAKAAkACwAKAAgA"),
-"material": SubResource("StandardMaterial3D_tyoq3"),
+"material": SubResource("StandardMaterial3D_4tp86"),
 "name": "konsola ekran",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -233,6 +227,14 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_vo4y7")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_p1dc7"]
+viewport_path = NodePath("../mainscreen")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyoq3"]
+resource_local_to_scene = true
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_p1dc7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afoto"]
 albedo_color = Color(1, 0, 0, 1)
@@ -489,6 +491,7 @@ transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=966312807]
 mesh = SubResource("ArrayMesh_qr1pr")
+surface_material_override/0 = SubResource("StandardMaterial3D_tyoq3")
 
 [node name="ekrany_przod" parent="statekfixed" index="13" unique_id=1705450940]
 transform = Transform3D(1.0000012, 0, 0, 0, 1.0000012, 0, 0, 0, 1, 0, 0, 0)
