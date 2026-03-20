@@ -1,0 +1,9 @@
+# Godot 4.x ignores
+.godot/
+.import/
+export_presets.cfg
+*.translation
+
+# macOS ignores
+.DS_Store
+*/.DS_Store
