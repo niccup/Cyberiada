@@ -82,7 +82,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_2rcj5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_x6e0r")
 theme_override_styles/hover = SubResource("StyleBoxFlat_in5sc")
-text = "Continue"
+text = "Kontynuuj"
 
 [node name="back" type="Button" parent="." unique_id=779945653]
 layout_mode = 1
@@ -98,8 +98,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_2rcj5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_x6e0r")
 theme_override_styles/hover = SubResource("StyleBoxFlat_in5sc")
-text = "Back
-"
+text = "Wróć"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=627917535]
 stream = ExtResource("4_883qk")

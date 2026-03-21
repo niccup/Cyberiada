@@ -112,7 +112,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_igs2m")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_d2nv2")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3pujl")
-text = "New Game"
+text = "Nowa Gra"
 
 [node name="continue" type="Button" parent="VBoxContainer" unique_id=825874881]
 layout_mode = 2
@@ -122,7 +122,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_igs2m")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wgsso")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7uvds")
-text = "Continue"
+text = "Kontynuuj"
 
 [node name="settings" type="Button" parent="VBoxContainer" unique_id=409192264]
 layout_mode = 2
@@ -132,7 +132,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_igs2m")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_at6rn")
 theme_override_styles/hover = SubResource("StyleBoxFlat_dihg0")
-text = "Settings"
+text = "Ustawienia"
 
 [node name="exit" type="Button" parent="VBoxContainer" unique_id=117167996]
 layout_mode = 2
@@ -142,7 +142,7 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_igs2m")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_rqglp")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0y70q")
-text = "Exit"
+text = "Wyjście"
 
 [node name="Label" type="Label" parent="." unique_id=1757758152]
 layout_mode = 1
