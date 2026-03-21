@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dft4yvcfly4jf" path="res://cinematic.gd" id="1_cylie"]
 [ext_resource type="Texture2D" uid="uid://rwwadu7ulvy3" path="res://menuassets/image2.png" id="2_883qk"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/Jersey_15 copy/Jersey15-Regular.ttf" id="3_b1bco"]
+[ext_resource type="AudioStream" uid="uid://c0nnw1vdu0qei" path="res://menuassets/YTDown.com_YouTube_Media_SguvxRbsRdY_009_128k.mp3" id="4_883qk"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kqd23"]
 texture = ExtResource("2_883qk")
@@ -83,4 +84,34 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_x6e0r")
 theme_override_styles/hover = SubResource("StyleBoxFlat_in5sc")
 text = "Continue"
 
+[node name="back" type="Button" parent="." unique_id=779945653]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -41.0
+offset_right = 129.0
+grow_vertical = 0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_b1bco")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_2rcj5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x6e0r")
+theme_override_styles/hover = SubResource("StyleBoxFlat_in5sc")
+text = "Back
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=627917535]
+stream = ExtResource("4_883qk")
+autoplay = true
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2030917443]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [connection signal="pressed" from="continue" to="." method="_on_contcinematic_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
