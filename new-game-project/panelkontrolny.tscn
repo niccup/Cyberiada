@@ -867,6 +867,7 @@ script = ExtResource("1_7rxlg")
 
 [node name="Camera3D" type="Camera3D" parent="player" unique_id=353376000]
 transform = Transform3D(0.9996851, -0.008101718, 0.02374952, -0.009418005, 0.7561186, 0.6543669, -0.023258947, -0.65438455, 0.7558042, 3.9399517, 1.4674834, 2.3055964)
+fov = 58.9
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1235908708]
 environment = SubResource("Environment_4ejwq")
@@ -984,65 +985,68 @@ light_color = Color(0.18467474, 0.2785994, 1, 1)
 shadow_enabled = true
 omni_range = 2.611
 
-[node name="panel" type="Node3D" parent="." unique_id=927159749]
-transform = Transform3D(1.33, 0, 0, 0, 1.2610272, -0.42274153, 0, 0.42274153, 1.2610272, -1.028979, 0.49233806, -0.07861996)
-visible = false
+[node name="panel_guziki" type="Node3D" parent="." unique_id=927159749]
+transform = Transform3D(0.6, 0, 0, 0, 0.5263028, -0.28810653, 0, 0.28810653, 0.5263028, -6.0616136, -3.0122666, 8.8316765)
 
-[node name="btn_up" parent="panel" unique_id=1131578206 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.842638, -0.4801041, 1.1656412)
+[node name="btn_up" parent="panel_guziki" unique_id=1131578206 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -0.842638, -0.49705982, 1.0603237)
 
-[node name="btn_left" parent="panel" unique_id=1900704687 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2503777, -0.4801041, 1.4674062)
+[node name="Label3D" parent="panel_guziki/btn_up/CSGCylinder3D" parent_id_path=PackedInt32Array(1131578206, 933325362) index="1" unique_id=1158175212]
+text = "góra"
 
-[node name="Label3D" parent="panel/btn_left/CSGCylinder3D" parent_id_path=PackedInt32Array(1900704687, 933325362) index="1" unique_id=1158175212]
-text = "left"
+[node name="btn_left" parent="panel_guziki" unique_id=1900704687 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -1.3081503, -0.48377848, 1.4146004)
 
-[node name="btn_right" parent="panel" unique_id=104298709 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39214897, -0.4801041, 1.4674062)
+[node name="Label3D" parent="panel_guziki/btn_left/CSGCylinder3D" parent_id_path=PackedInt32Array(1900704687, 933325362) index="1" unique_id=1158175212]
+text = "lewo
+"
 
-[node name="Label3D" parent="panel/btn_right/CSGCylinder3D" parent_id_path=PackedInt32Array(104298709, 933325362) index="1" unique_id=1158175212]
-text = "right"
+[node name="btn_right" parent="panel_guziki" unique_id=104298709 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -0.37997246, -0.48377848, 1.4146004)
 
-[node name="btn_down" parent="panel" unique_id=96921113 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.842638, -0.4801041, 1.7414037)
+[node name="Label3D" parent="panel_guziki/btn_right/CSGCylinder3D" parent_id_path=PackedInt32Array(104298709, 933325362) index="1" unique_id=1158175212]
+text = "prawo"
 
-[node name="Label3D" parent="panel/btn_down/CSGCylinder3D" parent_id_path=PackedInt32Array(96921113, 933325362) index="1" unique_id=1158175212]
-text = "down"
+[node name="btn_down" parent="panel_guziki" unique_id=96921113 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.842638, -0.45200872, 1.7927265)
 
-[node name="btn_back" parent="panel" unique_id=1565893760 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 1.0000001, -2.9802322e-08, 0, 2.9802322e-08, 1.0000001, -1.6331251, -0.4801041, 1.7414038)
+[node name="Label3D" parent="panel_guziki/btn_down/CSGCylinder3D" parent_id_path=PackedInt32Array(96921113, 933325362) index="1" unique_id=1158175212]
+text = "dół"
 
-[node name="Label3D" parent="panel/btn_back/CSGCylinder3D" parent_id_path=PackedInt32Array(1565893760, 933325362) index="1" unique_id=1158175212]
-text = "back"
+[node name="btn_back" parent="panel_guziki" unique_id=1565893760 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, -2.9802322e-08, 0, 2.9802322e-08, 1.0000001, -1.7564678, -0.45740652, 0.80945396)
 
-[node name="btn_enter" parent="panel" unique_id=1751775633 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 1.0000004, 0, 0, 0, 1.0000004, -0.019523859, -0.4801042, 1.7414038)
+[node name="Label3D" parent="panel_guziki/btn_back/CSGCylinder3D" parent_id_path=PackedInt32Array(1565893760, 933325362) index="1" unique_id=1158175212]
+text = "cofnij"
 
-[node name="Label3D" parent="panel/btn_enter/CSGCylinder3D" parent_id_path=PackedInt32Array(1751775633, 933325362) index="1" unique_id=1158175212]
+[node name="btn_enter" parent="panel_guziki" unique_id=1751775633 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1.1, 0, 0, 0, 1.0999995, -2.9802322e-08, 0, 2.9802322e-08, 1.0999995, 0.29547405, -0.34406996, 1.728651)
+
+[node name="Label3D" parent="panel_guziki/btn_enter/CSGCylinder3D" parent_id_path=PackedInt32Array(1751775633, 933325362) index="1" unique_id=1158175212]
 text = "enter"
 
-[node name="btn_build" parent="panel" unique_id=1020658465 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0.55495703, -0.48010406, 1.0616598)
+[node name="btn_build" parent="panel_guziki" unique_id=1020658465 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1.2, 0, 0, 0, 1.1999997, 0, 0, 0, 1.1999997, 1.6340475, -0.3531952, 0.82434464)
 
-[node name="Label3D" parent="panel/btn_build/CSGCylinder3D" parent_id_path=PackedInt32Array(1020658465, 933325362) index="1" unique_id=1158175212]
-text = "build"
+[node name="Label3D" parent="panel_guziki/btn_build/CSGCylinder3D" parent_id_path=PackedInt32Array(1020658465, 933325362) index="1" unique_id=1158175212]
+text = "zbuduj"
 
-[node name="btn_destroy" parent="panel" unique_id=213902779 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 1.0749892, -0.48010403, 1.0616597)
+[node name="btn_destroy" parent="panel_guziki" unique_id=213902779 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1.2, 0, 0, 0, 1.1999997, 0, 0, 0, 1.1999997, 2.4602556, -0.3995433, 0.839674)
 
-[node name="Label3D" parent="panel/btn_destroy/CSGCylinder3D" parent_id_path=PackedInt32Array(213902779, 933325362) index="1" unique_id=1158175212]
-text = "destroy"
+[node name="Label3D" parent="panel_guziki/btn_destroy/CSGCylinder3D" parent_id_path=PackedInt32Array(213902779, 933325362) index="1" unique_id=1158175212]
+text = "zniszcz"
 
-[node name="btn_rotate" parent="panel" unique_id=702045366 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 1.0749892, -0.480104, 1.5478098)
+[node name="btn_rotate" parent="panel_guziki" unique_id=702045366 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1.2, 0, 0, 0, 1.1999998, -5.9604645e-08, 0, 5.9604645e-08, 1.1999998, 2.8780851, -0.29001427, 1.6678333)
 
-[node name="Label3D" parent="panel/btn_rotate/CSGCylinder3D" parent_id_path=PackedInt32Array(702045366, 933325362) index="1" unique_id=1158175212]
-text = "rotate"
+[node name="Label3D" parent="panel_guziki/btn_rotate/CSGCylinder3D" parent_id_path=PackedInt32Array(702045366, 933325362) index="1" unique_id=1158175212]
+text = "obróć jest do wypierdolenia bo nie ma funkcjonalności"
 
-[node name="btn_upgr" parent="panel" unique_id=247080649 instance=ExtResource("4_6jovm")]
-transform = Transform3D(1, 0, 0, 0, 0.9999997, 0, 0, 0, 0.9999997, 0.5388702, -0.48010397, 1.5478097)
+[node name="btn_upgr" parent="panel_guziki" unique_id=247080649 instance=ExtResource("4_6jovm")]
+transform = Transform3D(1.1999999, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 1.9418697, -0.2846017, 1.6777191)
 
-[node name="Label3D" parent="panel/btn_upgr/CSGCylinder3D" parent_id_path=PackedInt32Array(247080649, 933325362) index="1" unique_id=1158175212]
+[node name="Label3D" parent="panel_guziki/btn_upgr/CSGCylinder3D" parent_id_path=PackedInt32Array(247080649, 933325362) index="1" unique_id=1158175212]
 text = "upgr"
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=561594530]
@@ -1106,6 +1110,7 @@ transform = Transform3D(3.9999447, -0.02101367, 0, 0.02101367, 3.9999447, 0, 0, 
 visible = false
 
 [node name="podstawa_guzikow" parent="statekfixed" index="1" unique_id=490161940]
+transform = Transform3D(-1.44355e-08, 0.00020119057, -0.04999747, -0.021918578, 0.017974967, 0.00045207847, 0.044939693, 0.008766987, 0.00022047758, -0.4181583, 1.0545619, 0.4027226)
 mesh = SubResource("ArrayMesh_p1dc7")
 
 [node name="STATEK" parent="statekfixed" index="2" unique_id=541619985]
@@ -1387,14 +1392,14 @@ text = "back"
 [connection signal="toggled" from="pause/settings/pause2/VBoxContainer9/sdfgitoggle" to="pause" method="_on_sdfgitoggle_toggled"]
 [connection signal="pressed" from="pause/settings/pause2/backsettings" to="pause" method="_on_backsettings_pressed"]
 
-[editable path="panel/btn_up"]
-[editable path="panel/btn_left"]
-[editable path="panel/btn_right"]
-[editable path="panel/btn_down"]
-[editable path="panel/btn_back"]
-[editable path="panel/btn_enter"]
-[editable path="panel/btn_build"]
-[editable path="panel/btn_destroy"]
-[editable path="panel/btn_rotate"]
-[editable path="panel/btn_upgr"]
+[editable path="panel_guziki/btn_up"]
+[editable path="panel_guziki/btn_left"]
+[editable path="panel_guziki/btn_right"]
+[editable path="panel_guziki/btn_down"]
+[editable path="panel_guziki/btn_back"]
+[editable path="panel_guziki/btn_enter"]
+[editable path="panel_guziki/btn_build"]
+[editable path="panel_guziki/btn_destroy"]
+[editable path="panel_guziki/btn_rotate"]
+[editable path="panel_guziki/btn_upgr"]
 [editable path="statekfixed"]
