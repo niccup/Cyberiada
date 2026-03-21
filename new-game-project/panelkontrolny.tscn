@@ -1041,7 +1041,7 @@ text = "zniszcz"
 transform = Transform3D(1.2, 0, 0, 0, 1.1999998, -5.9604645e-08, 0, 5.9604645e-08, 1.1999998, 2.8780851, -0.29001427, 1.6678333)
 
 [node name="Label3D" parent="panel_guziki/btn_rotate/CSGCylinder3D" parent_id_path=PackedInt32Array(702045366, 933325362) index="1" unique_id=1158175212]
-text = "obróć jest do wypierdolenia bo nie ma funkcjonalności"
+text = "USUNAC"
 
 [node name="btn_upgr" parent="panel_guziki" unique_id=247080649 instance=ExtResource("4_6jovm")]
 transform = Transform3D(1.1999999, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 1.9418697, -0.2846017, 1.6777191)
@@ -1106,51 +1106,51 @@ omni_range = 7.065
 [node name="statekfixed" parent="." unique_id=1971047331 instance=ExtResource("10_afoto")]
 transform = Transform3D(3.9999447, -0.02101367, 0, 0.02101367, 3.9999447, 0, 0, 0, 4, -3.8482609, -8.004439, 7.7203426)
 
-[node name="Cube" parent="statekfixed" index="0" unique_id=1827854200]
+[node name="Cube" parent="statekfixed" index="0" unique_id=1167886407]
 visible = false
 
-[node name="podstawa_guzikow" parent="statekfixed" index="1" unique_id=490161940]
+[node name="podstawa_guzikow" parent="statekfixed" index="1" unique_id=244239472]
 transform = Transform3D(-1.44355e-08, 0.00020119057, -0.04999747, -0.021918578, 0.017974967, 0.00045207847, 0.044939693, 0.008766987, 0.00022047758, -0.4181583, 1.0545619, 0.4027226)
 mesh = SubResource("ArrayMesh_p1dc7")
 
-[node name="STATEK" parent="statekfixed" index="2" unique_id=541619985]
+[node name="STATEK" parent="statekfixed" index="2" unique_id=346829574]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_1wo2x")
 
-[node name="Kontakt_kable_konsola" parent="statekfixed" index="3" unique_id=1972164462]
+[node name="Kontakt_kable_konsola" parent="statekfixed" index="3" unique_id=1121505918]
 mesh = SubResource("ArrayMesh_7g7sk")
 
-[node name="kable_maszyna_bok" parent="statekfixed" index="4" unique_id=16149959]
+[node name="kable_maszyna_bok" parent="statekfixed" index="4" unique_id=2097345923]
 mesh = SubResource("ArrayMesh_e6s6q")
 
-[node name="pudlo_dokumenty" parent="statekfixed" index="5" unique_id=1054531499]
+[node name="pudlo_dokumenty" parent="statekfixed" index="5" unique_id=560172345]
 mesh = SubResource("ArrayMesh_qr1pr")
 
-[node name="kable_konsola" parent="statekfixed" index="6" unique_id=2094668165]
+[node name="kable_konsola" parent="statekfixed" index="6" unique_id=1839908875]
 mesh = SubResource("ArrayMesh_musfh")
 
-[node name="KONSOLA" parent="statekfixed" index="8" unique_id=1229369099]
+[node name="KONSOLA" parent="statekfixed" index="8" unique_id=44903132]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_bx4oe")
 
-[node name="szafka_dokumenty" parent="statekfixed" index="10" unique_id=1853950232]
+[node name="szafka_dokumenty" parent="statekfixed" index="10" unique_id=963806172]
 mesh = SubResource("ArrayMesh_85hli")
 
-[node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=2048421587]
+[node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=2022125800]
 mesh = SubResource("ArrayMesh_4tp86")
 surface_material_override/0 = SubResource("StandardMaterial3D_04kjf")
 
-[node name="ekrany_przod" parent="statekfixed" index="13" unique_id=894526804]
+[node name="ekrany_przod" parent="statekfixed" index="13" unique_id=2051071313]
 transform = Transform3D(1.0000012, 0, 0, 0, 1.0000012, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="szyby" parent="statekfixed" index="16" unique_id=1321832081]
+[node name="szyby" parent="statekfixed" index="16" unique_id=1234488368]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_1vbcp")
 
-[node name="zasilanie_maszyna" parent="statekfixed" index="23" unique_id=1409005897]
+[node name="zasilanie_maszyna" parent="statekfixed" index="23" unique_id=892221268]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, -4.440546e-05, -0.0008831024, 2.0742416e-05)
 
-[node name="monitor" parent="statekfixed" index="24" unique_id=1151504247]
+[node name="monitor" parent="statekfixed" index="24" unique_id=28578461]
 mesh = SubResource("ArrayMesh_lrntp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1668559536]
@@ -1183,17 +1183,17 @@ label_settings = SubResource("LabelSettings_04kjf")
 [node name="back" type="Button" parent="pause/pause" unique_id=1356558691]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-text = "back"
+text = "Wróć do gry"
 
 [node name="settings" type="Button" parent="pause/pause" unique_id=1082372177]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-text = "settings"
+text = "Ustawienia"
 
 [node name="quit" type="Button" parent="pause/pause" unique_id=163704089]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-text = "quit"
+text = "Wyjście"
 
 [node name="settings" type="ScrollContainer" parent="pause" unique_id=90972099]
 visible = false
@@ -1209,17 +1209,17 @@ size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="pause/settings/pause2" unique_id=883896941]
 layout_mode = 2
-text = "settings:"
+text = "Ustawienia:"
 label_settings = SubResource("LabelSettings_04kjf")
 
 [node name="Label2" type="Label" parent="pause/settings/pause2" unique_id=1020174749]
 layout_mode = 2
-text = "graphics:"
+text = "Grafika:"
 label_settings = SubResource("LabelSettings_ttnnh")
 
 [node name="Label5" type="Label" parent="pause/settings/pause2" unique_id=616066304]
 layout_mode = 2
-text = "window mode:"
+text = "Tryb w oknie:"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="VBoxContainer3" type="HBoxContainer" parent="pause/settings/pause2" unique_id=205907959]
@@ -1235,12 +1235,12 @@ max_value = 4.0
 [node name="windowmodelabel" type="Label" parent="pause/settings/pause2/VBoxContainer3" unique_id=1460587292]
 unique_name_in_owner = true
 layout_mode = 2
-text = "mode"
+text = "Tryb"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="Label3" type="Label" parent="pause/settings/pause2" unique_id=2009842557]
 layout_mode = 2
-text = "window strech mode:"
+text = "Tryb rozciągniętego okna:"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="VBoxContainer" type="HBoxContainer" parent="pause/settings/pause2" unique_id=1570299359]
@@ -1256,12 +1256,12 @@ max_value = 2.0
 [node name="windowstrechmodelabel" type="Label" parent="pause/settings/pause2/VBoxContainer" unique_id=1369803103]
 unique_name_in_owner = true
 layout_mode = 2
-text = "mode"
+text = "Tryb"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="Label4" type="Label" parent="pause/settings/pause2" unique_id=2055667679]
 layout_mode = 2
-text = "window aspect mode:"
+text = "Tryb proporcji okna:"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="VBoxContainer2" type="HBoxContainer" parent="pause/settings/pause2" unique_id=1488787268]
@@ -1277,7 +1277,7 @@ max_value = 4.0
 [node name="windowaspectlabel" type="Label" parent="pause/settings/pause2/VBoxContainer2" unique_id=1930707156]
 unique_name_in_owner = true
 layout_mode = 2
-text = "mode"
+text = "Tryb"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="Label6" type="Label" parent="pause/settings/pause2" unique_id=1328257514]
@@ -1321,7 +1321,7 @@ value = 1.0
 
 [node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer5" unique_id=891260897]
 layout_mode = 2
-text = "mode"
+text = "Tryb"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="VBoxContainer6" type="HBoxContainer" parent="pause/settings/pause2" unique_id=1379121993]
@@ -1329,7 +1329,7 @@ layout_mode = 2
 
 [node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer6" unique_id=583414447]
 layout_mode = 2
-text = "enable SSR:"
+text = "Włącz SSR:"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="ssrtoggle" type="CheckButton" parent="pause/settings/pause2/VBoxContainer6" unique_id=1177644021]
@@ -1341,7 +1341,7 @@ layout_mode = 2
 
 [node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer7" unique_id=882745753]
 layout_mode = 2
-text = "enable SSAO:"
+text = "Włącz SSAO:"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="ssaotoggle" type="CheckButton" parent="pause/settings/pause2/VBoxContainer7" unique_id=1901240128]
@@ -1353,7 +1353,7 @@ layout_mode = 2
 
 [node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer8" unique_id=738804497]
 layout_mode = 2
-text = "enable SSIL:"
+text = "Włącz SSIL:"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="ssiltoggle" type="CheckButton" parent="pause/settings/pause2/VBoxContainer8" unique_id=2073892366]
@@ -1365,7 +1365,7 @@ layout_mode = 2
 
 [node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer9" unique_id=954461031]
 layout_mode = 2
-text = "enable SDFGI:"
+text = "Włącz SDFGI:"
 label_settings = SubResource("LabelSettings_4tp86")
 
 [node name="sdfgitoggle" type="CheckButton" parent="pause/settings/pause2/VBoxContainer9" unique_id=649804838]
@@ -1375,7 +1375,7 @@ layout_mode = 2
 [node name="backsettings" type="Button" parent="pause/settings/pause2" unique_id=1669114839]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-text = "back"
+text = "Wróć"
 
 [connection signal="pressed" from="pause/pause/back" to="pause" method="_on_back_pressed"]
 [connection signal="pressed" from="pause/pause/settings" to="pause" method="_on_settings_pressed"]
