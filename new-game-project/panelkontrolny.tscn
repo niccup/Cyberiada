@@ -1177,7 +1177,7 @@ offset_bottom = 268.0
 
 [node name="Label" type="Label" parent="pause/pause" unique_id=775636982]
 layout_mode = 2
-text = "pause menu"
+text = "Menu pauzy"
 label_settings = SubResource("LabelSettings_04kjf")
 
 [node name="back" type="Button" parent="pause/pause" unique_id=1356558691]
