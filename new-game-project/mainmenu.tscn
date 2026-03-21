@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cox810dmasw28" path="res://menuassets/image.png" id="1_cmhrf"]
 [ext_resource type="Script" uid="uid://dhpkir0ev4lsc" path="res://mainmenu.gd" id="1_wgsso"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/Jersey_15 copy/Jersey15-Regular.ttf" id="2_d2nv2"]
+[ext_resource type="AudioStream" uid="uid://c0nnw1vdu0qei" path="res://menuassets/YTDown.com_YouTube_Media_SguvxRbsRdY_009_128k.mp3" id="4_igs2m"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wgsso"]
 texture = ExtResource("1_cmhrf")
@@ -177,6 +178,10 @@ theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("2_d2nv2")
 theme_override_font_sizes/font_size = 150
 text = "FOR MILLIONS"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2050413402]
+stream = ExtResource("4_igs2m")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/new game" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/continue" to="." method="_on_continue_pressed"]
