@@ -1,12 +1,12 @@
 extends CanvasLayer
 # obrazek, name, cena
-var data = [[load("res://icon.svg"), "shanty", 2137],
-[load("res://icon.svg"), "powerhouse", 2435],
-[load("res://icon.svg"), "water pump", 3443],
-[load("res://icon.svg"), "food supply", 6767],
-[load("res://icon.svg"), "factory", 3567],
-[load("res://icon.svg"), "street", 500],
-[load("res://icon.svg"), "plant", 100]]
+var data = [[load("res://icon.svg"), "shanty", 50],
+[load("res://icon.svg"), "powerhouse", 100],
+[load("res://icon.svg"), "water pump", 150],
+[load("res://icon.svg"), "food supply", 250],
+[load("res://icon.svg"), "factory", 450],
+[load("res://icon.svg"), "street", 30],
+[load("res://icon.svg"), "plant", 10]]
 var selected = 0
 
 var panel = load("uid://bvxthgic28ya5")
@@ -21,9 +21,13 @@ func addinput(input):
 	if input == "r":
 		selected += 1
 	if input == "u":
-		selected -= 4
+		pass
+		#selected -= 4
 	if input == "d":
-		selected += 4
+		pass
+		#selected += 4
+	if input == "enter":
+		pass
 	if selected < 0:
 		selected = prevsel
 	if selected > 6:
@@ -43,8 +47,13 @@ func _ready() -> void:
 		inst.price = n[2]
 		
 		$TextureRect/GridContainer.add_child(inst)
+	for n in $TextureRect/GridContainer.get_children():
+		if n.get_index() == selected:
+			n.selected=true
+		else:
+			n.selected=false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	$TextureRect/moneycounter.text = "$"+ "%06d" % Global.money

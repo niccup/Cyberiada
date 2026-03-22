@@ -49,12 +49,14 @@ func ray():
 			for n in screen.get_children():
 				n.hide()
 			screen.get_node("Build").show()
+			screen.get_node("City").hide()
 			scene = "build"
 		if (raycast_result["collider"].name) == "btn_back":
 			
 			for n in screen.get_children():
 				n.hide()
 			screen.get_node("City").show()
+			screen.get_node("Build").hide()
 			scene = "city"
 		
 		
@@ -78,6 +80,14 @@ func ray():
 				screen.get_node("Build").addinput("d")
 			if scene == "city":
 				screen.get_node("City").addinput("d")
+		if (raycast_result["collider"].name) == "btn_enter":
+			if scene == "build":
+				screen.get_node("Build").addinput("enter")
+			if scene == "city":
+				screen.get_node("City").addinput("enter")
+		if (raycast_result["collider"].name) == "btn_destroy":
+			if scene == "city":
+				screen.get_node("City").addinput("destroy")
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index==1:

@@ -1,19 +1,47 @@
 [gd_scene format=3 uid="uid://bjyappyr6cwxa"]
 
+[ext_resource type="Shader" uid="uid://6o3s7yc01q4f" path="res://uiscreens/crt.gdshader" id="1_c35dq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3i38e"]
+shader = ExtResource("1_c35dq")
+shader_parameter/overlay = true
+shader_parameter/resolution = Vector2(6400, 4800)
+shader_parameter/brightness = 1.31
+shader_parameter/scanlines_opacity = 0.034000001615
+shader_parameter/scanlines_width = 0.5
+shader_parameter/grille_opacity = 0.178000008455
+shader_parameter/roll = true
+shader_parameter/roll_speed = 6.45
+shader_parameter/roll_size = 81.2790038607525
+shader_parameter/roll_variation = 0.24200000823512
+shader_parameter/distort_intensity = 0.0170000008075
+shader_parameter/aberration = -0.009999952975
+shader_parameter/noise_opacity = 0.342000016245
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/pixelate = true
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 0.390000018525
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
+
 [node name="tenai" type="Node2D" unique_id=632339229]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=910401834]
 offset_right = 1954.0
 offset_bottom = 1102.0
+color = Color(0.05000019, 0, 1, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=185817786]
-offset_left = 127.0
-offset_top = 260.0
-offset_right = 248.0
-offset_bottom = 549.0
+offset_left = 14.0
+offset_top = 31.0
+offset_right = 69.0
+offset_bottom = 104.0
 color = Color(0, 0, 0, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="ColorRect2" unique_id=1649692641]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.19000001
@@ -21,20 +49,21 @@ anchor_top = 1.0
 anchor_right = 0.623
 anchor_bottom = 1.0
 offset_left = 0.0099983215
-offset_top = -117.0
-offset_right = 15.616997
+offset_top = -56.0
+offset_right = -5.8560066
 offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="ColorRect3" type="ColorRect" parent="." unique_id=238617292]
-offset_left = 502.0
-offset_top = 256.0
-offset_right = 623.0
-offset_bottom = 545.0
+offset_left = 370.0
+offset_top = 36.0
+offset_right = 432.0
+offset_bottom = 105.0
 color = Color(0, 0, 0, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="ColorRect3" unique_id=1939740758]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.19000001
@@ -42,8 +71,28 @@ anchor_top = 1.0
 anchor_right = 0.623
 anchor_bottom = 1.0
 offset_left = 0.0099983215
-offset_top = -117.0
-offset_right = 15.616997
+offset_top = -54.0
+offset_right = -1.9869995
 offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 0
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=411465567]
+offset_left = 25.0
+offset_top = 125.0
+offset_right = 411.0
+offset_bottom = 149.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="." unique_id=610733714]
+material = SubResource("ShaderMaterial_3i38e")
+custom_minimum_size = Vector2(4.64, 5.83)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.32
+offset_top = -2.915
+offset_right = 486.0
+offset_bottom = 236.0
+grow_horizontal = 2
+grow_vertical = 2

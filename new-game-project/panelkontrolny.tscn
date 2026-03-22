@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bkufbvu3polag" path="res://assets/skybox2_bezgwiazd.png" id="3_oaijq"]
 [ext_resource type="PackedScene" uid="uid://cugmduxinvt1u" path="res://uiscreens/build.tscn" id="3_qjhqy"]
 [ext_resource type="PackedScene" uid="uid://c6takejyrn2f3" path="res://button.tscn" id="4_6jovm"]
+[ext_resource type="PackedScene" uid="uid://bjyappyr6cwxa" path="res://ai.tscn" id="4_hv7gs"]
 [ext_resource type="PackedScene" uid="uid://drr5ye8tgctg1" path="res://uiscreens/city/city.tscn" id="4_ntmi1"]
 [ext_resource type="Texture2D" uid="uid://ctqggi0vhrr6" path="res://assets/planeta.png" id="8_2j56q"]
 [ext_resource type="Texture2D" uid="uid://bbvdoil3g0kka" path="res://assets/statek2/statekfixed_statek_re_UV_arch_base.jpg" id="9_hv7gs"]
@@ -1534,6 +1535,14 @@ resource_local_to_scene = true
 shading_mode = 0
 albedo_texture = SubResource("ViewportTexture_ctoj3")
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_musfh"]
+viewport_path = NodePath("stasia")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wc1g5"]
+resource_local_to_scene = true
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_musfh")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xccvx"]
 resource_name = "monitory ekran.1"
 cull_mode = 2
@@ -1577,6 +1586,7 @@ shadow_mesh = SubResource("ArrayMesh_6f586")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afoto"]
 albedo_color = Color(1, 0, 0, 1)
 emission_enabled = true
+emission = Color(1, 0, 0, 1)
 rim_enabled = true
 
 [sub_resource type="QuadMesh" id="QuadMesh_uwgir"]
@@ -1677,6 +1687,11 @@ mesh = SubResource("QuadMesh_qjhqy")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_1tmdx")
 
+[node name="stasia" type="SubViewport" parent="." unique_id=876435194]
+size = Vector2i(450, 300)
+
+[node name="tenai" parent="stasia" unique_id=632339229 instance=ExtResource("4_hv7gs")]
+
 [node name="SubViewport" type="SubViewport" parent="." unique_id=576581507]
 
 [node name="Node2D" type="Node2D" parent="SubViewport" unique_id=1652899177]
@@ -1711,6 +1726,7 @@ size = Vector2i(900, 600)
 [node name="City" parent="mainscreen" unique_id=562497731 instance=ExtResource("4_ntmi1")]
 
 [node name="Build" parent="mainscreen" unique_id=1187181437 instance=ExtResource("3_qjhqy")]
+visible = false
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=525018605]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4932795, 0.4365034, 1.4618409)
@@ -1965,6 +1981,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ddx0w")
 
 [node name="monitor_ekran_1" type="MeshInstance3D" parent="statekfixed" unique_id=1442378278]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_wc1g5")
 mesh = SubResource("ArrayMesh_ta5aa")
 skeleton = NodePath("")
 
