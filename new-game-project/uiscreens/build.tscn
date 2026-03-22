@@ -21,7 +21,7 @@ shader_parameter/roll_speed = 6.45
 shader_parameter/roll_size = 81.2790038607525
 shader_parameter/roll_variation = 0.24200000823512
 shader_parameter/distort_intensity = 0.0170000008075
-shader_parameter/aberration = -0.009999952975000004
+shader_parameter/aberration = -0.009999952975
 shader_parameter/noise_opacity = 0.342000016245
 shader_parameter/noise_speed = 5.0
 shader_parameter/static_noise_intensity = 0.06
@@ -32,7 +32,7 @@ shader_parameter/clip_warp = false
 shader_parameter/vignette_intensity = 0.4
 shader_parameter/vignette_opacity = 0.5
 
-[node name="Node2D" type="Node2D" unique_id=1187181437]
+[node name="Node2D" type="CanvasLayer" unique_id=315271612]
 script = ExtResource("1_tqes5")
 
 [node name="TextureRect" type="ColorRect" parent="." unique_id=978765914]

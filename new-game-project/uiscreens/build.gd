@@ -1,4 +1,4 @@
-extends Node2D
+extends CanvasLayer
 # obrazek, name, cena
 var data = [[load("res://icon.svg"), "shanty", 2137],
 [load("res://icon.svg"), "powerhouse", 2435],

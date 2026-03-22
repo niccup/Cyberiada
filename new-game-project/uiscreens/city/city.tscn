@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://drr5ye8tgctg1"]
 
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_2krn4"]
+[ext_resource type="Script" uid="uid://1s2w68qcq7v4" path="res://uiscreens/city/city.gd" id="1_vwx1n"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/Jersey_15 copy/Jersey15-Regular.ttf" id="2_3w7kk"]
 [ext_resource type="Shader" uid="uid://6o3s7yc01q4f" path="res://uiscreens/crt.gdshader" id="3_63v6i"]
 [ext_resource type="Texture2D" uid="uid://ne4mg14wiuav" path="res://assets/IMG_2695.png" id="7_vgpuk"]
@@ -129,9 +130,6 @@ sources/5 = SubResource("TileSetAtlasSource_ygcph")
 sources/6 = SubResource("TileSetAtlasSource_yus3a")
 sources/7 = SubResource("TileSetAtlasSource_bx6kf")
 
-[sub_resource type="LabelSettings" id="LabelSettings_63v6i"]
-font = ExtResource("2_3w7kk")
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3cbma"]
 shader = ExtResource("3_63v6i")
 shader_parameter/overlay = true
@@ -156,27 +154,29 @@ shader_parameter/clip_warp = false
 shader_parameter/vignette_intensity = 0.4
 shader_parameter/vignette_opacity = 0.5
 
-[node name="City" type="Node2D" unique_id=562497731]
+[sub_resource type="LabelSettings" id="LabelSettings_63v6i"]
+font = ExtResource("2_3w7kk")
 
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=1303538815]
+[node name="City" type="Node2D" unique_id=562497731]
+script = ExtResource("1_vwx1n")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=2093272578]
+layer = -1
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer2" unique_id=1303538815]
+z_index = -3
 custom_minimum_size = Vector2(900, 600)
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.90571666, 0.7550234, 0.29819688, 1)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1386163259]
 scale = Vector2(0.1, 0.1)
 tile_map_data = PackedByteArray("AAAAAAAABwAAAAAAAAABAP//BwAAAAAAAAACAP7/BwAAAAAAAAADAP3/BwAAAAAAAAAEAPz/BwAAAAAAAAAFAPv/BwAAAAAAAAAGAPr/BwAAAAAAAAAHAPn/BwAAAAAAAAAIAPj/BwAAAAAAAAAJAPf/BwAAAAAAAAAXAAYABwAAAAAAAAAXAAcABwAAAAAAAAAWAAcABwAAAAAAAAAWAAgABwAAAAAAAAAVAAgABwAAAAAAAAAVAAkABwAAAAAAAAAUAAkABwAAAAAAAAAUAAoABwAAAAAAAAATAAoABwAAAAAAAAATAAsABwAAAAAAAAASAAsABwAAAAAAAAASAAwABwAAAAAAAAARAAwABwAAAAAAAAARAA0ABwAAAAAAAAAQAA0ABwAAAAAAAAAQAA4ABwAAAAAAAAAPAA4ABwAAAAAAAAAPAA8ABwAAAAAAAAAOAA8ABwAAAAAAAAANAA4ABwAAAAAAAAAMAA0ABwAAAAAAAAALAAwABwAAAAAAAAAKAAsABwAAAAAAAAAJAAoABwAAAAAAAAAIAAkABwAAAAAAAAAHAAgABwAAAAAAAAAGAAcABwAAAAAAAAAFAAYABwAAAAAAAAAEAAUABwAAAAAAAAADAAQABwAAAAAAAAABAAIABwAAAAAAAAACAAMABwAAAAAAAAAAAAEABwAAAAAAAAAGAPv/BwAAAAAAAAAHAPr/BwAAAAAAAAAIAPn/BwAAAAAAAAAJAPj/BwAAAAAAAAD//wAABwAAAAAAAAAAAP//BwAAAAAAAAABAP7/BwAAAAAAAAACAP3/BwAAAAAAAAADAPz/BwAAAAAAAAAEAPv/BwAAAAAAAAAFAPr/BwAAAAAAAAAGAPn/BwAAAAAAAAAHAPj/BwAAAAAAAAAIAPf/BwAAAAAAAAALAAcABwAAAAAAAAAMAAcABwAAAAAAAAANAAcABwAAAAAAAAANAAYABwAAAAAAAAAOAAUABwAAAAAAAAAPAAUABwAAAAAAAAAPAAQABwAAAAAAAAAKAPn/BwAAAAAAAAALAPn/BwAAAAAAAAALAPr/BwAAAAAAAAAMAPr/BwAAAAAAAAAMAPv/BwAAAAAAAAANAPz/BwAAAAAAAAANAPv/BwAAAAAAAAAOAPz/BwAAAAAAAAAOAP3/BwAAAAAAAAAPAP3/BwAAAAAAAAAPAP7/BwAAAAAAAAAQAP7/BwAAAAAAAAAQAP//BwAAAAAAAAARAP//BwAAAAAAAAARAAAABwAAAAAAAAASAAAABwAAAAAAAAASAAEABwAAAAAAAAATAAEABwAAAAAAAAATAAIABwAAAAAAAAAUAAIABwAAAAAAAAAUAAMABwAAAAAAAAAVAAMABwAAAAAAAAAVAAQABwAAAAAAAAAWAAQABwAAAAAAAAAWAAUABwAAAAAAAAAXAAUABwAAAAAAAAAKAAcABwAAAAAAAAAKAAgABwAAAAAAAAAKAAkABwAAAAAAAAAJAAkABwAAAAAAAAAJAAgABwAAAAAAAAAKAAoABwAAAAAAAAALAAoABwAAAAAAAAALAAkABwAAAAAAAAALAAgABwAAAAAAAAALAAsABwAAAAAAAAAMAAkABwAAAAAAAAANAAgABwAAAAAAAAAMAAoABwAAAAAAAAANAAkABwAAAAAAAAAMAAsABwAAAAAAAAAMAAgABwAAAAAAAAANAAoABwAAAAAAAAANAAsABwAAAAAAAAANAAwABwAAAAAAAAAOAAYABwAAAAAAAAAQAAQABwAAAAAAAAARAAMABwAAAAAAAAASAAIABwAAAAAAAAALAP//BwAAAAAAAAA=")
 tile_set = SubResource("TileSet_63v6i")
-
-[node name="Label" type="Label" parent="." unique_id=1056226087]
-offset_left = 9.0
-offset_top = 12.0
-offset_right = 76.0
-offset_bottom = 35.0
-scale = Vector2(1.83, 1.83)
-text = "city view:"
-label_settings = SubResource("LabelSettings_63v6i")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=503888879]
 visible = false
@@ -190,3 +190,31 @@ offset_right = 1124.0
 offset_bottom = 632.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=678117689]
+zoom = Vector2(2, 2)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=205876834]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=318269253]
+custom_minimum_size = Vector2(6, 6)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1056226087]
+offset_left = 9.0
+offset_top = 12.0
+offset_right = 76.0
+offset_bottom = 35.0
+scale = Vector2(1.83, 1.83)
+text = "city view:"
+label_settings = SubResource("LabelSettings_63v6i")

@@ -61,15 +61,23 @@ func ray():
 		if (raycast_result["collider"].name) == "btn_left":
 			if scene == "build":
 				screen.get_node("Build").addinput("l")
+			if scene == "city":
+				screen.get_node("City").addinput("l")
 		if (raycast_result["collider"].name) == "btn_right":
 			if scene == "build":
 				screen.get_node("Build").addinput("r")
+			if scene == "city":
+				screen.get_node("City").addinput("r")
 		if (raycast_result["collider"].name) == "btn_up":
 			if scene == "build":
 				screen.get_node("Build").addinput("u")
+			if scene == "city":
+				screen.get_node("City").addinput("u")
 		if (raycast_result["collider"].name) == "btn_down":
 			if scene == "build":
 				screen.get_node("Build").addinput("d")
+			if scene == "city":
+				screen.get_node("City").addinput("d")
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index==1:
