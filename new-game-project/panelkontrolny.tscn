@@ -77,6 +77,7 @@ ssil_radius = 3.34
 ssil_intensity = 1.87
 ssil_normal_rejection = 0.31
 sdfgi_enabled = true
+sdfgi_use_occlusion = true
 sdfgi_cascades = 2
 glow_enabled = true
 glow_levels/3 = 1.25
@@ -1576,7 +1577,6 @@ shadow_mesh = SubResource("ArrayMesh_6f586")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afoto"]
 albedo_color = Color(1, 0, 0, 1)
 emission_enabled = true
-emission = Color(1, 0, 0, 1)
 rim_enabled = true
 
 [sub_resource type="QuadMesh" id="QuadMesh_uwgir"]
@@ -1852,19 +1852,15 @@ visible = false
 mesh = SubResource("ArrayMesh_k215b")
 skeleton = NodePath("")
 
-
 [node name="podstawa_guzikow" type="MeshInstance3D" parent="statekfixed" unique_id=490161940]
 transform = Transform3D(-1.44355e-08, 0.00020119057, -0.04999747, -0.021918578, 0.017974967, 0.00045207847, 0.044939693, 0.008766987, 0.00022047758, -0.4181583, 1.0545619, 0.4027226)
 mesh = SubResource("ArrayMesh_p1dc7")
 skeleton = NodePath("")
 
-
-
 [node name="STATEK" type="MeshInstance3D" parent="statekfixed" unique_id=541619985]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_1wo2x")
 skeleton = NodePath("")
-
 
 [node name="Kontakt_kable_konsola" type="MeshInstance3D" parent="statekfixed" unique_id=1972164462]
 mesh = SubResource("ArrayMesh_7g7sk")
@@ -1928,9 +1924,6 @@ transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_1vbcp")
 skeleton = NodePath("")
 
-<<<<<<< HEAD
-[node name="zasilanie_maszyna" parent="statekfixed" index="23" unique_id=1422893139]
-=======
 [node name="maszyna_w_maszyna" type="MeshInstance3D" parent="statekfixed" unique_id=528805980]
 mesh = SubResource("ArrayMesh_qofed")
 skeleton = NodePath("")
