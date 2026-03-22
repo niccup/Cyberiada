@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ovu6xg3i6fm5"]
 
 [ext_resource type="Script" uid="uid://dft4yvcfly4jf" path="res://cinematic.gd" id="1_cylie"]
-[ext_resource type="VideoStream" uid="uid://bhdqdv473mkw" path="res://assets/menuassets/klip13-phgvjy.ogv" id="2_cylie"]
+[ext_resource type="VideoStream" uid="uid://bf0rey0wegffg" path="res://cutscenka-v2-2jekcv.ogv" id="2_cylie"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/Jersey_15 copy/Jersey15-Regular.ttf" id="3_b1bco"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2rcj5"]
