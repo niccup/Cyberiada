@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bjyappyr6cwxa"]
+
+[node name="tenai" type="Node2D" unique_id=632339229]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=910401834]
+offset_right = 1954.0
+offset_bottom = 1102.0
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=185817786]
+offset_left = 127.0
+offset_top = 260.0
+offset_right = 248.0
+offset_bottom = 549.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect2" unique_id=1649692641]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.19000001
+anchor_top = 1.0
+anchor_right = 0.623
+anchor_bottom = 1.0
+offset_left = 0.0099983215
+offset_top = -117.0
+offset_right = 15.616997
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=238617292]
+offset_left = 502.0
+offset_top = 256.0
+offset_right = 623.0
+offset_bottom = 545.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect3" unique_id=1939740758]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.19000001
+anchor_top = 1.0
+anchor_right = 0.623
+anchor_bottom = 1.0
+offset_left = 0.0099983215
+offset_top = -117.0
+offset_right = 15.616997
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 0
