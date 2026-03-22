@@ -41,7 +41,6 @@ ssil_radius = 3.34
 ssil_intensity = 1.87
 ssil_normal_rejection = 0.31
 sdfgi_enabled = true
-sdfgi_use_occlusion = true
 sdfgi_cascades = 2
 glow_enabled = true
 glow_levels/3 = 1.25
@@ -836,6 +835,7 @@ shadow_mesh = SubResource("ArrayMesh_fj4es")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afoto"]
 albedo_color = Color(1, 0, 0, 1)
 emission_enabled = true
+emission = Color(1, 0, 0, 1)
 rim_enabled = true
 
 [sub_resource type="QuadMesh" id="QuadMesh_uwgir"]
@@ -1102,50 +1102,50 @@ omni_range = 7.065
 [node name="statekfixed" parent="." unique_id=1971047331 instance=ExtResource("10_afoto")]
 transform = Transform3D(3.9999447, -0.02101367, 0, 0.02101367, 3.9999447, 0, 0, 0, 4, -3.8482609, -8.004439, 7.7203426)
 
-[node name="Cube" parent="statekfixed" index="0" unique_id=1827854200]
+[node name="Cube" parent="statekfixed" index="0" unique_id=2040440974]
 visible = false
 
-[node name="podstawa_guzikow" parent="statekfixed" index="1" unique_id=490161940]
+[node name="podstawa_guzikow" parent="statekfixed" index="1" unique_id=1756914137]
 mesh = SubResource("ArrayMesh_p1dc7")
 
-[node name="STATEK" parent="statekfixed" index="2" unique_id=541619985]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
+[node name="STATEK" parent="statekfixed" index="2" unique_id=1302819585]
+transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_1wo2x")
 
-[node name="Kontakt_kable_konsola" parent="statekfixed" index="3" unique_id=1972164462]
+[node name="Kontakt_kable_konsola" parent="statekfixed" index="3" unique_id=1467602293]
 mesh = SubResource("ArrayMesh_7g7sk")
 
-[node name="kable_maszyna_bok" parent="statekfixed" index="4" unique_id=16149959]
+[node name="kable_maszyna_bok" parent="statekfixed" index="4" unique_id=949173335]
 mesh = SubResource("ArrayMesh_e6s6q")
 
-[node name="pudlo_dokumenty" parent="statekfixed" index="5" unique_id=1054531499]
+[node name="pudlo_dokumenty" parent="statekfixed" index="5" unique_id=741070363]
 mesh = SubResource("ArrayMesh_qr1pr")
 
-[node name="kable_konsola" parent="statekfixed" index="6" unique_id=2094668165]
+[node name="kable_konsola" parent="statekfixed" index="6" unique_id=811930894]
 mesh = SubResource("ArrayMesh_musfh")
 
-[node name="KONSOLA" parent="statekfixed" index="8" unique_id=1229369099]
+[node name="KONSOLA" parent="statekfixed" index="8" unique_id=26205733]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_bx4oe")
 
-[node name="szafka_dokumenty" parent="statekfixed" index="10" unique_id=1853950232]
+[node name="szafka_dokumenty" parent="statekfixed" index="10" unique_id=327646153]
 mesh = SubResource("ArrayMesh_85hli")
 
-[node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=2048421587]
+[node name="Konsola_ekran" parent="statekfixed" index="11" unique_id=698422387]
 mesh = SubResource("ArrayMesh_4tp86")
 surface_material_override/0 = SubResource("StandardMaterial3D_04kjf")
 
-[node name="ekrany_przod" parent="statekfixed" index="13" unique_id=894526804]
+[node name="ekrany_przod" parent="statekfixed" index="13" unique_id=1079448274]
 transform = Transform3D(1.0000012, 0, 0, 0, 1.0000012, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="szyby" parent="statekfixed" index="16" unique_id=1321832081]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
+[node name="szyby" parent="statekfixed" index="16" unique_id=1467557473]
+transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_1vbcp")
 
-[node name="zasilanie_maszyna" parent="statekfixed" index="23" unique_id=1409005897]
+[node name="zasilanie_maszyna" parent="statekfixed" index="23" unique_id=1422893139]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, -4.440546e-05, -0.0008831024, 2.0742416e-05)
 
-[node name="monitor" parent="statekfixed" index="24" unique_id=1151504247]
+[node name="monitor" parent="statekfixed" index="24" unique_id=85047253]
 mesh = SubResource("ArrayMesh_lrntp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1668559536]
