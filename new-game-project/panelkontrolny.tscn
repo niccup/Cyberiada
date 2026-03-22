@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://c6takejyrn2f3" path="res://button.tscn" id="4_6jovm"]
 [ext_resource type="PackedScene" uid="uid://drr5ye8tgctg1" path="res://uiscreens/city/city.tscn" id="4_ntmi1"]
 [ext_resource type="Texture2D" uid="uid://ctqggi0vhrr6" path="res://assets/planeta.png" id="8_2j56q"]
-[ext_resource type="PackedScene" uid="uid://clx3ephuibsfl" path="res://assets/statek2/statekfixed.glb" id="10_afoto"]
 [ext_resource type="Texture2D" uid="uid://bbvdoil3g0kka" path="res://assets/statek2/statekfixed_statek_re_UV_arch_base.jpg" id="9_hv7gs"]
 [ext_resource type="Texture2D" uid="uid://coxunv7ykwsq1" path="res://assets/statek2/statekfixed_statek_re_UV_arch_metallic-statek_re_UV_arch_roughness.jpg" id="10_kgulf"]
 [ext_resource type="Texture2D" uid="uid://bayo5oj44pou3" path="res://assets/statek2/statekfixed_statek_materials_re_made_konsola_base.jpg" id="10_uwgir"]
