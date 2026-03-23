@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://coc2x7idydv8v"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_monitory_height.jpg-4c1a7e927176830fe4ada5fc3e17f4ce.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_monitory_height.jpg-4c1a7e927176830fe4ada5fc3e17f4ce.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_monitory_height.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_monitory_height.jpg-4c1a7e927176830fe4ada5fc3e17f4ce.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_monitory_height.jpg-4c1a7e927176830fe4ada5fc3e17f4ce.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_monitory_height.jpg-4c1a7e927176830fe4ada5fc3e17f4ce.etc2.ctex"]
 
 [params]
 

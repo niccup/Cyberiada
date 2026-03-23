@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b20euit5xqw6e"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_monitory ekran_base.jpg-6513522db3a68a38c641b40736cfbb21.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_monitory ekran_base.jpg-6513522db3a68a38c641b40736cfbb21.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_monitory ekran_base.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_monitory ekran_base.jpg-6513522db3a68a38c641b40736cfbb21.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_monitory ekran_base.jpg-6513522db3a68a38c641b40736cfbb21.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_monitory ekran_base.jpg-6513522db3a68a38c641b40736cfbb21.etc2.ctex"]
 
 [params]
 

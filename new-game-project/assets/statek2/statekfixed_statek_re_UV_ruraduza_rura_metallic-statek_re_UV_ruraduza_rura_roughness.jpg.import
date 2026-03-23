@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgx14gq45rlbr"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_ruraduza_rura_metallic-statek_re_UV_ruraduza_rura_roughness.jpg-6a948bcfc4354f86395a1be204a687ec.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_ruraduza_rura_metallic-statek_re_UV_ruraduza_rura_roughness.jpg-6a948bcfc4354f86395a1be204a687ec.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_ruraduza_rura_metallic-statek_re_UV_ruraduza_rura_roughness.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_ruraduza_rura_metallic-statek_re_UV_ruraduza_rura_roughness.jpg-6a948bcfc4354f86395a1be204a687ec.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_ruraduza_rura_metallic-statek_re_UV_ruraduza_rura_roughness.jpg-6a948bcfc4354f86395a1be204a687ec.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_ruraduza_rura_metallic-statek_re_UV_ruraduza_rura_roughness.jpg-6a948bcfc4354f86395a1be204a687ec.etc2.ctex"]
 
 [params]
 

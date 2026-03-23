@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://drft2eys6eryd"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_base.jpg-b3a6d07a303dee244dc2904bbb891653.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_base.jpg-b3a6d07a303dee244dc2904bbb891653.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_szafka_docs_base.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_base.jpg-b3a6d07a303dee244dc2904bbb891653.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_base.jpg-b3a6d07a303dee244dc2904bbb891653.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_base.jpg-b3a6d07a303dee244dc2904bbb891653.etc2.ctex"]
 
 [params]
 

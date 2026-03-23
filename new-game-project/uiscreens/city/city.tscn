@@ -10,11 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://cv2dnt681m467" path="res://assets/tiles/IMG_2859.png" id="5_3cbma"]
 [ext_resource type="Texture2D" uid="uid://1bcdrs2sig1c" path="res://assets/IMG_0656.PNG" id="6_7ruy1"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irigh"]
-texture = ExtResource("2_4cyb6")
-texture_region_size = Vector2i(1024, 1024)
-0:0/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4cyb6"]
 texture = ExtResource("2_7ruy1")
 texture_region_size = Vector2i(1024, 1024)
@@ -55,6 +50,11 @@ texture_region_size = Vector2i(1024, 1024)
 2:3/0 = 0
 3:3/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irigh"]
+texture = ExtResource("2_4cyb6")
+texture_region_size = Vector2i(1024, 1024)
+0:0/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_knv00"]
 texture = ExtResource("5_3cbma")
 texture_region_size = Vector2i(1024, 1024)
@@ -64,13 +64,15 @@ texture_region_size = Vector2i(1024, 1024)
 tile_shape = 1
 tile_layout = 5
 tile_size = Vector2i(1024, 410)
-sources/3 = SubResource("TileSetAtlasSource_4cyb6")
-sources/4 = SubResource("TileSetAtlasSource_3cbma")
 sources/8 = SubResource("TileSetAtlasSource_knv00")
 sources/10 = SubResource("TileSetAtlasSource_irigh")
+sources/0 = SubResource("TileSetAtlasSource_4cyb6")
+sources/1 = SubResource("TileSetAtlasSource_3cbma")
 
 [sub_resource type="LabelSettings" id="LabelSettings_63v6i"]
 font = ExtResource("2_3w7kk")
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_7ruy1"]
 font = ExtResource("2_3w7kk")
@@ -108,6 +110,8 @@ shader_parameter/warp_amount = 0.390000018525
 shader_parameter/clip_warp = false
 shader_parameter/vignette_intensity = 0.4
 shader_parameter/vignette_opacity = 0.5
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3cbma"]
 
 [node name="City" type="Node2D" unique_id=562497731]
 script = ExtResource("1_vwx1n")
@@ -152,9 +156,7 @@ tile_map_data = PackedByteArray("AAD3/wgACAAAAAAAAAD3/wcACAAAAAAAAAD3/wYACAAAAAA
 tile_set = SubResource("TileSet_63v6i")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1386163259]
-visible = false
 scale = Vector2(0.1, 0.1)
-tile_map_data = PackedByteArray("AAD//wAABwAAAAAAAAALAAYAAwAAAAAAAAAFAPr/AwAAAAAAAAAFAPv/AwAAAAAAAAAGAPv/AwAAAAAAAAAGAPz/AwAAAAAAAAAGAP3/AwAAAAAAAAAHAP3/AwAAAAAAAAAHAP7/AwAAAAAAAAAHAP//AwAAAAAAAAAIAP//AwAAAAAAAAAIAAAAAwAAAAAAAAAIAAEAAwAAAAAAAAAJAAEAAwAAAAAAAAAJAAIAAwAAAAAAAAAJAAMAAwAAAAAAAAAKAAMAAwAAAAAAAAAKAAQAAwAAAAAAAAAKAAUAAwAAAAAAAAALAAUAAwAAAAAAAAAMAAYAAwAAAAAAAAANAAYAAwAAAAAAAAAOAAYAAwAAAAAAAAAPAAYAAwAAAAAAAAAOAAUAAwAAAAAAAAAOAAQAAwAAAAAAAAAOAAMAAwAAAAAAAAANAAMAAwAAAAAAAAANAAIAAwAAAAAAAAANAAEAAwAAAAAAAAAMAAEAAwAAAAAAAAAMAAAAAwAAAAAAAAALAAAAAwAAAAAAAAATAAUABAACAAEAAAAUAAMABAACAAEAAAAWAAEABAACAAEAAAAWAAIABAACAAEAAAAWAAMABAACAAEAAAAWAAQABAACAAEAAAAVAAQABAACAAEAAAAVAAUABAACAAEAAAAVAAYABAACAAEAAAAUAAYABAACAAEAAAAUAAcABAACAAEAAAATAAcABAACAAEAAAATAAgABAACAAEAAAASAAgAAwAAAAAAAAARAAgAAwAAAAAAAAARAAkAAwAAAAAAAAAXAAMABAACAAEAAAAXAAQABAACAAEAAAAXAAUABAACAAEAAAAWAAUABAACAAEAAAAYAAMABAACAAEAAAAYAAQABAACAAEAAAAYAAUABAACAAEAAAAYAAYABAACAAEAAAAYAAcAAwAAAAEAAAAXAAcAAwAAAAEAAAAXAAYABAACAAEAAAAWAAYABAACAAEAAAAZAAQABAACAAEAAAAZAAUABAACAAEAAAAZAAYABAACAAEAAAAZAAcABAACAAEAAAAZAAgABAACAAEAAAAYAAgAAwAAAAEAAAAWAAcAAwAAAAEAAAAVAAcABAACAAEAAAAXAAgABAAAAAEAAAAWAAgAAwAAAAEAAAAZAAkABAACAAEAAAAaAAkABAACAAEAAAAaAAoABAACAAEAAAAZAAoABAACAAEAAAAZAAsABAACAAEAAAAYAAoABAACAAEAAAAXAAoABAACAAEAAAAXAAkABAACAAEAAAAaAAYABAACAAEAAAAaAAcABAACAAEAAAAaAAgABAACAAEAAAAYAAsABAACAAEAAAAUAAQABAACAAEAAAAUAAIABAACAAEAAAAVAAIABAACAAEAAAAVAAMABAACAAEAAAAYAAkABAACAAEAAAAaAAUABAACAAEAAAAbAAUABAACAAEAAAAbAAQABAACAAEAAAAaAAQABAACAAEAAAAaAAMABAACAAEAAAAZAAMABAACAAEAAAAZAAIABAACAAEAAAAYAAIABAACAAEAAAAYAAEABAACAAEAAAAXAAEABAACAAEAAAAXAAAABAACAAEAAAAWAAAABAACAAEAAAAVAAAABAACAAEAAAAUAAAABAACAAEAAAAUAAEABAACAAEAAAAXAAIABAACAAEAAAAVAAEABAACAAEAAAAbAAgABAACAAEAAAAcAAgABAACAAEAAAAdAAgABAACAAEAAAAdAAkABAACAAEAAAAeAAkABAACAAEAAAAeAAoABAACAAEAAAAcAAcABAACAAEAAAAbAAcABAACAAEAAAAbAAYABAACAAEAAAAcAAYABAACAAEAAAAdAAoABAACAAEAAAAcAAoABAACAAEAAAAbAAoABAACAAEAAAAbAAkABAACAAEAAAAcAAkABAACAAEAAAATAAIABAACAAEAAAATAAMABAACAAEAAAATAAQABAACAAEAAAATAAYABAACAAEAAAAUAAUABAACAAEAAAAVAAgABAACAAEAAAAVAAkABAACAAEAAAAWAAkABAACAAEAAAAUAAgABAACAAEAAAAUAAkABAACAAEAAAA=")
 tile_set = SubResource("TileSet_63v6i")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=678117689]
@@ -178,10 +180,10 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=1056226087]
-offset_left = 9.0
-offset_top = 12.0
-offset_right = 76.0
-offset_bottom = 35.0
+offset_left = 400.00003
+offset_top = 9.000001
+offset_right = 467.00003
+offset_bottom = 32.000004
 scale = Vector2(1.83, 1.83)
 text = "city view:"
 label_settings = SubResource("LabelSettings_63v6i")
@@ -266,4 +268,15 @@ offset_bottom = 51.399994
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_7ruy1")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="poiter" unique_id=1755878788]
+modulate = Color(1, 1, 1, 0.42352942)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_3cbma")
 expand_mode = 1

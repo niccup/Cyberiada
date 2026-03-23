@@ -48,6 +48,8 @@
 [ext_resource type="Texture2D" uid="uid://bn01aylqv1n8y" path="res://assets/statek2/statekfixed_statek_re_UV_zasilanie_metallic-statek_re_UV_zasilanie_roughness.jpg" id="46_4dspf"]
 [ext_resource type="Texture2D" uid="uid://bx300akjg414s" path="res://assets/statek2/statekfixed_statek_re_UV_zasilanie_height.jpg" id="47_cl2ol"]
 [ext_resource type="PackedScene" uid="uid://34fcl345btae" path="res://numerki_ekran_przod.tscn" id="47_etu1g"]
+[ext_resource type="Theme" uid="uid://b6j3p7kgq37hf" path="res://theme.tres" id="48_musfh"]
+[ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/Jersey_15 copy/Jersey15-Regular.ttf" id="49_kgulf"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2j56q"]
 panorama = ExtResource("3_oaijq")
@@ -1601,6 +1603,7 @@ colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
 gradient = SubResource("Gradient_ttnnh")
 
 [sub_resource type="LabelSettings" id="LabelSettings_04kjf"]
+font = ExtResource("49_kgulf")
 font_size = 32
 
 [sub_resource type="LabelSettings" id="LabelSettings_ttnnh"]
@@ -1608,6 +1611,10 @@ font_size = 24
 
 [sub_resource type="LabelSettings" id="LabelSettings_4tp86"]
 font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_musfh"]
+font = ExtResource("49_kgulf")
+font_color = Color(1, 1, 1, 0.23137255)
 
 [node name="ship" type="Node3D" unique_id=1952611357]
 script = ExtResource("1_1tmdx")
@@ -1743,7 +1750,7 @@ shadow_enabled = true
 omni_range = 2.611
 
 [node name="panel_guziki" type="Node3D" parent="." unique_id=927159749]
-transform = Transform3D(0.6, 0, 0, 0, 0.5263028, -0.28810653, 0, 0.28810653, 0.5263028, -6.0616136, -3.0122666, 8.8316765)
+transform = Transform3D(0.6, 0, 0, 0, 0.5263028, -0.28810653, 0, 0.28810653, 0.5263028, -6.0616136, -2.968808, 8.850375)
 
 [node name="btn_up" parent="panel_guziki" unique_id=1131578206 instance=ExtResource("4_6jovm")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -0.842638, -0.49705982, 1.0603237)
@@ -2006,6 +2013,7 @@ offset_left = 16.0
 offset_top = 7.0
 offset_right = 362.0
 offset_bottom = 268.0
+theme = ExtResource("48_musfh")
 
 [node name="Label" type="Label" parent="pause/pause" unique_id=775636982]
 layout_mode = 2
@@ -2038,6 +2046,7 @@ size_flags_horizontal = 6
 [node name="pause2" type="VBoxContainer" parent="pause/settings" unique_id=254592979]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("48_musfh")
 
 [node name="Label" type="Label" parent="pause/settings/pause2" unique_id=883896941]
 layout_mode = 2
@@ -2213,6 +2222,20 @@ text = "Wróć"
 size = Vector2i(1000, 1000)
 
 [node name="numerki_przod_ekrany" parent="numerki_przod_ekrany" unique_id=2104980879 instance=ExtResource("47_etu1g")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1759453181]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=887907729]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -103.0
+offset_top = 3.0
+offset_right = 22.0
+offset_bottom = 26.0
+grow_horizontal = 0
+text = "escape to pause"
+label_settings = SubResource("LabelSettings_musfh")
 
 [connection signal="pressed" from="pause/pause/back" to="pause" method="_on_back_pressed"]
 [connection signal="pressed" from="pause/pause/settings" to="pause" method="_on_settings_pressed"]

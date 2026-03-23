@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://h7myg1hl1o8w"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_metallic-statek_re_UV_szafka_docs_roughness.jpg-76c7147a97d227b5035c3472b99a05b4.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_metallic-statek_re_UV_szafka_docs_roughness.jpg-76c7147a97d227b5035c3472b99a05b4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_szafka_docs_metallic-statek_re_UV_szafka_docs_roughness.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_metallic-statek_re_UV_szafka_docs_roughness.jpg-76c7147a97d227b5035c3472b99a05b4.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_metallic-statek_re_UV_szafka_docs_roughness.jpg-76c7147a97d227b5035c3472b99a05b4.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_szafka_docs_metallic-statek_re_UV_szafka_docs_roughness.jpg-76c7147a97d227b5035c3472b99a05b4.etc2.ctex"]
 
 [params]
 

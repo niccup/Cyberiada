@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://bvxthgic28ya5"]
 
 [ext_resource type="Script" uid="uid://cw1d2gvvdv2nb" path="res://uiscreens/buildpanel/buildpanel.gd" id="1_fdp73"]
-[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="2_1opg2"]
+[ext_resource type="Texture2D" uid="uid://f1sxgpqvydp6" path="res://assets/tiles/tekstury_budynki.png" id="2_fdp73"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/Jersey_15 copy/Jersey15-Regular.ttf" id="3_u172j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4hxr"]
+atlas = ExtResource("2_fdp73")
 
 [sub_resource type="LabelSettings" id="LabelSettings_yav8k"]
 font = ExtResource("3_u172j")
@@ -36,7 +39,7 @@ offset_right = 40.0
 offset_bottom = -14.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_1opg2")
+texture = SubResource("AtlasTexture_b4hxr")
 expand_mode = 1
 
 [node name="name" type="Label" parent="." unique_id=61607201]

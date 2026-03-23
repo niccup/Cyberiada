@@ -49,6 +49,8 @@ pause={
 
 [rendering]
 
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
 global_illumination/gi/use_half_resolution=true
 environment/ssil/quality=1
 environment/ssil/blur_passes=3

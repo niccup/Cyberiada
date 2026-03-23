@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cemg54ov2a7u2"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_rury_height.jpg-e41e92e1126ac55bcfee179bf4643e9a.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_rury_height.jpg-e41e92e1126ac55bcfee179bf4643e9a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_rury_height.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_rury_height.jpg-e41e92e1126ac55bcfee179bf4643e9a.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_rury_height.jpg-e41e92e1126ac55bcfee179bf4643e9a.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_rury_height.jpg-e41e92e1126ac55bcfee179bf4643e9a.etc2.ctex"]
 
 [params]
 

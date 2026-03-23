@@ -8,22 +8,15 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wgsso"]
 texture = ExtResource("1_cmhrf")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7uvds"]
+bg_color = Color(0.05490196, 0.12156863, 0.10980392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_igs2m"]
 bg_color = Color(0.15294118, 0.29803923, 0.25490198, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2nv2"]
-bg_color = Color(0.6, 0.39215687, 0.36078432, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3pujl"]
-bg_color = Color(0.05490196, 0.12156863, 0.10980392, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -36,7 +29,21 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7uvds"]
+[sub_resource type="Theme" id="Theme_igs2m"]
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("2_d2nv2")
+Button/styles/hover = SubResource("StyleBoxFlat_7uvds")
+Button/styles/normal = SubResource("StyleBoxFlat_igs2m")
+Button/styles/pressed = SubResource("StyleBoxFlat_wgsso")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2nv2"]
+bg_color = Color(0.6, 0.39215687, 0.36078432, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3pujl"]
 bg_color = Color(0.05490196, 0.12156863, 0.10980392, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
@@ -107,6 +114,7 @@ theme_override_constants/separation = 5
 [node name="new game" type="Button" parent="VBoxContainer" unique_id=1791962026]
 layout_mode = 2
 size_flags_vertical = 3
+theme = SubResource("Theme_igs2m")
 theme_override_fonts/font = ExtResource("2_d2nv2")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_igs2m")
@@ -125,6 +133,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_7uvds")
 text = "Kontynuuj"
 
 [node name="settings" type="Button" parent="VBoxContainer" unique_id=409192264]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("2_d2nv2")

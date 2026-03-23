@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckylvm1s0ekm"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_podłoga_2_base-statek_re_UV_podłoga_2_opacity.png-135868cfc7b46cf5638ae46275e8a0cd.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_podłoga_2_base-statek_re_UV_podłoga_2_opacity.png-135868cfc7b46cf5638ae46275e8a0cd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_podłoga_2_base-statek_re_UV_podłoga_2_opacity.png"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_podłoga_2_base-statek_re_UV_podłoga_2_opacity.png-135868cfc7b46cf5638ae46275e8a0cd.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_podłoga_2_base-statek_re_UV_podłoga_2_opacity.png-135868cfc7b46cf5638ae46275e8a0cd.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_podłoga_2_base-statek_re_UV_podłoga_2_opacity.png-135868cfc7b46cf5638ae46275e8a0cd.etc2.ctex"]
 
 [params]
 

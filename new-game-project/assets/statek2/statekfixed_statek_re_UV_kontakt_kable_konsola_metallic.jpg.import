@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://idvcsayjcq3g"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_kontakt_kable_konsola_metallic.jpg-90f1ff142187fcf2740d2e3b61eee16c.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_kontakt_kable_konsola_metallic.jpg-90f1ff142187fcf2740d2e3b61eee16c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_kontakt_kable_konsola_metallic.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_kontakt_kable_konsola_metallic.jpg-90f1ff142187fcf2740d2e3b61eee16c.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_kontakt_kable_konsola_metallic.jpg-90f1ff142187fcf2740d2e3b61eee16c.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_kontakt_kable_konsola_metallic.jpg-90f1ff142187fcf2740d2e3b61eee16c.etc2.ctex"]
 
 [params]
 

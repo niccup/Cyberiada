@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dacym6sw24h7f"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_maszyna_w_maszynie_base.jpg-f60b6fb9aef281f100e99a992fc4b83c.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_maszyna_w_maszynie_base.jpg-f60b6fb9aef281f100e99a992fc4b83c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_maszyna_w_maszynie_base.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_maszyna_w_maszynie_base.jpg-f60b6fb9aef281f100e99a992fc4b83c.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_maszyna_w_maszynie_base.jpg-f60b6fb9aef281f100e99a992fc4b83c.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_maszyna_w_maszynie_base.jpg-f60b6fb9aef281f100e99a992fc4b83c.etc2.ctex"]
 
 [params]
 

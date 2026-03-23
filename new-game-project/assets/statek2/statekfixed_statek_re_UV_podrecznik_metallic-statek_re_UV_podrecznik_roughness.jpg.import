@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl8cvlhpyi28o"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_podrecznik_metallic-statek_re_UV_podrecznik_roughness.jpg-4609bdbb852cacdf1891e4cf8981f54b.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_podrecznik_metallic-statek_re_UV_podrecznik_roughness.jpg-4609bdbb852cacdf1891e4cf8981f54b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_podrecznik_metallic-statek_re_UV_podrecznik_roughness.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_podrecznik_metallic-statek_re_UV_podrecznik_roughness.jpg-4609bdbb852cacdf1891e4cf8981f54b.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_podrecznik_metallic-statek_re_UV_podrecznik_roughness.jpg-4609bdbb852cacdf1891e4cf8981f54b.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_podrecznik_metallic-statek_re_UV_podrecznik_roughness.jpg-4609bdbb852cacdf1891e4cf8981f54b.etc2.ctex"]
 
 [params]
 

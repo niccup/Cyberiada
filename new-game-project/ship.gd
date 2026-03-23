@@ -3,6 +3,19 @@ extends Node3D
 var raycast_result = null
 var scene = "city"
 # Called when the node enters the scene tree for the first time.
+
+
+func change_scene(scenee):
+	var screen = $mainscreen
+	if scenee == "city":
+		screen.get_node("City").show()
+		screen.get_node("Build").hide()
+		scene= "city"
+	if scenee == "build":
+		screen.get_node("City").hide()
+		screen.get_node("Build").show()
+		scene= "build"
+		
 func _ready() -> void:
 	
 	
@@ -30,6 +43,7 @@ func _ready() -> void:
 	e.close()
 	
 func ray():
+	
 	var screen = $mainscreen
 	var mouse_pos = get_viewport().get_mouse_position()
 	var ray_length = 100
@@ -48,16 +62,12 @@ func ray():
 
 			for n in screen.get_children():
 				n.hide()
-			screen.get_node("Build").show()
-			screen.get_node("City").hide()
-			scene = "build"
+			change_scene("build")
 		if (raycast_result["collider"].name) == "btn_back":
 			
 			for n in screen.get_children():
 				n.hide()
-			screen.get_node("City").show()
-			screen.get_node("Build").hide()
-			scene = "city"
+			change_scene("city")
 		
 		
 		if (raycast_result["collider"].name) == "btn_left":
@@ -83,11 +93,15 @@ func ray():
 		if (raycast_result["collider"].name) == "btn_enter":
 			if scene == "build":
 				screen.get_node("Build").addinput("enter")
+				screen.get_node("City").tset=false
 			if scene == "city":
 				screen.get_node("City").addinput("enter")
 		if (raycast_result["collider"].name) == "btn_destroy":
 			if scene == "city":
 				screen.get_node("City").addinput("destroy")
+		if (raycast_result["collider"].name) == "btn_back":
+			if scene == "city":
+				screen.get_node("City").addinput("back")
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index==1:

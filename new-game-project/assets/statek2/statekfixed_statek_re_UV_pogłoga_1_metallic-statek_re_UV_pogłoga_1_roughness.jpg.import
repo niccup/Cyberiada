@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://csw8h0i7qh7v2"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_pogłoga_1_metallic-statek_re_UV_pogłoga_1_roughness.jpg-1615ddd0a1289bda84a77d4fe35cf440.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_pogłoga_1_metallic-statek_re_UV_pogłoga_1_roughness.jpg-1615ddd0a1289bda84a77d4fe35cf440.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_pogłoga_1_metallic-statek_re_UV_pogłoga_1_roughness.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_pogłoga_1_metallic-statek_re_UV_pogłoga_1_roughness.jpg-1615ddd0a1289bda84a77d4fe35cf440.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_pogłoga_1_metallic-statek_re_UV_pogłoga_1_roughness.jpg-1615ddd0a1289bda84a77d4fe35cf440.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_pogłoga_1_metallic-statek_re_UV_pogłoga_1_roughness.jpg-1615ddd0a1289bda84a77d4fe35cf440.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://xysjmnjh1ryi"
 path.s3tc="res://.godot/imported/statekfixed_statek_re_UV_rury_base.jpg-df57743e28d58c73710f52ce1a1385d0.s3tc.ctex"
+path.etc2="res://.godot/imported/statekfixed_statek_re_UV_rury_base.jpg-df57743e28d58c73710f52ce1a1385d0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/statek2/statekfixed_statek_re_UV_rury_base.jpg"
-dest_files=["res://.godot/imported/statekfixed_statek_re_UV_rury_base.jpg-df57743e28d58c73710f52ce1a1385d0.s3tc.ctex"]
+dest_files=["res://.godot/imported/statekfixed_statek_re_UV_rury_base.jpg-df57743e28d58c73710f52ce1a1385d0.s3tc.ctex", "res://.godot/imported/statekfixed_statek_re_UV_rury_base.jpg-df57743e28d58c73710f52ce1a1385d0.etc2.ctex"]
 
 [params]
 
