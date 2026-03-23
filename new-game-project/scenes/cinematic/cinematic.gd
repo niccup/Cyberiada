@@ -12,8 +12,8 @@ func _process(delta: float) -> void:
 
 
 func _on_contcinematic_pressed() -> void:
-	get_tree().change_scene_to_file("res://panelkontrolny.tscn")
+	get_tree().change_scene_to_file("uid://ce7pkv4epp1tm")
 
 
 func _on_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://mainmenu.tscn")
+	get_tree().change_scene_to_file("uid://cv74w5igteoxc")
