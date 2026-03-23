@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://y8k2onmkjh8y"]
+
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://assets/icon.svg" id="1_8eiqb"]
+[ext_resource type="Theme" uid="uid://cwafdcrdoqiuj" path="res://themes/ui.tres" id="2_u6iyd"]
+[ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="3_kp82c"]
+[ext_resource type="Shader" uid="uid://6o3s7yc01q4f" path="res://scenes/uiscreens/crt.gdshader" id="4_u6iyd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jpvxh"]
+font = ExtResource("3_kp82c")
+font_size = 26
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kp82c"]
+shader = ExtResource("4_u6iyd")
+shader_parameter/overlay = true
+shader_parameter/resolution = Vector2(6400, 4800)
+shader_parameter/brightness = 1.31
+shader_parameter/scanlines_opacity = 0.034000001615
+shader_parameter/scanlines_width = 0.5
+shader_parameter/grille_opacity = 0.178000008455
+shader_parameter/roll = true
+shader_parameter/roll_speed = 6.0
+shader_parameter/roll_size = 59.40400282169
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.014000000665
+shader_parameter/aberration = 0.010000047974999982
+shader_parameter/noise_opacity = 0.4
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/pixelate = true
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 0.2190000104025
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
+
+[node name="Resources" type="Node2D" unique_id=952837248]
+position = Vector2(0, -6)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982723534]
+
+[node name="TextureRect" type="ColorRect" parent="CanvasLayer" unique_id=1881988344]
+offset_top = -6.0
+offset_right = 450.0
+offset_bottom = 164.0
+color = Color(0.05000019, 0, 1, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/TextureRect" unique_id=1157584169]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 27.0
+offset_right = -5.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/TextureRect/VBoxContainer" unique_id=241913370]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer" unique_id=1262229030]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 2
+texture = ExtResource("1_8eiqb")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer" unique_id=1774558840]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_u6iyd")
+value = 74.23
+show_percentage = false
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/TextureRect/VBoxContainer" unique_id=1616773692]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer2" unique_id=1376292783]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 2
+texture = ExtResource("1_8eiqb")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer2" unique_id=1853030189]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_u6iyd")
+value = 23.0
+show_percentage = false
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/TextureRect/VBoxContainer" unique_id=475854759]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer3" unique_id=21855637]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 2
+texture = ExtResource("1_8eiqb")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer3" unique_id=2092544282]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_u6iyd")
+value = 89.0
+show_percentage = false
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/TextureRect/VBoxContainer" unique_id=372937987]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer4" unique_id=416616597]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 2
+texture = ExtResource("1_8eiqb")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer4" unique_id=1610737135]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_u6iyd")
+value = 11.0
+show_percentage = false
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="CanvasLayer/TextureRect/VBoxContainer" unique_id=1000256079]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer5" unique_id=844902489]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 2
+texture = ExtResource("1_8eiqb")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/TextureRect/VBoxContainer/HBoxContainer5" unique_id=1997273738]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_u6iyd")
+value = 50.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect" unique_id=1710340136]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -211.5
+offset_top = 3.0
+offset_right = 212.5
+offset_bottom = 30.0
+grow_horizontal = 2
+text = "- - - - - - - - resource tracker - - - - - - - -"
+label_settings = SubResource("LabelSettings_jpvxh")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=449094768]
+material = SubResource("ShaderMaterial_kp82c")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
