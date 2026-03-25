@@ -3,7 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://cox810dmasw28" path="res://assets/menuassets/image.png" id="1_cmhrf"]
 [ext_resource type="Script" uid="uid://dhpkir0ev4lsc" path="res://scenes/menu/mainmenu.gd" id="1_wgsso"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="2_d2nv2"]
+[ext_resource type="Script" uid="uid://b3sj85wm7q5nf" path="res://scenes/menu/randomizer.gd" id="4_2ni00"]
 [ext_resource type="AudioStream" uid="uid://c530nmqaun7as" path="res://assets/sounds/menu.wav" id="4_igs2m"]
+[ext_resource type="AudioStream" uid="uid://bmw0lpcb367b7" path="res://assets/sounds/Button.wav" id="4_k2bp4"]
+[ext_resource type="Theme" uid="uid://cwafdcrdoqiuj" path="res://themes/ui.tres" id="6_dtaik"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wgsso"]
 texture = ExtResource("1_cmhrf")
@@ -77,6 +80,9 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ni00"]
+bg_color = Color(0.15294118, 0.29803923, 0.25490198, 1)
 
 [node name="mainmenu" type="Control" unique_id=189236830]
 layout_mode = 3
@@ -187,10 +193,55 @@ theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("2_d2nv2")
 theme_override_font_sizes/font_size = 150
 text = "FOR MILLIONS"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=275771606]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -206.5
+offset_top = -267.0
+offset_right = 206.5
+offset_bottom = -216.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.6156863, 0.34901962, 0.3137255, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("2_d2nv2")
+theme_override_font_sizes/font_size = 50
+text = "Teksty devów"
+horizontal_alignment = 1
+script = ExtResource("4_2ni00")
+
+[node name="clickaudio" type="AudioStreamPlayer" parent="." unique_id=1759305114]
+stream = ExtResource("4_k2bp4")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=726453909]
 stream = ExtResource("4_igs2m")
 autoplay = true
+
+[node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=1228022576]
+oversampling_override = 1.0
+title = "Uwaga! Do mieszkańców Rzymu!"
+position = Vector2i(700, 115)
+size = Vector2i(500, 500)
+visible = true
+theme = ExtResource("6_dtaik")
+theme_override_styles/panel = SubResource("StyleBoxFlat_2ni00")
+ok_button_text = "Jasne!"
+dialog_text = "1. Po odpaleniu aplikacji wybierz opcję \"Nowa Gra\". Pojawi Ci się cutscenka, którą można pominąć przyciskiem w prawym dolnym rogu (ale polecamy obejrzeć całą ;) ).
+2. Po kliknięciu przycisku w cutscence zostaniesz przerzucony do głównego panelu gry.
+3. Rozglądanie się aktywuje się po naciśnięciu inputu \"Spacja\" i poruszaniem myszką.
+4. Za pomocą kursora również możesz klikać guziki znajdujące się na panelu przed Tobą. Guzik \"Magazyn\" przeniesie Cię do panelu sklepu, w którym za pomocą guzików koordynacyjnych możesz wybrać konkretną konstrukcję.
+5. Po wybraniu konstrukcji i kliknięciu guzika \"Enter\" na panelu guzików, zostaniesz przeniesiony do mapy budowania.
+6. Za pomocą guzików koordynacyjnych i guzika \"Enter\" możesz postawić wybrany budynek, a z Twojego balansu konta zostaną wydane pieniądze."
+dialog_autowrap = true
 
 [connection signal="pressed" from="VBoxContainer/new game" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/continue" to="." method="_on_continue_pressed"]

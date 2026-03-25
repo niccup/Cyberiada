@@ -50,6 +50,7 @@
 [ext_resource type="Theme" uid="uid://b6j3p7kgq37hf" path="res://themes/theme.tres" id="48_7e8g0"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="49_gtpso"]
 [ext_resource type="PackedScene" uid="uid://34fcl345btae" path="res://scenes/spaceship/numerki_ekran_przod.tscn" id="50_karcq"]
+[ext_resource type="AudioStream" uid="uid://cxyjk2m8cp0bq" path="res://assets/sounds/ForMillionsAmbience.wav" id="51_locpd"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2j56q"]
 panorama = ExtResource("3_ilrci")
@@ -2236,6 +2237,10 @@ offset_bottom = 26.0
 grow_horizontal = 0
 text = "escape to pause"
 label_settings = SubResource("LabelSettings_musfh")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1084586485]
+stream = ExtResource("51_locpd")
+autoplay = true
 
 [connection signal="pressed" from="pause/pause/back" to="pause" method="_on_back_pressed"]
 [connection signal="pressed" from="pause/pause/settings" to="pause" method="_on_settings_pressed"]
