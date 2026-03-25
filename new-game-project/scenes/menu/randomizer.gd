@@ -5,7 +5,9 @@ var splashes : Array = [
 	"dexter zrób milion sprite'ów", 
 	"GDZIE PUSTYNIA", 
 	"TRZY PLANETY", 
-	"jakie przyciski do kopalni?"
+	"jakie przyciski do kopalni?",
+	"nie no milion to za dużo, dajmy 300",
+	
 ]
 
 func _ready() -> void:
