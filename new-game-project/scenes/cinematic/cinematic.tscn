@@ -128,5 +128,16 @@ theme_override_fonts/font = ExtResource("3_b1bco")
 theme_override_font_sizes/font_size = 150
 text = "NOT FINAL PRODUCT"
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1963850407]
+
+[node name="blackscreen" type="ColorRect" parent="CanvasLayer" unique_id=581426257]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
 [connection signal="pressed" from="continue" to="." method="_on_contcinematic_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
