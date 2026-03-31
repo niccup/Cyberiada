@@ -1,11 +1,12 @@
 extends Control
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
+func _ready():
+	var screen = $CanvasLayer/blackscreen 
+	screen.modulate.a = 1.0
+	var fade_tween = create_tween()
+	fade_tween.tween_property(screen, "modulate:a", 0.0, 3.0)
+	fade_tween.tween_callback(screen.queue_free)
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

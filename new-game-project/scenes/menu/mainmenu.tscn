@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="2_d2nv2"]
 [ext_resource type="Script" uid="uid://b3sj85wm7q5nf" path="res://scenes/menu/randomizer.gd" id="4_2ni00"]
 [ext_resource type="AudioStream" uid="uid://c530nmqaun7as" path="res://assets/sounds/menu.wav" id="4_igs2m"]
-[ext_resource type="AudioStream" uid="uid://bmw0lpcb367b7" path="res://assets/sounds/Button.wav" id="4_k2bp4"]
+[ext_resource type="AudioStream" uid="uid://7dl2pqc4gov7" path="res://assets/sounds/Button (1).wav" id="5_k2bp4"]
 [ext_resource type="Theme" uid="uid://cwafdcrdoqiuj" path="res://themes/ui.tres" id="6_dtaik"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wgsso"]
@@ -220,7 +220,7 @@ horizontal_alignment = 1
 script = ExtResource("4_2ni00")
 
 [node name="clickaudio" type="AudioStreamPlayer" parent="." unique_id=1759305114]
-stream = ExtResource("4_k2bp4")
+stream = ExtResource("5_k2bp4")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=726453909]
 stream = ExtResource("4_igs2m")
