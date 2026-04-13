@@ -104,7 +104,7 @@ offset_right = 40.0
 offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "s e l e c t e d"
+text = "w y b r a n y"
 label_settings = SubResource("LabelSettings_fdp73")
 horizontal_alignment = 1
 
@@ -121,6 +121,6 @@ offset_right = 35.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "s e l e c t"
+text = "w y b i e r z"
 label_settings = SubResource("LabelSettings_auaf3")
 horizontal_alignment = 1

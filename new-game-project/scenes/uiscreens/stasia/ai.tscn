@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bjyappyr6cwxa"]
 
+[ext_resource type="Texture2D" uid="uid://cbvmih207qsuj" path="res://scenes/uiscreens/stasia/StasiaEASTEREGGPREV.png" id="1_a8kvx"]
 [ext_resource type="Shader" uid="uid://6o3s7yc01q4f" path="res://scenes/uiscreens/crt.gdshader" id="1_c35dq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3i38e"]
@@ -223,7 +224,21 @@ offset_right = 1954.0
 offset_bottom = 1102.0
 color = Color(0.05000019, 0, 1, 1)
 
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1993746467]
+offset_left = 110.0
+offset_right = 350.0
+offset_bottom = 170.0
+size_flags_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=1844110715]
+clip_contents = true
+custom_minimum_size = Vector2(240, 170)
+layout_mode = 2
+texture = ExtResource("1_a8kvx")
+expand_mode = 1
+
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=185817786]
+visible = false
 offset_left = 14.0
 offset_top = 31.0
 offset_right = 69.0
@@ -246,6 +261,7 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="ColorRect3" type="ColorRect" parent="." unique_id=238617292]
+visible = false
 offset_left = 370.0
 offset_top = 36.0
 offset_right = 432.0
@@ -268,6 +284,7 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="ColorRect4" type="ColorRect" parent="." unique_id=411465567]
+visible = false
 offset_left = 25.0
 offset_top = 125.0
 offset_right = 411.0
