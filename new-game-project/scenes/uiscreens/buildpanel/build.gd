@@ -4,7 +4,7 @@ var dataa = [[load("uid://f1sxgpqvydp6"), "wieżowiec", 50, Rect2(0,1024,1024,10
 [load("uid://f1sxgpqvydp6"), "elektrownia", 100, Rect2(2048,0,1024,1024), ["powerplant", 1]],
 [load("uid://f1sxgpqvydp6"), "pompownia", 150, Rect2(0,0,1024,1024), ["waterpump", 1]],
 [load("uid://f1sxgpqvydp6"), "jadłodajnia", 250, Rect2(0,2048,1024,1024), ["foodsupply", 1]],
-[load("uid://f1sxgpqvydp6"), "domek", 450, Rect2(0,3072,1024,1024), ["house", 1]],
+[load("uid://f1sxgpqvydp6"), "biurowiec", 450, Rect2(0,3072,1024,1024), ["house", 1]],
 [load("uid://c6shlb5oi2wep"), "ulica", 30, Rect2(0,0,1024,1024), ["street", 1]],
 [load("uid://f1sxgpqvydp6"), "roślina", 10, Rect2(3072,0,1024,1024), ["plant", 1]]]
 var selected = 0

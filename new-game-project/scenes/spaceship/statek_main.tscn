@@ -1,59 +1,62 @@
 [gd_scene format=4 uid="uid://ce7pkv4epp1tm"]
 
-[ext_resource type="Script" uid="uid://bs5fx0qc7sji8" path="res://scenes/spaceship/ship.gd" id="1_sb2b5"]
-[ext_resource type="Script" uid="uid://bl6b26cn38wq" path="res://scenes/spaceship/player.gd" id="2_locpd"]
-[ext_resource type="Texture2D" uid="uid://bkufbvu3polag" path="res://assets/sky/skybox2_bezgwiazd.png" id="3_ilrci"]
-[ext_resource type="PackedScene" uid="uid://bjyappyr6cwxa" path="res://scenes/uiscreens/stasia/ai.tscn" id="4_7go4u"]
-[ext_resource type="PackedScene" uid="uid://y8k2onmkjh8y" path="res://scenes/uiscreens/resourcepanel/resources.tscn" id="5_oiscv"]
-[ext_resource type="PackedScene" uid="uid://drr5ye8tgctg1" path="res://scenes/uiscreens/city/city.tscn" id="6_vxcfw"]
-[ext_resource type="PackedScene" uid="uid://cugmduxinvt1u" path="res://scenes/uiscreens/buildpanel/build.tscn" id="7_7vkmb"]
-[ext_resource type="PackedScene" uid="uid://c6takejyrn2f3" path="res://scenes/spaceship/button.tscn" id="8_iu2rx"]
-[ext_resource type="Texture2D" uid="uid://ctqggi0vhrr6" path="res://assets/sky/planeta.png" id="9_jrn4d"]
-[ext_resource type="Texture2D" uid="uid://bbvdoil3g0kka" path="res://assets/statek-assets/statekfixed_statek_re_UV_arch_base.jpg" id="10_10lff"]
-[ext_resource type="Texture2D" uid="uid://coxunv7ykwsq1" path="res://assets/statek-assets/statekfixed_statek_re_UV_arch_metallic-statek_re_UV_arch_roughness.jpg" id="11_say5n"]
-[ext_resource type="Texture2D" uid="uid://bl256jby2k8at" path="res://assets/statek-assets/statekfixed_statek_re_UV_arch_height.jpg" id="12_4520m"]
-[ext_resource type="Texture2D" uid="uid://bayo5oj44pou3" path="res://assets/statek-assets/statekfixed_statek_materials_re_made_konsola_base.jpg" id="13_3smxr"]
-[ext_resource type="Texture2D" uid="uid://cpjfhsdhnya0t" path="res://assets/statek-assets/statekfixed_statek_re_UV_pudlo_docs2_base.jpg" id="14_vf3fa"]
-[ext_resource type="Texture2D" uid="uid://2sqf0u2usc1t" path="res://assets/statek-assets/statekfixed_statek_re_UV_pudlo_docs2_metallic-statek_re_UV_pudlo_docs2_roughness.jpg" id="15_2myd3"]
-[ext_resource type="Texture2D" uid="uid://u25sifodr8f3" path="res://assets/statek-assets/statekfixed_statek_re_UV_pudlo_docs2_height.jpg" id="16_851j8"]
-[ext_resource type="Texture2D" uid="uid://c7ksbngkl5i2a" path="res://assets/statek-assets/statekfixed_statek_re_UV_szuflada_base.jpg" id="17_snkxc"]
-[ext_resource type="Texture2D" uid="uid://bosokiwp6s8dy" path="res://assets/statek-assets/statekfixed_statek_re_UV_szuflada_metallic-statek_re_UV_szuflada_roughness.jpg" id="18_ktesl"]
-[ext_resource type="Texture2D" uid="uid://jg0nhogr48sp" path="res://assets/statek-assets/statekfixed_statek_re_UV_szuflada_normal.jpg" id="19_8xspt"]
-[ext_resource type="Texture2D" uid="uid://xysjmnjh1ryi" path="res://assets/statek-assets/statekfixed_statek_re_UV_rury_base.jpg" id="20_6015q"]
-[ext_resource type="Texture2D" uid="uid://b2xwk2pimx8t7" path="res://assets/statek-assets/statekfixed_statek_re_UV_rury_metallic-statek_re_UV_rury_roughness.jpg" id="21_35fr7"]
-[ext_resource type="Texture2D" uid="uid://cemg54ov2a7u2" path="res://assets/statek-assets/statekfixed_statek_re_UV_rury_height.jpg" id="22_1md1w"]
-[ext_resource type="Texture2D" uid="uid://b8wd7qd7mjll2" path="res://assets/statek-assets/statekfixed_statek_re_UV_vent_base.jpg" id="23_45ius"]
-[ext_resource type="Texture2D" uid="uid://c5ipcrw3tyfe1" path="res://assets/statek-assets/statekfixed_statek_re_UV_vent_metallic-statek_re_UV_vent_roughness.jpg" id="24_jxqpq"]
-[ext_resource type="Texture2D" uid="uid://b3q2wer3a3y8j" path="res://assets/statek-assets/statekfixed_statek_re_UV_vent_height.jpg" id="25_kde2f"]
-[ext_resource type="Texture2D" uid="uid://dacym6sw24h7f" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_w_maszynie_base.jpg" id="26_gl507"]
-[ext_resource type="Texture2D" uid="uid://dm6l3swql27kn" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_w_maszynie_metallic-statek_re_UV_maszyna_w_maszynie_roughness.jpg" id="27_fx8t3"]
-[ext_resource type="Texture2D" uid="uid://bq7s1dcg4llqb" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_w_maszynie_normal.jpg" id="28_k8w8r"]
-[ext_resource type="Texture2D" uid="uid://keeni4xp8e5n" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_boki_base.jpg" id="29_b0goj"]
-[ext_resource type="Texture2D" uid="uid://buss7oxupxd30" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_boki_emission.jpg" id="30_l28m4"]
-[ext_resource type="Texture2D" uid="uid://dnqu55aup4xws" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_boki_metallic-statek_re_UV_maszyna_boki_roughness.jpg" id="31_qnbdx"]
-[ext_resource type="Texture2D" uid="uid://dbdlm2em5ggvf" path="res://assets/statek-assets/statekfixed_statek_re_UV_ruraduza_rura_base.jpg" id="32_0xa8n"]
-[ext_resource type="Texture2D" uid="uid://dgx14gq45rlbr" path="res://assets/statek-assets/statekfixed_statek_re_UV_ruraduza_rura_metallic-statek_re_UV_ruraduza_rura_roughness.jpg" id="33_o7xvm"]
-[ext_resource type="Texture2D" uid="uid://datkfdm16cfqh" path="res://assets/statek-assets/statekfixed_statek_re_UV_ruraduza_rura_normal.jpg" id="34_4eg5d"]
-[ext_resource type="Texture2D" uid="uid://gakajfvcdu41" path="res://assets/statek-assets/statekfixed_statek_re_UV_podrecznik_base.jpg" id="35_4gf8b"]
-[ext_resource type="Texture2D" uid="uid://dl8cvlhpyi28o" path="res://assets/statek-assets/statekfixed_statek_re_UV_podrecznik_metallic-statek_re_UV_podrecznik_roughness.jpg" id="36_1bm7w"]
-[ext_resource type="Texture2D" uid="uid://cxp41wmetgrgv" path="res://assets/statek-assets/statekfixed_statek_re_UV_podrecznik_height.jpg" id="37_r4q8k"]
-[ext_resource type="Texture2D" uid="uid://bxowoy0xilq43" path="res://assets/statek-assets/statekfixed_statek_re_UV_pogłoga_1_base.jpg" id="38_8p86p"]
-[ext_resource type="Texture2D" uid="uid://csw8h0i7qh7v2" path="res://assets/statek-assets/statekfixed_statek_re_UV_pogłoga_1_metallic-statek_re_UV_pogłoga_1_roughness.jpg" id="39_0tpwf"]
-[ext_resource type="Texture2D" uid="uid://thtsidy3o0ac" path="res://assets/statek-assets/statekfixed_statek_re_UV_pogłoga_1_height.jpg" id="40_ggnfo"]
-[ext_resource type="Texture2D" uid="uid://ckylvm1s0ekm" path="res://assets/statek-assets/statekfixed_statek_re_UV_podłoga_2_base-statek_re_UV_podłoga_2_opacity.png" id="41_jocp8"]
-[ext_resource type="Texture2D" uid="uid://d35a4c330341p" path="res://assets/statek-assets/statekfixed_statek_re_UV_podłoga_2_metallic-statek_re_UV_podłoga_2_roughness.jpg" id="42_7y67e"]
-[ext_resource type="Texture2D" uid="uid://ck6niq5awyvle" path="res://assets/statek-assets/statekfixed_statek_re_UV_podłoga_2_height.jpg" id="43_e3due"]
-[ext_resource type="Texture2D" uid="uid://bl23e806bj4wx" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_base.jpg" id="44_pqdc5"]
-[ext_resource type="Texture2D" uid="uid://bn01aylqv1n8y" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_metallic-statek_re_UV_zasilanie_roughness.jpg" id="45_fqjtm"]
-[ext_resource type="Texture2D" uid="uid://bx300akjg414s" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_height.jpg" id="46_ipe77"]
-[ext_resource type="Script" uid="uid://d30sp6khb01ur" path="res://scenes/spaceship/pause.gd" id="47_65rr5"]
-[ext_resource type="Theme" uid="uid://b6j3p7kgq37hf" path="res://themes/theme.tres" id="48_7e8g0"]
-[ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="49_gtpso"]
-[ext_resource type="PackedScene" uid="uid://34fcl345btae" path="res://scenes/spaceship/numerki_ekran_przod.tscn" id="50_karcq"]
-[ext_resource type="AudioStream" uid="uid://cxyjk2m8cp0bq" path="res://assets/sounds/ForMillionsAmbience.wav" id="51_locpd"]
+[ext_resource type="Script" uid="uid://bs5fx0qc7sji8" path="res://scenes/spaceship/ship.gd" id="1_cdkku"]
+[ext_resource type="Script" uid="uid://bl6b26cn38wq" path="res://scenes/spaceship/player.gd" id="2_uwm87"]
+[ext_resource type="Texture2D" uid="uid://bkufbvu3polag" path="res://assets/sky/skybox2_bezgwiazd.png" id="3_y1x6n"]
+[ext_resource type="PackedScene" uid="uid://bjyappyr6cwxa" path="res://scenes/uiscreens/stasia/ai.tscn" id="4_7amyd"]
+[ext_resource type="PackedScene" uid="uid://y8k2onmkjh8y" path="res://scenes/uiscreens/resourcepanel/resources.tscn" id="5_4fwwd"]
+[ext_resource type="PackedScene" uid="uid://drr5ye8tgctg1" path="res://scenes/uiscreens/city/city.tscn" id="6_5ofix"]
+[ext_resource type="PackedScene" uid="uid://cugmduxinvt1u" path="res://scenes/uiscreens/buildpanel/build.tscn" id="7_p7dhy"]
+[ext_resource type="PackedScene" uid="uid://c6takejyrn2f3" path="res://scenes/spaceship/button.tscn" id="8_1guyd"]
+[ext_resource type="Texture2D" uid="uid://ctqggi0vhrr6" path="res://assets/sky/planeta.png" id="9_hdhp0"]
+[ext_resource type="Texture2D" uid="uid://bbvdoil3g0kka" path="res://assets/statek-assets/statekfixed_statek_re_UV_arch_base.jpg" id="10_xrrda"]
+[ext_resource type="Texture2D" uid="uid://coxunv7ykwsq1" path="res://assets/statek-assets/statekfixed_statek_re_UV_arch_metallic-statek_re_UV_arch_roughness.jpg" id="11_blhfo"]
+[ext_resource type="Texture2D" uid="uid://bl256jby2k8at" path="res://assets/statek-assets/statekfixed_statek_re_UV_arch_height.jpg" id="12_00lgi"]
+[ext_resource type="Texture2D" uid="uid://bayo5oj44pou3" path="res://assets/statek-assets/statekfixed_statek_materials_re_made_konsola_base.jpg" id="13_bs6qy"]
+[ext_resource type="Texture2D" uid="uid://cpjfhsdhnya0t" path="res://assets/statek-assets/statekfixed_statek_re_UV_pudlo_docs2_base.jpg" id="14_po8mk"]
+[ext_resource type="Texture2D" uid="uid://2sqf0u2usc1t" path="res://assets/statek-assets/statekfixed_statek_re_UV_pudlo_docs2_metallic-statek_re_UV_pudlo_docs2_roughness.jpg" id="15_25mpo"]
+[ext_resource type="Texture2D" uid="uid://u25sifodr8f3" path="res://assets/statek-assets/statekfixed_statek_re_UV_pudlo_docs2_height.jpg" id="16_xa6qh"]
+[ext_resource type="Texture2D" uid="uid://c7ksbngkl5i2a" path="res://assets/statek-assets/statekfixed_statek_re_UV_szuflada_base.jpg" id="17_s4h2j"]
+[ext_resource type="Texture2D" uid="uid://bosokiwp6s8dy" path="res://assets/statek-assets/statekfixed_statek_re_UV_szuflada_metallic-statek_re_UV_szuflada_roughness.jpg" id="18_55txy"]
+[ext_resource type="Texture2D" uid="uid://jg0nhogr48sp" path="res://assets/statek-assets/statekfixed_statek_re_UV_szuflada_normal.jpg" id="19_1je0n"]
+[ext_resource type="Texture2D" uid="uid://xysjmnjh1ryi" path="res://assets/statek-assets/statekfixed_statek_re_UV_rury_base.jpg" id="20_uoaq3"]
+[ext_resource type="Texture2D" uid="uid://b2xwk2pimx8t7" path="res://assets/statek-assets/statekfixed_statek_re_UV_rury_metallic-statek_re_UV_rury_roughness.jpg" id="21_fkhhl"]
+[ext_resource type="Texture2D" uid="uid://cemg54ov2a7u2" path="res://assets/statek-assets/statekfixed_statek_re_UV_rury_height.jpg" id="22_tjp8p"]
+[ext_resource type="Texture2D" uid="uid://b8wd7qd7mjll2" path="res://assets/statek-assets/statekfixed_statek_re_UV_vent_base.jpg" id="23_6dyvr"]
+[ext_resource type="Texture2D" uid="uid://c5ipcrw3tyfe1" path="res://assets/statek-assets/statekfixed_statek_re_UV_vent_metallic-statek_re_UV_vent_roughness.jpg" id="24_b8t07"]
+[ext_resource type="Texture2D" uid="uid://b3q2wer3a3y8j" path="res://assets/statek-assets/statekfixed_statek_re_UV_vent_height.jpg" id="25_7w6yc"]
+[ext_resource type="Texture2D" uid="uid://dacym6sw24h7f" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_w_maszynie_base.jpg" id="26_ero1d"]
+[ext_resource type="Texture2D" uid="uid://dm6l3swql27kn" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_w_maszynie_metallic-statek_re_UV_maszyna_w_maszynie_roughness.jpg" id="27_uyxrj"]
+[ext_resource type="Texture2D" uid="uid://bq7s1dcg4llqb" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_w_maszynie_normal.jpg" id="28_bovca"]
+[ext_resource type="Texture2D" uid="uid://keeni4xp8e5n" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_boki_base.jpg" id="29_2v81s"]
+[ext_resource type="Texture2D" uid="uid://buss7oxupxd30" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_boki_emission.jpg" id="30_awc0m"]
+[ext_resource type="Texture2D" uid="uid://dnqu55aup4xws" path="res://assets/statek-assets/statekfixed_statek_re_UV_maszyna_boki_metallic-statek_re_UV_maszyna_boki_roughness.jpg" id="31_04arb"]
+[ext_resource type="Texture2D" uid="uid://dbdlm2em5ggvf" path="res://assets/statek-assets/statekfixed_statek_re_UV_ruraduza_rura_base.jpg" id="32_tq3k3"]
+[ext_resource type="Texture2D" uid="uid://dgx14gq45rlbr" path="res://assets/statek-assets/statekfixed_statek_re_UV_ruraduza_rura_metallic-statek_re_UV_ruraduza_rura_roughness.jpg" id="33_m3tal"]
+[ext_resource type="Texture2D" uid="uid://datkfdm16cfqh" path="res://assets/statek-assets/statekfixed_statek_re_UV_ruraduza_rura_normal.jpg" id="34_wl335"]
+[ext_resource type="Texture2D" uid="uid://gakajfvcdu41" path="res://assets/statek-assets/statekfixed_statek_re_UV_podrecznik_base.jpg" id="35_bfb2q"]
+[ext_resource type="Texture2D" uid="uid://dl8cvlhpyi28o" path="res://assets/statek-assets/statekfixed_statek_re_UV_podrecznik_metallic-statek_re_UV_podrecznik_roughness.jpg" id="36_sx1nm"]
+[ext_resource type="Texture2D" uid="uid://cxp41wmetgrgv" path="res://assets/statek-assets/statekfixed_statek_re_UV_podrecznik_height.jpg" id="37_soreq"]
+[ext_resource type="Texture2D" uid="uid://bxowoy0xilq43" path="res://assets/statek-assets/statekfixed_statek_re_UV_pogłoga_1_base.jpg" id="38_ymv86"]
+[ext_resource type="Texture2D" uid="uid://csw8h0i7qh7v2" path="res://assets/statek-assets/statekfixed_statek_re_UV_pogłoga_1_metallic-statek_re_UV_pogłoga_1_roughness.jpg" id="39_rqpmm"]
+[ext_resource type="Texture2D" uid="uid://thtsidy3o0ac" path="res://assets/statek-assets/statekfixed_statek_re_UV_pogłoga_1_height.jpg" id="40_qexmm"]
+[ext_resource type="Texture2D" uid="uid://ckylvm1s0ekm" path="res://assets/statek-assets/statekfixed_statek_re_UV_podłoga_2_base-statek_re_UV_podłoga_2_opacity.png" id="41_pi6xx"]
+[ext_resource type="Texture2D" uid="uid://d35a4c330341p" path="res://assets/statek-assets/statekfixed_statek_re_UV_podłoga_2_metallic-statek_re_UV_podłoga_2_roughness.jpg" id="42_nywj4"]
+[ext_resource type="Texture2D" uid="uid://ck6niq5awyvle" path="res://assets/statek-assets/statekfixed_statek_re_UV_podłoga_2_height.jpg" id="43_8bn26"]
+[ext_resource type="Texture2D" uid="uid://bl23e806bj4wx" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_base.jpg" id="44_rk7ur"]
+[ext_resource type="Texture2D" uid="uid://bn01aylqv1n8y" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_metallic-statek_re_UV_zasilanie_roughness.jpg" id="45_bbq4s"]
+[ext_resource type="Texture2D" uid="uid://bx300akjg414s" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_height.jpg" id="46_dva75"]
+[ext_resource type="Script" uid="uid://d30sp6khb01ur" path="res://scenes/spaceship/pause.gd" id="47_fvdx7"]
+[ext_resource type="Script" uid="uid://c1m1qe10mml4r" path="res://scenes/spaceship/interact_stasia_badge.gd" id="47_uwm87"]
+[ext_resource type="Theme" uid="uid://b6j3p7kgq37hf" path="res://themes/theme.tres" id="48_n2iq6"]
+[ext_resource type="AudioStream" uid="uid://c14ihinskaggn" path="res://scenes/uiscreens/stasia/KOJARZE TO LOGO.wav" id="48_y1x6n"]
+[ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="49_2ck7r"]
+[ext_resource type="PackedScene" uid="uid://c8gabmk3kd08a" path="res://scenes/uiscreens/stasia/naklejka.glb" id="49_7amyd"]
+[ext_resource type="PackedScene" uid="uid://34fcl345btae" path="res://scenes/spaceship/numerki_ekran_przod.tscn" id="50_vcysn"]
+[ext_resource type="AudioStream" uid="uid://cxyjk2m8cp0bq" path="res://assets/sounds/ForMillionsAmbience.wav" id="51_isk53"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2j56q"]
-panorama = ExtResource("3_ilrci")
+panorama = ExtResource("3_y1x6n")
 
 [sub_resource type="Sky" id="Sky_2btxl"]
 sky_material = SubResource("PanoramaSkyMaterial_2j56q")
@@ -203,44 +206,6 @@ _data = {
 &"RESET": SubResource("Animation_2btxl"),
 &"new_animation": SubResource("Animation_afoto")
 }
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fnxda"]
-resource_name = "Material"
-cull_mode = 2
-albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
-roughness = 0.5
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_0ba06"]
-_surfaces = [{
-"aabb": AABB(-1, -1, -1, 2, 2, 2),
-"format": 34896613377,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
-"name": "Material",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("/////wAAAAAAAP////8AAAAA//8AAAAAAAAAAP//AAD///////8AAAAAAAAAAAAA//8AAAAAAAD//wAA//8AAA==")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_k215b"]
-resource_name = "statekfixed_Cube"
-_surfaces = [{
-"aabb": AABB(-1, -1, -1, 2, 2, 2),
-"attribute_data": PackedByteArray("/5//f//f/z//3/9//5//P/9f/z//nwAA/5//P/9fAAD/X////5//v/+f////X/+//x//f/9f/z//X/9//x//P/9f/3//n/8//5//f/9f/z//X/+//5//f/+f/7//X/9/"),
-"format": 34896613399,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_fnxda"),
-"name": "Material",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("/////wAA//8AAP///////wAA//8AAP///////////////wAA////vwAA//////+//////////78AAAAA////vwAAAAD//1TVAAD//wAAVNUAAP////9U1QAAAAAAAFTVAAAAAAAA/7///wAA////v///AAAAAP+/AAAAAP///7///wAAAABU1f///////1TV/////wAAVNX//wAA//9U1QAAAAAAAP///////wAA//8AAP//AAD/////AAAAAP///3//v/9//7//f/+//3//v/////////////////////9U1VTVVNVU1VTVVNVU1VTVAAD/fwAA/38AAP9/AAD/f6oqqiqqKqoqqiqqKqoqqir/v/+//7//v/+//7//v/+/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_0ba06")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_afoto"]
 load_path = "res://.godot/imported/statekfixed_statek_materials_re_made_podstawa_guzikow_base.jpg-52014682440dd834aaa57564bf5f180b.s3tc.ctex"
@@ -613,14 +578,14 @@ shadow_mesh = SubResource("ArrayMesh_kgulf")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_02xrq"]
 resource_name = "arch"
 cull_mode = 2
-albedo_texture = ExtResource("10_10lff")
+albedo_texture = ExtResource("10_xrrda")
 metallic = 1.0
-metallic_texture = ExtResource("11_say5n")
+metallic_texture = ExtResource("11_blhfo")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("11_say5n")
+roughness_texture = ExtResource("11_blhfo")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("12_4520m")
+normal_texture = ExtResource("12_00lgi")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3mrx7"]
 _surfaces = [{
@@ -681,7 +646,7 @@ normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_1wo2x")
 ao_enabled = true
 ao_light_affect = 0.1
-ao_texture = ExtResource("13_3smxr")
+ao_texture = ExtResource("13_bs6qy")
 ao_texture_channel = 4
 backlight = Color(0.13166949, 0.26474234, 0.16897175, 1)
 refraction_scale = 0.32
@@ -723,14 +688,14 @@ shadow_mesh = SubResource("ArrayMesh_41xyp")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hcalb"]
 resource_name = "pudlo_docs"
 cull_mode = 2
-albedo_texture = ExtResource("14_vf3fa")
+albedo_texture = ExtResource("14_po8mk")
 metallic = 1.0
-metallic_texture = ExtResource("15_2myd3")
+metallic_texture = ExtResource("15_25mpo")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("15_2myd3")
+roughness_texture = ExtResource("15_25mpo")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("16_851j8")
+normal_texture = ExtResource("16_xa6qh")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4bghs"]
 _surfaces = [{
@@ -868,14 +833,14 @@ albedo_texture = SubResource("ViewportTexture_hv7gs")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_va10d"]
 resource_name = "szuflada"
 cull_mode = 2
-albedo_texture = ExtResource("17_snkxc")
+albedo_texture = ExtResource("17_s4h2j")
 metallic = 1.0
-metallic_texture = ExtResource("18_ktesl")
+metallic_texture = ExtResource("18_55txy")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("18_ktesl")
+roughness_texture = ExtResource("18_55txy")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("19_8xspt")
+normal_texture = ExtResource("19_1je0n")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hxqcp"]
 _surfaces = [{
@@ -955,14 +920,14 @@ albedo_texture = SubResource("ViewportTexture_kgulf")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hu2v0"]
 resource_name = "rury"
 cull_mode = 2
-albedo_texture = ExtResource("20_6015q")
+albedo_texture = ExtResource("20_uoaq3")
 metallic = 1.0
-metallic_texture = ExtResource("21_35fr7")
+metallic_texture = ExtResource("21_fkhhl")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("21_35fr7")
+roughness_texture = ExtResource("21_fkhhl")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("22_1md1w")
+normal_texture = ExtResource("22_tjp8p")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4eygn"]
 _surfaces = [{
@@ -1001,14 +966,14 @@ shadow_mesh = SubResource("ArrayMesh_4eygn")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1jujf"]
 resource_name = "vent"
 cull_mode = 2
-albedo_texture = ExtResource("23_45ius")
+albedo_texture = ExtResource("23_6dyvr")
 metallic = 1.0
-metallic_texture = ExtResource("24_jxqpq")
+metallic_texture = ExtResource("24_b8t07")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("24_jxqpq")
+roughness_texture = ExtResource("24_b8t07")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("25_kde2f")
+normal_texture = ExtResource("25_7w6yc")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_m167j"]
 _surfaces = [{
@@ -1104,14 +1069,14 @@ shadow_mesh = SubResource("ArrayMesh_j30jj")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fvver"]
 resource_name = "maszyna_w_maszynie"
 cull_mode = 2
-albedo_texture = ExtResource("26_gl507")
+albedo_texture = ExtResource("26_ero1d")
 metallic = 1.0
-metallic_texture = ExtResource("27_fx8t3")
+metallic_texture = ExtResource("27_uyxrj")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("27_fx8t3")
+roughness_texture = ExtResource("27_uyxrj")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("28_k8w8r")
+normal_texture = ExtResource("28_bovca")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_w0jjk"]
 _surfaces = [{
@@ -1150,16 +1115,16 @@ shadow_mesh = SubResource("ArrayMesh_w0jjk")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5wu6c"]
 resource_name = "maszyna_boki"
 cull_mode = 2
-albedo_texture = ExtResource("29_b0goj")
+albedo_texture = ExtResource("29_2v81s")
 metallic = 1.0
-metallic_texture = ExtResource("31_qnbdx")
+metallic_texture = ExtResource("31_04arb")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("31_qnbdx")
+roughness_texture = ExtResource("31_04arb")
 roughness_texture_channel = 1
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_operator = 1
-emission_texture = ExtResource("30_l28m4")
+emission_texture = ExtResource("30_awc0m")
 normal_enabled = true
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lcw7o"]
@@ -1199,14 +1164,14 @@ shadow_mesh = SubResource("ArrayMesh_lcw7o")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_02wjr"]
 resource_name = "ruraduza_rura"
 cull_mode = 2
-albedo_texture = ExtResource("32_0xa8n")
+albedo_texture = ExtResource("32_tq3k3")
 metallic = 1.0
-metallic_texture = ExtResource("33_o7xvm")
+metallic_texture = ExtResource("33_m3tal")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("33_o7xvm")
+roughness_texture = ExtResource("33_m3tal")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("34_4eg5d")
+normal_texture = ExtResource("34_wl335")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4wl8t"]
 _surfaces = [{
@@ -1245,14 +1210,14 @@ shadow_mesh = SubResource("ArrayMesh_4wl8t")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_80lyf"]
 resource_name = "podrecznik"
 cull_mode = 2
-albedo_texture = ExtResource("35_4gf8b")
+albedo_texture = ExtResource("35_bfb2q")
 metallic = 1.0
-metallic_texture = ExtResource("36_1bm7w")
+metallic_texture = ExtResource("36_sx1nm")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("36_1bm7w")
+roughness_texture = ExtResource("36_sx1nm")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("37_r4q8k")
+normal_texture = ExtResource("37_soreq")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_v0iy3"]
 _surfaces = [{
@@ -1291,14 +1256,14 @@ shadow_mesh = SubResource("ArrayMesh_v0iy3")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ejv38"]
 resource_name = "pogłoga_1"
 cull_mode = 2
-albedo_texture = ExtResource("38_8p86p")
+albedo_texture = ExtResource("38_ymv86")
 metallic = 1.0
-metallic_texture = ExtResource("39_0tpwf")
+metallic_texture = ExtResource("39_rqpmm")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("39_0tpwf")
+roughness_texture = ExtResource("39_rqpmm")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("40_ggnfo")
+normal_texture = ExtResource("40_qexmm")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7hgv8"]
 _surfaces = [{
@@ -1338,14 +1303,14 @@ shadow_mesh = SubResource("ArrayMesh_7hgv8")
 resource_name = "podłoga_2"
 transparency = 4
 cull_mode = 2
-albedo_texture = ExtResource("41_jocp8")
+albedo_texture = ExtResource("41_pi6xx")
 metallic = 1.0
-metallic_texture = ExtResource("42_7y67e")
+metallic_texture = ExtResource("42_nywj4")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("42_7y67e")
+roughness_texture = ExtResource("42_nywj4")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("43_e3due")
+normal_texture = ExtResource("43_8bn26")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bydo3"]
 _surfaces = [{
@@ -1382,14 +1347,14 @@ shadow_mesh = SubResource("ArrayMesh_bydo3")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tu2ao"]
 resource_name = "zasilanie"
 cull_mode = 2
-albedo_texture = ExtResource("44_pqdc5")
+albedo_texture = ExtResource("44_rk7ur")
 metallic = 1.0
-metallic_texture = ExtResource("45_fqjtm")
+metallic_texture = ExtResource("45_bbq4s")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("45_fqjtm")
+roughness_texture = ExtResource("45_bbq4s")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("46_ipe77")
+normal_texture = ExtResource("46_dva75")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xxe0y"]
 _surfaces = [{
@@ -1596,6 +1561,9 @@ rim_enabled = true
 material = SubResource("StandardMaterial3D_afoto")
 size = Vector2(4.32, 2.02)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_y1x6n"]
+radius = 0.4916549
+
 [sub_resource type="Gradient" id="Gradient_ttnnh"]
 offsets = PackedFloat32Array(0.31924197, 0.9912537)
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
@@ -1604,7 +1572,7 @@ colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
 gradient = SubResource("Gradient_ttnnh")
 
 [sub_resource type="LabelSettings" id="LabelSettings_04kjf"]
-font = ExtResource("49_gtpso")
+font = ExtResource("49_2ck7r")
 font_size = 32
 
 [sub_resource type="LabelSettings" id="LabelSettings_ttnnh"]
@@ -1614,15 +1582,15 @@ font_size = 24
 font_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_musfh"]
-font = ExtResource("49_gtpso")
+font = ExtResource("49_2ck7r")
 font_color = Color(1, 1, 1, 0.23137255)
 
 [node name="ship" type="Node3D" unique_id=1952611357]
-script = ExtResource("1_sb2b5")
+script = ExtResource("1_cdkku")
 
 [node name="player" type="Node3D" parent="." unique_id=1962062939]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.890703, -1.6574965, 9.115617)
-script = ExtResource("2_locpd")
+script = ExtResource("2_uwm87")
 
 [node name="Camera3D" type="Camera3D" parent="player" unique_id=353376000]
 transform = Transform3D(0.9996851, -0.008101718, 0.02374952, -0.009418005, 0.7561186, 0.6543669, -0.023258947, -0.65438455, 0.7558042, 3.9399517, 1.4674834, 2.3055964)
@@ -1698,7 +1666,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1tmdx")
 [node name="stasia" type="SubViewport" parent="." unique_id=876435194]
 size = Vector2i(450, 300)
 
-[node name="tenai" parent="stasia" unique_id=632339229 instance=ExtResource("4_7go4u")]
+[node name="tenai" parent="stasia" unique_id=632339229 instance=ExtResource("4_7amyd")]
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=576581507]
 
@@ -1726,22 +1694,22 @@ polygon = PackedVector2Array(188, 312, 191, 306, 197, 306, 197, 301, 186, 301, 1
 [node name="resourcescreen" type="SubViewport" parent="." unique_id=1166368277]
 size = Vector2i(450, 300)
 
-[node name="Resources" parent="resourcescreen" unique_id=952837248 instance=ExtResource("5_oiscv")]
+[node name="Resources" parent="resourcescreen" unique_id=952837248 instance=ExtResource("5_4fwwd")]
 
 [node name="mainscreen" type="SubViewport" parent="." unique_id=2126375841]
 size = Vector2i(900, 600)
 
-[node name="City" parent="mainscreen" unique_id=562497731 instance=ExtResource("6_vxcfw")]
+[node name="City" parent="mainscreen" unique_id=562497731 instance=ExtResource("6_5ofix")]
 
-[node name="Build" parent="mainscreen" unique_id=1187181437 instance=ExtResource("7_7vkmb")]
+[node name="Build" parent="mainscreen" unique_id=1187181437 instance=ExtResource("7_p7dhy")]
 visible = false
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=525018605]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4932795, 0.4365034, 1.4618409)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.234564, -0.92264414, 7.091564)
 light_color = Color(0.3153961, 0.2228916, 1, 1)
+light_energy = 0.185
 shadow_enabled = true
-omni_range = 4.026
+omni_range = 8.453
 
 [node name="OmniLight3D" type="OmniLight3D" parent="OmniLight3D" unique_id=1775391813]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.233104, 0.4365034, 0.2801931)
@@ -1753,62 +1721,62 @@ omni_range = 2.611
 [node name="panel_guziki" type="Node3D" parent="." unique_id=927159749]
 transform = Transform3D(0.6, 0, 0, 0, 0.5263028, -0.28810653, 0, 0.28810653, 0.5263028, -6.0616136, -2.968808, 8.850375)
 
-[node name="btn_up" parent="panel_guziki" unique_id=1131578206 instance=ExtResource("8_iu2rx")]
+[node name="btn_up" parent="panel_guziki" unique_id=1131578206 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -0.842638, -0.49705982, 1.0603237)
 
 [node name="Label3D" parent="panel_guziki/btn_up/CSGCylinder3D" parent_id_path=PackedInt32Array(1131578206, 933325362) index="1" unique_id=1158175212]
 text = "góra"
 
-[node name="btn_left" parent="panel_guziki" unique_id=1900704687 instance=ExtResource("8_iu2rx")]
+[node name="btn_left" parent="panel_guziki" unique_id=1900704687 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -1.3081503, -0.48377848, 1.4146004)
 
 [node name="Label3D" parent="panel_guziki/btn_left/CSGCylinder3D" parent_id_path=PackedInt32Array(1900704687, 933325362) index="1" unique_id=1158175212]
 text = "lewo
 "
 
-[node name="btn_right" parent="panel_guziki" unique_id=104298709 instance=ExtResource("8_iu2rx")]
+[node name="btn_right" parent="panel_guziki" unique_id=104298709 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -0.37997246, -0.48377848, 1.4146004)
 
 [node name="Label3D" parent="panel_guziki/btn_right/CSGCylinder3D" parent_id_path=PackedInt32Array(104298709, 933325362) index="1" unique_id=1158175212]
 text = "prawo"
 
-[node name="btn_down" parent="panel_guziki" unique_id=96921113 instance=ExtResource("8_iu2rx")]
+[node name="btn_down" parent="panel_guziki" unique_id=96921113 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.842638, -0.45200872, 1.7927265)
 
 [node name="Label3D" parent="panel_guziki/btn_down/CSGCylinder3D" parent_id_path=PackedInt32Array(96921113, 933325362) index="1" unique_id=1158175212]
 text = "dół"
 
-[node name="btn_back" parent="panel_guziki" unique_id=1565893760 instance=ExtResource("8_iu2rx")]
+[node name="btn_back" parent="panel_guziki" unique_id=1565893760 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1, 0, 0, 0, 1.0000001, -2.9802322e-08, 0, 2.9802322e-08, 1.0000001, -1.7564678, -0.45740652, 0.80945396)
 
 [node name="Label3D" parent="panel_guziki/btn_back/CSGCylinder3D" parent_id_path=PackedInt32Array(1565893760, 933325362) index="1" unique_id=1158175212]
 text = "cofnij"
 
-[node name="btn_enter" parent="panel_guziki" unique_id=1751775633 instance=ExtResource("8_iu2rx")]
+[node name="btn_enter" parent="panel_guziki" unique_id=1751775633 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1.1, 0, 0, 0, 1.0999995, -2.9802322e-08, 0, 2.9802322e-08, 1.0999995, 0.29547405, -0.34406996, 1.728651)
 
 [node name="Label3D" parent="panel_guziki/btn_enter/CSGCylinder3D" parent_id_path=PackedInt32Array(1751775633, 933325362) index="1" unique_id=1158175212]
 text = "enter"
 
-[node name="btn_build" parent="panel_guziki" unique_id=1020658465 instance=ExtResource("8_iu2rx")]
+[node name="btn_build" parent="panel_guziki" unique_id=1020658465 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1.2, 0, 0, 0, 1.1999997, 0, 0, 0, 1.1999997, 1.6340475, -0.3531952, 0.82434464)
 
 [node name="Label3D" parent="panel_guziki/btn_build/CSGCylinder3D" parent_id_path=PackedInt32Array(1020658465, 933325362) index="1" unique_id=1158175212]
 text = "magazyn"
 
-[node name="btn_destroy" parent="panel_guziki" unique_id=213902779 instance=ExtResource("8_iu2rx")]
+[node name="btn_destroy" parent="panel_guziki" unique_id=213902779 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1.2, 0, 0, 0, 1.1999997, 0, 0, 0, 1.1999997, 2.4602556, -0.3995433, 0.839674)
 
 [node name="Label3D" parent="panel_guziki/btn_destroy/CSGCylinder3D" parent_id_path=PackedInt32Array(213902779, 933325362) index="1" unique_id=1158175212]
 text = "zniszcz"
 
-[node name="btn_rotate" parent="panel_guziki" unique_id=702045366 instance=ExtResource("8_iu2rx")]
+[node name="btn_rotate" parent="panel_guziki" unique_id=702045366 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1.2, 0, 0, 0, 1.1999998, -5.9604645e-08, 0, 5.9604645e-08, 1.1999998, 2.8780851, -0.29001427, 1.6678333)
 
 [node name="Label3D" parent="panel_guziki/btn_rotate/CSGCylinder3D" parent_id_path=PackedInt32Array(702045366, 933325362) index="1" unique_id=1158175212]
 text = "rotate"
 
-[node name="btn_upgr" parent="panel_guziki" unique_id=247080649 instance=ExtResource("8_iu2rx")]
+[node name="btn_upgr" parent="panel_guziki" unique_id=247080649 instance=ExtResource("8_1guyd")]
 transform = Transform3D(1.1999999, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 1.9418697, -0.2846017, 1.6777191)
 
 [node name="Label3D" parent="panel_guziki/btn_upgr/CSGCylinder3D" parent_id_path=PackedInt32Array(247080649, 933325362) index="1" unique_id=1158175212]
@@ -1818,7 +1786,7 @@ text = "upgr"
 transform = Transform3D(7.1099977, 0, 0, 0, 0.9999996, 0, 0, 0, 0.9999995, 0.0008659363, 0.9760678, -59.118988)
 visible = false
 offset = Vector2(3.86, 0)
-texture = ExtResource("9_jrn4d")
+texture = ExtResource("9_hdhp0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite3D" unique_id=1804480486]
 libraries/ = SubResource("AnimationLibrary_uwgir")
@@ -1870,11 +1838,6 @@ omni_range = 7.065
 
 [node name="statekfixed" type="Node3D" parent="." unique_id=1971047331]
 transform = Transform3D(3.9999447, -0.02101367, 0, 0.02101367, 3.9999447, 0, 0, 0, 4, -3.8482609, -8.004439, 7.7203426)
-
-[node name="Cube" type="MeshInstance3D" parent="statekfixed" unique_id=1827854200]
-visible = false
-mesh = SubResource("ArrayMesh_k215b")
-skeleton = NodePath("")
 
 [node name="podstawa_guzikow" type="MeshInstance3D" parent="statekfixed" unique_id=490161940]
 transform = Transform3D(-1.44355e-08, 0.00020119057, -0.04999747, -0.021918578, 0.017974967, 0.00045207847, 0.044939693, 0.008766987, 0.00022047758, -0.4181583, 1.0545619, 0.4027226)
@@ -1993,13 +1956,41 @@ material_override = SubResource("StandardMaterial3D_wc1g5")
 mesh = SubResource("ArrayMesh_ta5aa")
 skeleton = NodePath("")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1668559536]
+[node name="panel_zasilania" type="MeshInstance3D" parent="." unique_id=1668559536]
 transform = Transform3D(-4.371139e-08, -0.008726535, -0.9999619, 0, 0.9999619, -0.008726535, 1, -3.8144898e-10, -4.3709722e-08, 6.361244, -0.38125712, 7.7699146)
 mesh = SubResource("QuadMesh_uwgir")
 
+[node name="stasia_interactable_esteregg" type="CSGSphere3D" parent="." unique_id=913929206]
+transform = Transform3D(0.7255786, -0.0060050716, -0.6881131, 2.9219666e-10, 0.9999619, -0.008726535, 0.6881394, 0.0063317865, 0.72555095, 0.4744454, -1.7083088, 6.631026)
+layers = 0
+radius = 0.1
+script = ExtResource("47_uwm87")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="stasia_interactable_esteregg" unique_id=1848687110]
+transform = Transform3D(1, 0, -3.5527137e-15, 0, 1, 1.667303e-17, 0, 1.667303e-17, 1, 0, 0, 0)
+skeleton = NodePath("../../panel_zasilania")
+
+[node name="Area3D" type="Area3D" parent="stasia_interactable_esteregg/MeshInstance3D" unique_id=558068319]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stasia_interactable_esteregg/MeshInstance3D/Area3D" unique_id=118701655]
+transform = Transform3D(1, 0, 0, 0, 0.47963306, -0.65670425, 0, 0.41765934, 0.75414824, -0.28560045, -0.15076599, 0.088779315)
+shape = SubResource("SphereShape3D_y1x6n")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="stasia_interactable_esteregg" unique_id=342911142]
+stream = ExtResource("48_y1x6n")
+volume_db = 1.836
+
+[node name="Timer" type="Timer" parent="stasia_interactable_esteregg" unique_id=2115721834]
+wait_time = 6.5
+one_shot = true
+autostart = true
+
+[node name="naklejka" parent="." unique_id=874629598 instance=ExtResource("49_7amyd")]
+transform = Transform3D(0.16005994, -0.09824633, -0.13277227, 0, 0.1848871, -0.13680924, 0.16516905, 0.09520731, 0.12866528, -0.055878926, -1.9934539, 6.3868194)
+
 [node name="pause" type="CanvasLayer" parent="." unique_id=1123493303]
 process_mode = 3
-script = ExtResource("47_65rr5")
+script = ExtResource("47_fvdx7")
 
 [node name="TextureRect" type="TextureRect" parent="pause" unique_id=2112472946]
 modulate = Color(0.19, 0.19, 0.19, 1)
@@ -2014,7 +2005,7 @@ offset_left = 16.0
 offset_top = 7.0
 offset_right = 362.0
 offset_bottom = 268.0
-theme = ExtResource("48_7e8g0")
+theme = ExtResource("48_n2iq6")
 
 [node name="Label" type="Label" parent="pause/pause" unique_id=775636982]
 layout_mode = 2
@@ -2047,7 +2038,7 @@ size_flags_horizontal = 6
 [node name="pause2" type="VBoxContainer" parent="pause/settings" unique_id=254592979]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("48_7e8g0")
+theme = ExtResource("48_n2iq6")
 
 [node name="Label" type="Label" parent="pause/settings/pause2" unique_id=883896941]
 layout_mode = 2
@@ -2222,7 +2213,7 @@ text = "Wróć"
 [node name="numerki_przod_ekrany" type="SubViewport" parent="." unique_id=814736850]
 size = Vector2i(1000, 1000)
 
-[node name="numerki_przod_ekrany" parent="numerki_przod_ekrany" unique_id=2104980879 instance=ExtResource("50_karcq")]
+[node name="numerki_przod_ekrany" parent="numerki_przod_ekrany" unique_id=2104980879 instance=ExtResource("50_vcysn")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1759453181]
 
@@ -2239,9 +2230,10 @@ text = "escape to pause"
 label_settings = SubResource("LabelSettings_musfh")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1084586485]
-stream = ExtResource("51_locpd")
+stream = ExtResource("51_isk53")
 autoplay = true
 
+[connection signal="input_event" from="stasia_interactable_esteregg/MeshInstance3D/Area3D" to="stasia_interactable_esteregg" method="_on_area_3d_input_event"]
 [connection signal="pressed" from="pause/pause/back" to="pause" method="_on_back_pressed"]
 [connection signal="pressed" from="pause/pause/settings" to="pause" method="_on_settings_pressed"]
 [connection signal="pressed" from="pause/pause/quit" to="pause" method="_on_quit_pressed"]

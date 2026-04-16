@@ -229,9 +229,8 @@ autoplay = true
 [node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=1228022576]
 oversampling_override = 1.0
 title = "Uwaga! Do mieszkańców Rzymu!"
-position = Vector2i(700, 115)
+position = Vector2i(617, 115)
 size = Vector2i(500, 500)
-visible = true
 theme = ExtResource("6_dtaik")
 theme_override_styles/panel = SubResource("StyleBoxFlat_2ni00")
 ok_button_text = "Jasne!"
