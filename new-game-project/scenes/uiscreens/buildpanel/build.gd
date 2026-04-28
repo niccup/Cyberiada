@@ -1,12 +1,12 @@
 extends CanvasLayer
 # obrazek, name, cena
-var dataa = [[load("uid://f1sxgpqvydp6"), "wieżowiec", 50, Rect2(0,1024,1024,1024), ["tower", 1]],
-[load("uid://f1sxgpqvydp6"), "elektrownia", 100, Rect2(2048,0,1024,1024), ["powerplant", 1]],
-[load("uid://f1sxgpqvydp6"), "pompownia", 150, Rect2(0,0,1024,1024), ["waterpump", 1]],
-[load("uid://f1sxgpqvydp6"), "jadłodajnia", 250, Rect2(0,2048,1024,1024), ["foodsupply", 1]],
-[load("uid://f1sxgpqvydp6"), "biurowiec", 450, Rect2(0,3072,1024,1024), ["house", 1]],
+var dataa = [[load("uid://topglqfr1vxu"), "wieżowiec", 50, Rect2(0,2*1024,1024,1024), ["tower", 1]],
+[load("uid://topglqfr1vxu"), "elektrownia", 100, Rect2(0,5*1024,1024,1024), ["powerplant", 1]],
+[load("uid://topglqfr1vxu"), "pompownia", 150, Rect2(0,0,1024,1024), ["waterpump", 1]],
+[load("uid://topglqfr1vxu"), "jadłodajnia", 250, Rect2(0,1*1024,1024,1024), ["foodsupply", 1]],
+[load("uid://topglqfr1vxu"), "kwatery", 450, Rect2(0,3*1024,1024,1024), ["house", 1]],
 [load("uid://c6shlb5oi2wep"), "ulica", 30, Rect2(0,0,1024,1024), ["street", 1]],
-[load("uid://f1sxgpqvydp6"), "roślina", 10, Rect2(3072,0,1024,1024), ["plant", 1]]]
+[load("uid://topglqfr1vxu"), "park xd", 10, Rect2(0,4*1024,1024,1024), ["park", 1]]]
 var selected = 0
 
 var panel = load("uid://bvxthgic28ya5")

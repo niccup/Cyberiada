@@ -19,7 +19,8 @@ func _on_start_pressed() -> void:
 func _on_continue_pressed() -> void:
 	$clickaudio.play()
 	await get_tree().create_timer(0.5).timeout
-	get_tree().change_scene_to_file("uid://ce7pkv4epp1tm")
+	get_tree().change_scene_to_file("uid://b4ktnmcr7dwaa")
+	
 
 
 func _on_settings_pressed() -> void:

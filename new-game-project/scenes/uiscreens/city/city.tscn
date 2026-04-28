@@ -4,31 +4,52 @@
 [ext_resource type="VideoStream" uid="uid://dkkaetrkmna8u" path="res://assets/cutscenes/numerki hihi.ogv" id="2_3cbma"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="2_3w7kk"]
 [ext_resource type="Texture2D" uid="uid://dbrsa66oim7yc" path="res://assets/tiles/IMG_2857.png" id="2_4cyb6"]
-[ext_resource type="Texture2D" uid="uid://f1sxgpqvydp6" path="res://assets/tiles/tekstury_budynki.png" id="2_7ruy1"]
 [ext_resource type="Shader" uid="uid://6o3s7yc01q4f" path="res://scenes/uiscreens/crt.gdshader" id="3_63v6i"]
+[ext_resource type="Texture2D" uid="uid://topglqfr1vxu" path="res://assets/tiles/Budynki_beton.png" id="3_tqwff"]
 [ext_resource type="Texture2D" uid="uid://c6shlb5oi2wep" path="res://assets/tiles/road_tiles.png" id="3_uqro6"]
 [ext_resource type="Texture2D" uid="uid://cv2dnt681m467" path="res://assets/tiles/IMG_2859.png" id="5_3cbma"]
 [ext_resource type="Texture2D" uid="uid://1bcdrs2sig1c" path="res://assets/tiles/IMG_0656.PNG" id="6_7ruy1"]
+[ext_resource type="Script" uid="uid://clc63omnvyvw8" path="res://scenes/uiscreens/city/tile_map_layer.gd" id="7_r4ikv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4cyb6"]
-texture = ExtResource("2_7ruy1")
+texture = ExtResource("3_tqwff")
 texture_region_size = Vector2i(1024, 1024)
 0:0/0 = 0
+0:0/0/custom_data_0 = 1.0
 1:0/0 = 0
+1:0/0/custom_data_0 = 1.0
 2:0/0 = 0
-3:0/0 = 0
+2:0/0/custom_data_0 = 1.0
 0:1/0 = 0
+0:1/0/custom_data_0 = 1.0
 1:1/0 = 0
+1:1/0/custom_data_0 = 1.0
 2:1/0 = 0
-3:2/0 = 0
-3:3/0 = 0
+2:1/0/custom_data_0 = 1.0
 2:3/0 = 0
+2:3/0/custom_data_0 = 1.0
 2:2/0 = 0
+2:2/0/custom_data_0 = 1.0
 1:2/0 = 0
+1:2/0/custom_data_0 = 1.0
 0:2/0 = 0
+0:2/0/custom_data_0 = 1.0
 0:3/0 = 0
+0:3/0/custom_data_0 = 1.0
 1:3/0 = 0
-3:1/0 = 0
+1:3/0/custom_data_0 = 1.0
+0:4/0 = 0
+0:4/0/custom_data_0 = 1.0
+1:4/0 = 0
+1:4/0/custom_data_0 = 1.0
+2:4/0 = 0
+2:4/0/custom_data_0 = 1.0
+0:5/0 = 0
+0:5/0/custom_data_0 = 1.0
+1:5/0 = 0
+1:5/0/custom_data_0 = 1.0
+2:5/0 = 0
+2:5/0/custom_data_0 = 1.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3cbma"]
 texture = ExtResource("3_uqro6")
@@ -64,6 +85,8 @@ texture_region_size = Vector2i(1024, 1024)
 tile_shape = 1
 tile_layout = 5
 tile_size = Vector2i(1024, 410)
+custom_data_layer_0/name = "energy"
+custom_data_layer_0/type = 3
 sources/8 = SubResource("TileSetAtlasSource_knv00")
 sources/10 = SubResource("TileSetAtlasSource_irigh")
 sources/0 = SubResource("TileSetAtlasSource_4cyb6")
@@ -158,6 +181,7 @@ tile_set = SubResource("TileSet_63v6i")
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1386163259]
 scale = Vector2(0.1, 0.1)
 tile_set = SubResource("TileSet_63v6i")
+script = ExtResource("7_r4ikv")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=678117689]
 zoom = Vector2(2, 2)
@@ -249,9 +273,6 @@ custom_minimum_size = Vector2(50, 50)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -1.0
-offset_right = 1124.0
-offset_bottom = 632.0
 grow_horizontal = 2
 grow_vertical = 2
 

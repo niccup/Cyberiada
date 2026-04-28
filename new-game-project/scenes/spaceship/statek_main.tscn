@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://ce7pkv4epp1tm"]
+[gd_scene format=4 uid="uid://b4ktnmcr7dwaa"]
 
 [ext_resource type="Script" uid="uid://bs5fx0qc7sji8" path="res://scenes/spaceship/ship.gd" id="1_cdkku"]
 [ext_resource type="Script" uid="uid://bl6b26cn38wq" path="res://scenes/spaceship/player.gd" id="2_uwm87"]
@@ -47,7 +47,7 @@
 [ext_resource type="Texture2D" uid="uid://bn01aylqv1n8y" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_metallic-statek_re_UV_zasilanie_roughness.jpg" id="45_bbq4s"]
 [ext_resource type="Texture2D" uid="uid://bx300akjg414s" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_height.jpg" id="46_dva75"]
 [ext_resource type="Script" uid="uid://d30sp6khb01ur" path="res://scenes/spaceship/pause.gd" id="47_fvdx7"]
-[ext_resource type="Script" uid="uid://c1m1qe10mml4r" path="res://scenes/spaceship/interact_stasia_badge.gd" id="47_uwm87"]
+[ext_resource type="Script" path="res://scenes/spaceship/interact_stasia_badge.gd" id="47_uwm87"]
 [ext_resource type="Theme" uid="uid://b6j3p7kgq37hf" path="res://themes/theme.tres" id="48_n2iq6"]
 [ext_resource type="AudioStream" uid="uid://c14ihinskaggn" path="res://scenes/uiscreens/stasia/KOJARZE TO LOGO.wav" id="48_y1x6n"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="49_2ck7r"]
@@ -397,7 +397,6 @@ load_path = "res://.godot/imported/statekfixed_statek_re_UV_kable maszyna_emissi
 load_path = "res://.godot/imported/statekfixed_statek_re_UV_kable maszyna_metallic-statek_re_UV_kable maszyna_roughness.jpg-ef7b4183e7a70d08193421323b92e8cd.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rssrm"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_kable maszyna_height.jpg-98f904d088e3a88cc50b8654bab151eb.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f5vmi"]
 load_path = "res://.godot/imported/statekfixed_statek_re_UV_kable maszyna_metallic-statek_re_UV_kable maszyna_roughness.jpg-ef7b4183e7a70d08193421323b92e8cd.s3tc.ctex"
@@ -459,13 +458,10 @@ shadow_mesh = SubResource("ArrayMesh_ugeqh")
 load_path = "res://.godot/imported/statekfixed_statek_re_UV_pudlo_docs_base.jpg-4cf9c625cc55aafe0850de8fa172a3dd.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_peu4i"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_pudlo_docs_metallic-statek_re_UV_pudlo_docs_roughness.jpg-872946e03619f65de3916bc51a1e497b.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_57x7v"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_pudlo_docs_height.jpg-8eb5c7949063d2591bdae563ee848570.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p1dc7"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_pudlo_docs_metallic-statek_re_UV_pudlo_docs_roughness.jpg-872946e03619f65de3916bc51a1e497b.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyoq3"]
 resource_name = "pudlo_docs2"
@@ -516,7 +512,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_vo4y7")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_54qsl"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_kable konsola_base.jpg-a251bfd5c03e03c77eb34157c4c877a9.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_slgl8"]
 load_path = "res://.godot/imported/statekfixed_statek_re_UV_kable konsola_metallic-statek_re_UV_kable konsola_roughness.jpg-89c93642d471373b73589ab3dea85ed9.s3tc.ctex"
@@ -628,7 +623,6 @@ load_path = "res://.godot/imported/statekfixed_statek_materials_re_made_konsola_
 load_path = "res://.godot/imported/statekfixed_statek_re_UV_konsola_metallic-statek_re_UV_konsola_roughness.jpg-d4cd61dcfea350c5ba170728f91af96b.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1wo2x"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_konsola_height.jpg-0c6d7c1561ef7569f1e706438252d806.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wymgi"]
 load_path = "res://.godot/imported/statekfixed_statek_re_UV_konsola_metallic-statek_re_UV_konsola_roughness.jpg-d4cd61dcfea350c5ba170728f91af96b.s3tc.ctex"
@@ -1011,13 +1005,11 @@ shadow_mesh = SubResource("ArrayMesh_m167j")
 load_path = "res://.godot/imported/statekfixed_statek_re_UV_szyby_base-statek_re_UV_szyby_opacity.png-9985f3fa056d8c19eb1d7ec72c6f0b06.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vo4y7"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_szyby_metallic-statek_re_UV_szyby_roughness.jpg-02d7da19d3eb468cb849ab9868f93b8c.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qr1pr"]
 load_path = "res://.godot/imported/statekfixed_statek_re_UV_szyby_height.jpg-1c68344377f98dec7fef7b5988367483.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8b6km"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_szyby_metallic-statek_re_UV_szyby_roughness.jpg-02d7da19d3eb468cb849ab9868f93b8c.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lha7w"]
 resource_name = "szyby"
@@ -1391,19 +1383,14 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_xxe0y")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c2qif"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_monitory_base.jpg-bcbe1f1cbf1d1d339fec161064f5bf8d.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k0ign"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_monitory_emission.jpg-64e14d74c5b6eec2a112452596114589.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1j0kv"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_monitory_metallic-statek_re_UV_monitory_roughness.jpg-6e9975e57b6a19ec1ab623c5988f4c6b.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c2mhu"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_monitory_height.jpg-4c1a7e927176830fe4ada5fc3e17f4ce.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_arbo3"]
-load_path = "res://.godot/imported/statekfixed_statek_re_UV_monitory_metallic-statek_re_UV_monitory_roughness.jpg-6e9975e57b6a19ec1ab623c5988f4c6b.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8be2"]
 resource_name = "monitory"
@@ -1845,7 +1832,7 @@ mesh = SubResource("ArrayMesh_p1dc7")
 skeleton = NodePath("")
 
 [node name="STATEK" type="MeshInstance3D" parent="statekfixed" unique_id=541619985]
-transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1, -0.009911239, -0.01749003, 0.0057501793)
 mesh = SubResource("ArrayMesh_1wo2x")
 skeleton = NodePath("")
 
@@ -1979,6 +1966,7 @@ shape = SubResource("SphereShape3D_y1x6n")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="stasia_interactable_esteregg" unique_id=342911142]
 stream = ExtResource("48_y1x6n")
 volume_db = 1.836
+bus = &"New Bus"
 
 [node name="Timer" type="Timer" parent="stasia_interactable_esteregg" unique_id=2115721834]
 wait_time = 6.5
