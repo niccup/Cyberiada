@@ -211,6 +211,7 @@ offset_bottom = 32.000004
 scale = Vector2(1.83, 1.83)
 text = "city view:"
 label_settings = SubResource("LabelSettings_63v6i")
+metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="CanvasLayer" unique_id=1982956136]
 layout_mode = 3
@@ -290,6 +291,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_7ruy1")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="poiter" unique_id=1755878788]
 modulate = Color(1, 1, 1, 0.42352942)
@@ -301,3 +303,4 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("AtlasTexture_3cbma")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
