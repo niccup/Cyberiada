@@ -13,21 +13,21 @@ func _process(delta: float) -> void:
 
 func _on_start_pressed() -> void:
 	$clickaudio.play()
-	await get_tree().create_timer(0.5).timeout
-	get_tree().change_scene_to_file("uid://ovu6xg3i6fm5")
+
+	Global.changescene("uid://ovu6xg3i6fm5", 2)
 
 func _on_continue_pressed() -> void:
 	$clickaudio.play()
-	await get_tree().create_timer(0.5).timeout
-	get_tree().change_scene_to_file("uid://b4ktnmcr7dwaa")
-	
+	Global.changescene("uid://b4ktnmcr7dwaa", 1)
 
 
 func _on_settings_pressed() -> void:
 	$clickaudio.play()
-	await get_tree().create_timer(0.5).timeout
-	print("OPT DZIALA")
+	get_parent().get_parent().get_node("pause").settingsfrommenu()
+	
+	
 	# gustaw tu ma byc jakas inna scena na settingsy?
+	# szesc siedem - gustaw
 
 
 func _on_exit_pressed() -> void:

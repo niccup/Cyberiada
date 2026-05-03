@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cox810dmasw28" path="res://assets/menuassets/image.png" id="1_cmhrf"]
 [ext_resource type="Script" uid="uid://dhpkir0ev4lsc" path="res://scenes/menu/mainmenu.gd" id="1_wgsso"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="2_d2nv2"]
-[ext_resource type="Script" uid="uid://b3sj85wm7q5nf" path="res://scenes/menu/randomizer.gd" id="4_2ni00"]
+[ext_resource type="Script" path="res://scenes/menu/randomizer.gd" id="4_2ni00"]
 [ext_resource type="AudioStream" uid="uid://c530nmqaun7as" path="res://assets/sounds/menu.wav" id="4_igs2m"]
 [ext_resource type="AudioStream" uid="uid://7dl2pqc4gov7" path="res://assets/sounds/Button (1).wav" id="5_k2bp4"]
 [ext_resource type="Theme" uid="uid://cwafdcrdoqiuj" path="res://themes/ui.tres" id="6_dtaik"]
@@ -104,15 +104,15 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_wgsso")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1976166017]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.52900004
 anchor_right = 0.5
-anchor_bottom = 1.0
+anchor_bottom = 0.52900004
 offset_left = -186.0
-offset_top = -509.0
+offset_top = -0.32006836
 offset_right = 186.0
-offset_bottom = -274.0
+offset_bottom = 234.67993
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 5
@@ -139,7 +139,6 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_7uvds")
 text = "Kontynuuj"
 
 [node name="settings" type="Button" parent="VBoxContainer" unique_id=409192264]
-visible = false
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("2_d2nv2")
@@ -178,13 +177,15 @@ text = "alpha 0.1"
 
 [node name="Label2" type="Label" parent="." unique_id=43057728]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
+anchor_top = 0.112
 anchor_right = 0.5
+anchor_bottom = 0.112
 offset_left = -347.5
-offset_top = 90.0
+offset_top = -30.960007
 offset_right = 347.5
-offset_bottom = 241.0
+offset_bottom = 120.03999
 grow_horizontal = 2
 theme_override_colors/font_shadow_color = Color(0.0627451, 0.12156863, 0.10980392, 1)
 theme_override_constants/line_spacing = 20
@@ -197,15 +198,15 @@ horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="." unique_id=275771606]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.11400001
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 0.11400001
 offset_left = -206.5
-offset_top = -267.0
+offset_top = 149.87999
 offset_right = 206.5
-offset_bottom = -216.0
+offset_bottom = 200.87999
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.6156863, 0.34901962, 0.3137255, 1)

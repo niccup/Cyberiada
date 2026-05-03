@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dt8ilgb8i8sw3" path="res://scenes/uiscreens/resourcepanel/resources.gd" id="1_entrh"]
 [ext_resource type="Theme" uid="uid://cwafdcrdoqiuj" path="res://themes/ui.tres" id="2_u6iyd"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="3_kp82c"]
-[ext_resource type="Shader" uid="uid://6o3s7yc01q4f" path="res://scenes/uiscreens/crt.gdshader" id="4_u6iyd"]
+[ext_resource type="Material" uid="uid://36h1t6wgckhp" path="res://resources/screen.tres" id="5_entrh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_e8l3l"]
 font = ExtResource("3_kp82c")
@@ -12,30 +12,6 @@ font = ExtResource("3_kp82c")
 [sub_resource type="LabelSettings" id="LabelSettings_jpvxh"]
 font = ExtResource("3_kp82c")
 font_size = 26
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_kp82c"]
-shader = ExtResource("4_u6iyd")
-shader_parameter/overlay = true
-shader_parameter/resolution = Vector2(6400, 4800)
-shader_parameter/brightness = 1.31
-shader_parameter/scanlines_opacity = 0.034000001615
-shader_parameter/scanlines_width = 0.5
-shader_parameter/grille_opacity = 0.178000008455
-shader_parameter/roll = true
-shader_parameter/roll_speed = 6.0
-shader_parameter/roll_size = 59.40400282169
-shader_parameter/roll_variation = 1.8
-shader_parameter/distort_intensity = 0.014000000665
-shader_parameter/aberration = 0.01000004797499998
-shader_parameter/noise_opacity = 0.4
-shader_parameter/noise_speed = 5.0
-shader_parameter/static_noise_intensity = 0.06
-shader_parameter/pixelate = true
-shader_parameter/discolor = true
-shader_parameter/warp_amount = 0.2190000104025
-shader_parameter/clip_warp = false
-shader_parameter/vignette_intensity = 0.4
-shader_parameter/vignette_opacity = 0.5
 
 [node name="Resources" type="Node2D" unique_id=952837248]
 script = ExtResource("1_entrh")
@@ -201,7 +177,7 @@ text = "- - - - - - - - resource tracker - - - - - - - -"
 label_settings = SubResource("LabelSettings_jpvxh")
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=449094768]
-material = SubResource("ShaderMaterial_kp82c")
+material = ExtResource("5_entrh")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

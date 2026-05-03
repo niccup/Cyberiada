@@ -30,7 +30,7 @@ func addinput(input):
 		print(selected)
 		Global.selectbuild = [dataa[selected][4].duplicate(), dataa[selected][3], dataa[selected][0], dataa[selected][2]]
 		print(dataa[selected])
-		get_node("/root/ship").change_scene("city")
+		get_node("/root/Scenemanager/scene/ship").change_scene("city")
 
 	if selected < 0:
 		selected = prevsel

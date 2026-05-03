@@ -2,6 +2,7 @@ extends Node3D
 @onready var camera = $player/Camera3D
 var raycast_result = null
 var scene = "city"
+var finishkapsulkidozmywarki = false
 # Called when the node enters the scene tree for the first time.
 
 
@@ -16,31 +17,6 @@ func change_scene(scenee):
 		screen.get_node("Build").show()
 		scene= "build"
 		
-func _ready() -> void:
-	
-	
-	
-	var savefolder = DirAccess.make_dir_absolute("user://save") 
-	if FileAccess.file_exists("user://save/settings"):
-		pass
-	else:
-		print("HOLAAA")
-		var settingfile = FileAccess.open("user://save/settings", FileAccess.WRITE)
-		settingfile.store_var({"windowmode": 3, "strechmode": 1, "aspectmode": 4, "resolution": Vector2(1152,648), "SSR": true, "SSAO": true, "SSIL": true, "SDFGI": true})
-	var e =FileAccess.open("user://save/settings", FileAccess.READ)
-	var settings = e.get_var()
-	print(settings)
-	DisplayServer.window_set_mode(settings["windowmode"])
-	get_window().content_scale_size = (settings["resolution"])
-	get_tree().root.content_scale_mode = int(settings["strechmode"] )
-	get_tree().root.content_scale_aspect = int(settings["aspectmode"])
-	var env = $WorldEnvironment.environment
-	env.ssr_enabled = settings["SSR"]
-	env.ssao_enabled = settings["SSAO"]
-	env.ssil_enabled = settings["SSIL"]
-	env.sdfgi_enabled = settings["SDFGI"]
-	FileAccess.open("user://save/gamedata", FileAccess.WRITE)
-	e.close()
 	
 func ray():
 	
@@ -109,5 +85,18 @@ func _input(event: InputEvent) -> void:
 				ray()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-	
+	if Global.newday==true:
+		$dayui.show()
+		print("OHH YEAH")
+		if Global.firstopening == true:
+			
+			$dayui/AnimationPlayer.play("new_animation_2")
+			Global.firstopening=false
+		else:
+			$dayui/AnimationPlayer.play("new_animation")
+		Global.newday=false
+		$dayui/Label.text = "Dzień " + str(Global.day)
+	if Global.day==15:
+		if finishkapsulkidozmywarki == false:
+			Global.changescene("res://scenes/endingz/ending.tscn",2)
+			finishkapsulkidozmywarki = true

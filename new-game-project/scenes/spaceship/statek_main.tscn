@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bs5fx0qc7sji8" path="res://scenes/spaceship/ship.gd" id="1_cdkku"]
 [ext_resource type="Script" uid="uid://bl6b26cn38wq" path="res://scenes/spaceship/player.gd" id="2_uwm87"]
-[ext_resource type="Texture2D" uid="uid://bkufbvu3polag" path="res://assets/sky/skybox2_bezgwiazd.png" id="3_y1x6n"]
 [ext_resource type="PackedScene" uid="uid://bjyappyr6cwxa" path="res://scenes/uiscreens/stasia/ai.tscn" id="4_7amyd"]
 [ext_resource type="PackedScene" uid="uid://y8k2onmkjh8y" path="res://scenes/uiscreens/resourcepanel/resources.tscn" id="5_4fwwd"]
 [ext_resource type="PackedScene" uid="uid://drr5ye8tgctg1" path="res://scenes/uiscreens/city/city.tscn" id="6_5ofix"]
@@ -46,103 +45,13 @@
 [ext_resource type="Texture2D" uid="uid://bl23e806bj4wx" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_base.jpg" id="44_rk7ur"]
 [ext_resource type="Texture2D" uid="uid://bn01aylqv1n8y" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_metallic-statek_re_UV_zasilanie_roughness.jpg" id="45_bbq4s"]
 [ext_resource type="Texture2D" uid="uid://bx300akjg414s" path="res://assets/statek-assets/statekfixed_statek_re_UV_zasilanie_height.jpg" id="46_dva75"]
-[ext_resource type="Script" uid="uid://d30sp6khb01ur" path="res://scenes/spaceship/pause.gd" id="47_fvdx7"]
 [ext_resource type="Script" path="res://scenes/spaceship/interact_stasia_badge.gd" id="47_uwm87"]
-[ext_resource type="Theme" uid="uid://b6j3p7kgq37hf" path="res://themes/theme.tres" id="48_n2iq6"]
 [ext_resource type="AudioStream" uid="uid://c14ihinskaggn" path="res://scenes/uiscreens/stasia/KOJARZE TO LOGO.wav" id="48_y1x6n"]
 [ext_resource type="FontFile" uid="uid://c27yrvbvkjcu2" path="res://assets/fonts/Jersey15-Regular.ttf" id="49_2ck7r"]
 [ext_resource type="PackedScene" uid="uid://c8gabmk3kd08a" path="res://scenes/uiscreens/stasia/naklejka.glb" id="49_7amyd"]
 [ext_resource type="PackedScene" uid="uid://34fcl345btae" path="res://scenes/spaceship/numerki_ekran_przod.tscn" id="50_vcysn"]
-[ext_resource type="AudioStream" uid="uid://cxyjk2m8cp0bq" path="res://assets/sounds/ForMillionsAmbience.wav" id="51_isk53"]
-
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2j56q"]
-panorama = ExtResource("3_y1x6n")
-
-[sub_resource type="Sky" id="Sky_2btxl"]
-sky_material = SubResource("PanoramaSkyMaterial_2j56q")
-
-[sub_resource type="Environment" id="Environment_4ejwq"]
-background_mode = 2
-sky = SubResource("Sky_2btxl")
-sky_custom_fov = 100.1
-ambient_light_source = 1
-reflected_light_source = 1
-tonemap_mode = 4
-tonemap_exposure = 1.41
-tonemap_white = 4.53
-tonemap_agx_white = 12.04
-tonemap_agx_contrast = 1.18
-ssr_enabled = true
-ssr_max_steps = 32
-ssr_fade_in = 0.31057936
-ssr_fade_out = 1.9318702
-ssr_depth_tolerance = 0.61
-ssao_enabled = true
-ssao_intensity = 4.11
-ssil_enabled = true
-ssil_radius = 3.34
-ssil_intensity = 1.87
-ssil_normal_rejection = 0.31
-sdfgi_enabled = true
-sdfgi_use_occlusion = true
-sdfgi_cascades = 2
-glow_enabled = true
-glow_levels/3 = 1.25
-glow_levels/4 = 2.04
-glow_normalized = true
-glow_intensity = 0.5
-glow_strength = 1.13
-glow_bloom = 0.17
-volumetric_fog_enabled = true
-volumetric_fog_density = 0.0025
-volumetric_fog_albedo = Color(0.10403561, 0.48341686, 0.6210055, 1)
-volumetric_fog_emission = Color(0.016181353, 0.022306697, 0.066227876, 1)
-volumetric_fog_emission_energy = 15.0
-volumetric_fog_gi_inject = 2.16
-volumetric_fog_anisotropy = 0.07
-volumetric_fog_length = 189.58
-volumetric_fog_detail_spread = 3.6934316
-volumetric_fog_ambient_inject = 1.19
-volumetric_fog_sky_affect = 0.165
-adjustment_enabled = true
-
-[sub_resource type="Animation" id="Animation_oaijq"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:environment:sky_rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_2j56q"]
-resource_name = "spinnn"
-length = 10.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:environment:sky_rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 10),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 6.2831855, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_2btxl"]
-_data = {
-&"RESET": SubResource("Animation_oaijq"),
-&"spinnn": SubResource("Animation_2j56q")
-}
+[ext_resource type="AudioStream" uid="uid://nfst5lb0px0a" path="res://assets/Snail's House - ムーンラビット (moonrabbit).mp3" id="51_uwm87"]
+[ext_resource type="Script" uid="uid://cqyuokem2b5pr" path="res://scenes/spaceship/clock.gd" id="55_4fwwd"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_4ejwq"]
 size = Vector2(4.5, 3)
@@ -1551,26 +1460,232 @@ size = Vector2(4.32, 2.02)
 [sub_resource type="SphereShape3D" id="SphereShape3D_y1x6n"]
 radius = 0.4916549
 
-[sub_resource type="Gradient" id="Gradient_ttnnh"]
-offsets = PackedFloat32Array(0.31924197, 0.9912537)
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+[sub_resource type="Animation" id="Animation_4fwwd"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-4000, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate:r")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label:modulate:g")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label:modulate:b")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Label:modulate:a")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_4tp86"]
-gradient = SubResource("Gradient_ttnnh")
+[sub_resource type="Animation" id="Animation_5ofix"]
+resource_name = "new_animation"
+length = 3.71
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(-4000, -0.25, 0, 0.25, 0, 0, -0.16666667, -666.6667, 0, 0, 0, -0.2777778, 0, 0, 0, 4000, -0.16666667, -666.6667, 0, 0),
+"times": PackedFloat32Array(0, 0.33333337, 3.3333333, 3.633333)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.16666667, 0, 0, 0, 0, -0.2777778, 0, 0, 0, 0, -0.16666667, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.33333337, 3.3333333, 3.633333)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate:r")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.03333333, 0, 0, 0, 1, -0.10333334, 0, 0, 0, 1, -0.06999999, 0, 0, 0),
+"times": PackedFloat32Array(0.5, 1, 2.6866663, 3.1066663)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label:modulate:g")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.03333333, 0, 0, 0, 1, -0.10333334, 0, 0, 0, 1, -0.06999999, 0, 0, 0),
+"times": PackedFloat32Array(0.5, 1, 2.6866663, 3.1066663)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label:modulate:b")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.03333333, 0, 0, 0, 1, -0.10333334, 0, 0, 0, 1, -0.06999999, 0, 0, 0),
+"times": PackedFloat32Array(0.5, 1, 2.6866663, 3.1066663)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Label:modulate:a")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.03333333, -0.16666667, 0, 0, 1, -0.10333334, 0, 0, 0, 0, -0.06999999, 0.16666667, 0, 0),
+"times": PackedFloat32Array(0.5, 1, 2.6866663, 3.1066663)
+}
 
-[sub_resource type="LabelSettings" id="LabelSettings_04kjf"]
+[sub_resource type="Animation" id="Animation_p7dhy"]
+resource_name = "new_animation_2"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 4000, -0.16666667, -666.6667, 0, 0),
+"times": PackedFloat32Array(1.6333333, 1.9666667)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.16666667, 0, 0, 0),
+"times": PackedFloat32Array(1.6333333, 1.9666667)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:modulate:r")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.04, 0, 0, 0),
+"times": PackedFloat32Array(1.0333333, 1.6999999)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label:modulate:g")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.04, 0, 0, 0),
+"times": PackedFloat32Array(1.0333333, 1.6999999)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label:modulate:b")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.04, 0, 0, 0),
+"times": PackedFloat32Array(1.0333333, 1.6999999)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Label:modulate:a")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.04, 0.16666667, 0, 0),
+"times": PackedFloat32Array(1.0333333, 1.6999999)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1guyd"]
+_data = {
+&"RESET": SubResource("Animation_4fwwd"),
+&"new_animation": SubResource("Animation_5ofix"),
+&"new_animation_2": SubResource("Animation_p7dhy")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_hdhp0"]
 font = ExtResource("49_2ck7r")
-font_size = 32
-
-[sub_resource type="LabelSettings" id="LabelSettings_ttnnh"]
-font_size = 24
-
-[sub_resource type="LabelSettings" id="LabelSettings_4tp86"]
-font_size = 20
+font_size = 128
 
 [sub_resource type="LabelSettings" id="LabelSettings_musfh"]
 font = ExtResource("49_2ck7r")
 font_color = Color(1, 1, 1, 0.23137255)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7amyd"]
+albedo_color = Color(0, 0, 0, 1)
 
 [node name="ship" type="Node3D" unique_id=1952611357]
 script = ExtResource("1_cdkku")
@@ -1582,14 +1697,6 @@ script = ExtResource("2_uwm87")
 [node name="Camera3D" type="Camera3D" parent="player" unique_id=353376000]
 transform = Transform3D(0.9996851, -0.008101718, 0.02374952, -0.009418005, 0.7561186, 0.6543669, -0.023258947, -0.65438455, 0.7558042, 3.9399517, 1.4674834, 2.3055964)
 fov = 58.9
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1235908708]
-environment = SubResource("Environment_4ejwq")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="WorldEnvironment" unique_id=1319988451]
-libraries/ = SubResource("AnimationLibrary_2btxl")
-autoplay = &"spinnn"
-speed_scale = 0.03
 
 [node name="tempstatek" type="Node3D" parent="." unique_id=2000909562]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
@@ -1960,7 +2067,7 @@ skeleton = NodePath("../../panel_zasilania")
 [node name="Area3D" type="Area3D" parent="stasia_interactable_esteregg/MeshInstance3D" unique_id=558068319]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="stasia_interactable_esteregg/MeshInstance3D/Area3D" unique_id=118701655]
-transform = Transform3D(1, 0, 0, 0, 0.47963306, -0.65670425, 0, 0.41765934, 0.75414824, -0.28560045, -0.15076599, 0.088779315)
+transform = Transform3D(1, 0, 0, 0, 0.75414824, -0.65670425, 0, 0.65670425, 0.75414824, -0.28560045, -0.15076599, 0.088779315)
 shape = SubResource("SphereShape3D_y1x6n")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="stasia_interactable_esteregg" unique_id=342911142]
@@ -1976,227 +2083,36 @@ autostart = true
 [node name="naklejka" parent="." unique_id=874629598 instance=ExtResource("49_7amyd")]
 transform = Transform3D(0.16005994, -0.09824633, -0.13277227, 0, 0.1848871, -0.13680924, 0.16516905, 0.09520731, 0.12866528, -0.055878926, -1.9934539, 6.3868194)
 
-[node name="pause" type="CanvasLayer" parent="." unique_id=1123493303]
-process_mode = 3
-script = ExtResource("47_fvdx7")
+[node name="dayui" type="CanvasLayer" parent="." unique_id=21112796]
 
-[node name="TextureRect" type="TextureRect" parent="pause" unique_id=2112472946]
-modulate = Color(0.19, 0.19, 0.19, 1)
-anchors_preset = -1
-anchor_bottom = 1.0220001
-offset_right = 393.0
-offset_bottom = -0.25604248
-texture = SubResource("GradientTexture2D_4tp86")
+[node name="ColorRect" type="ColorRect" parent="dayui" unique_id=1760980050]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4000.0
+offset_right = -3999.9995
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
-[node name="pause" type="VBoxContainer" parent="pause" unique_id=2099264374]
-offset_left = 16.0
-offset_top = 7.0
-offset_right = 362.0
-offset_bottom = 268.0
-theme = ExtResource("48_n2iq6")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dayui" unique_id=1566931794]
+libraries/ = SubResource("AnimationLibrary_1guyd")
 
-[node name="Label" type="Label" parent="pause/pause" unique_id=775636982]
-layout_mode = 2
-text = "Menu pauzy"
-label_settings = SubResource("LabelSettings_04kjf")
-
-[node name="back" type="Button" parent="pause/pause" unique_id=1356558691]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-text = "Wróć do gry"
-
-[node name="settings" type="Button" parent="pause/pause" unique_id=1082372177]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-text = "Ustawienia"
-
-[node name="quit" type="Button" parent="pause/pause" unique_id=163704089]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-text = "Wyjście"
-
-[node name="settings" type="ScrollContainer" parent="pause" unique_id=90972099]
-visible = false
-offset_left = 16.0
-offset_top = 7.0
-offset_right = 377.0
-offset_bottom = 631.0
-size_flags_horizontal = 6
-
-[node name="pause2" type="VBoxContainer" parent="pause/settings" unique_id=254592979]
-layout_mode = 2
-size_flags_horizontal = 3
-theme = ExtResource("48_n2iq6")
-
-[node name="Label" type="Label" parent="pause/settings/pause2" unique_id=883896941]
-layout_mode = 2
-text = "Ustawienia:"
-label_settings = SubResource("LabelSettings_04kjf")
-
-[node name="Label2" type="Label" parent="pause/settings/pause2" unique_id=1020174749]
-layout_mode = 2
-text = "Grafika:"
-label_settings = SubResource("LabelSettings_ttnnh")
-
-[node name="Label5" type="Label" parent="pause/settings/pause2" unique_id=616066304]
-layout_mode = 2
-text = "Tryb w oknie:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="VBoxContainer3" type="HBoxContainer" parent="pause/settings/pause2" unique_id=205907959]
-layout_mode = 2
-
-[node name="winodwmode" type="HSlider" parent="pause/settings/pause2/VBoxContainer3" unique_id=637329231]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-max_value = 4.0
-
-[node name="windowmodelabel" type="Label" parent="pause/settings/pause2/VBoxContainer3" unique_id=1460587292]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Tryb"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="Label3" type="Label" parent="pause/settings/pause2" unique_id=2009842557]
-layout_mode = 2
-text = "Tryb rozciągniętego okna:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="VBoxContainer" type="HBoxContainer" parent="pause/settings/pause2" unique_id=1570299359]
-layout_mode = 2
-
-[node name="windowstrechmode" type="HSlider" parent="pause/settings/pause2/VBoxContainer" unique_id=571070274]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-max_value = 2.0
-
-[node name="windowstrechmodelabel" type="Label" parent="pause/settings/pause2/VBoxContainer" unique_id=1369803103]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Tryb"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="Label4" type="Label" parent="pause/settings/pause2" unique_id=2055667679]
-layout_mode = 2
-text = "Tryb proporcji okna:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="VBoxContainer2" type="HBoxContainer" parent="pause/settings/pause2" unique_id=1488787268]
-layout_mode = 2
-
-[node name="windowaspect" type="HSlider" parent="pause/settings/pause2/VBoxContainer2" unique_id=2063029505]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-max_value = 4.0
-
-[node name="windowaspectlabel" type="Label" parent="pause/settings/pause2/VBoxContainer2" unique_id=1930707156]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Tryb"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="Label6" type="Label" parent="pause/settings/pause2" unique_id=1328257514]
-layout_mode = 2
-text = "resolution:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="VBoxContainer4" type="HBoxContainer" parent="pause/settings/pause2" unique_id=1180445910]
-layout_mode = 2
-
-[node name="resx" type="SpinBox" parent="pause/settings/pause2/VBoxContainer4" unique_id=1393669855]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-max_value = 8192.0
-
-[node name="resy" type="SpinBox" parent="pause/settings/pause2/VBoxContainer4" unique_id=1009155943]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-max_value = 8192.0
-
-[node name="Label7" type="Label" parent="pause/settings/pause2" unique_id=696845875]
-visible = false
-layout_mode = 2
-text = "ui scale:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="VBoxContainer5" type="HBoxContainer" parent="pause/settings/pause2" unique_id=1162224452]
-visible = false
-layout_mode = 2
-
-[node name="uiscale" type="HSlider" parent="pause/settings/pause2/VBoxContainer5" unique_id=2044262097]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-min_value = 0.5
-max_value = 2.0
-step = 0.01
-value = 1.0
-
-[node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer5" unique_id=891260897]
-layout_mode = 2
-text = "Tryb"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="VBoxContainer6" type="HBoxContainer" parent="pause/settings/pause2" unique_id=1379121993]
-layout_mode = 2
-
-[node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer6" unique_id=583414447]
-layout_mode = 2
-text = "Włącz SSR:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="ssrtoggle" type="CheckButton" parent="pause/settings/pause2/VBoxContainer6" unique_id=1177644021]
-unique_name_in_owner = true
-layout_mode = 2
-
-[node name="VBoxContainer7" type="HBoxContainer" parent="pause/settings/pause2" unique_id=505714516]
-layout_mode = 2
-
-[node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer7" unique_id=882745753]
-layout_mode = 2
-text = "Włącz SSAO:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="ssaotoggle" type="CheckButton" parent="pause/settings/pause2/VBoxContainer7" unique_id=1901240128]
-unique_name_in_owner = true
-layout_mode = 2
-
-[node name="VBoxContainer8" type="HBoxContainer" parent="pause/settings/pause2" unique_id=38453605]
-layout_mode = 2
-
-[node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer8" unique_id=738804497]
-layout_mode = 2
-text = "Włącz SSIL:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="ssiltoggle" type="CheckButton" parent="pause/settings/pause2/VBoxContainer8" unique_id=2073892366]
-unique_name_in_owner = true
-layout_mode = 2
-
-[node name="VBoxContainer9" type="HBoxContainer" parent="pause/settings/pause2" unique_id=469438325]
-layout_mode = 2
-
-[node name="Label3" type="Label" parent="pause/settings/pause2/VBoxContainer9" unique_id=954461031]
-layout_mode = 2
-text = "Włącz SDFGI:"
-label_settings = SubResource("LabelSettings_4tp86")
-
-[node name="sdfgitoggle" type="CheckButton" parent="pause/settings/pause2/VBoxContainer9" unique_id=649804838]
-unique_name_in_owner = true
-layout_mode = 2
-
-[node name="backsettings" type="Button" parent="pause/settings/pause2" unique_id=1669114839]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-text = "Wróć"
+[node name="Label" type="Label" parent="dayui" unique_id=113118020]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.5
+offset_top = -64.5
+offset_right = 154.5
+offset_bottom = 64.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Dzien 1"
+label_settings = SubResource("LabelSettings_hdhp0")
 
 [node name="numerki_przod_ekrany" type="SubViewport" parent="." unique_id=814736850]
 size = Vector2i(1000, 1000)
@@ -2218,24 +2134,25 @@ text = "escape to pause"
 label_settings = SubResource("LabelSettings_musfh")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1084586485]
-stream = ExtResource("51_isk53")
+stream = ExtResource("51_uwm87")
+volume_db = -15.965
 autoplay = true
 
+[node name="clock" type="CSGBox3D" parent="." unique_id=599922361]
+transform = Transform3D(0.7912235, 0, -0.611527, 0, 1, 0, 0.611527, 0, 0.7912235, 2.440399, -1.6989987, 14.425271)
+size = Vector3(0.5864258, 0.52233887, 1.0615845)
+material = SubResource("StandardMaterial3D_7amyd")
+script = ExtResource("55_4fwwd")
+
+[node name="Label3D" type="Label3D" parent="clock" unique_id=2094986581]
+transform = Transform3D(-1.4901161e-07, 0, -0.99999976, 0, 1, 0, 0.99999976, 0, -1.4901161e-07, -0.29688644, 0, 0.007051468)
+modulate = Color(1, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "14:00"
+font = ExtResource("49_2ck7r")
+font_size = 82
+
 [connection signal="input_event" from="stasia_interactable_esteregg/MeshInstance3D/Area3D" to="stasia_interactable_esteregg" method="_on_area_3d_input_event"]
-[connection signal="pressed" from="pause/pause/back" to="pause" method="_on_back_pressed"]
-[connection signal="pressed" from="pause/pause/settings" to="pause" method="_on_settings_pressed"]
-[connection signal="pressed" from="pause/pause/quit" to="pause" method="_on_quit_pressed"]
-[connection signal="drag_ended" from="pause/settings/pause2/VBoxContainer3/winodwmode" to="pause" method="_on_winodwmode_drag_ended"]
-[connection signal="drag_ended" from="pause/settings/pause2/VBoxContainer/windowstrechmode" to="pause" method="_on_windowstrechmode_drag_ended"]
-[connection signal="drag_ended" from="pause/settings/pause2/VBoxContainer2/windowaspect" to="pause" method="_on_windowaspect_drag_ended"]
-[connection signal="value_changed" from="pause/settings/pause2/VBoxContainer4/resx" to="pause" method="_on_resx_value_changed"]
-[connection signal="value_changed" from="pause/settings/pause2/VBoxContainer4/resy" to="pause" method="_on_resy_value_changed"]
-[connection signal="value_changed" from="pause/settings/pause2/VBoxContainer5/uiscale" to="." method="_on_uiscale_value_changed"]
-[connection signal="toggled" from="pause/settings/pause2/VBoxContainer6/ssrtoggle" to="pause" method="_on_ssrtoggle_toggled"]
-[connection signal="toggled" from="pause/settings/pause2/VBoxContainer7/ssaotoggle" to="pause" method="_on_ssaotoggle_toggled"]
-[connection signal="toggled" from="pause/settings/pause2/VBoxContainer8/ssiltoggle" to="pause" method="_on_ssiltoggle_toggled"]
-[connection signal="toggled" from="pause/settings/pause2/VBoxContainer9/sdfgitoggle" to="pause" method="_on_sdfgitoggle_toggled"]
-[connection signal="pressed" from="pause/settings/pause2/backsettings" to="pause" method="_on_backsettings_pressed"]
 
 [editable path="panel_guziki/btn_up"]
 [editable path="panel_guziki/btn_left"]

@@ -1,9 +1,34 @@
 extends CanvasLayer
 var pause = false
-@onready var world = get_parent().get_node("WorldEnvironment")
+@onready var world = $"../WorldEnvironment"
 var settings = {}
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	var savefolder = DirAccess.make_dir_absolute("user://save") 
+	if FileAccess.file_exists("user://save/settings"):
+		pass
+	else:
+		print("HOLAAA")
+		var settingfile = FileAccess.open("user://save/settings", FileAccess.WRITE)
+		settingfile.store_var({"windowmode": 3, "strechmode": 1, "aspectmode": 4, "resolution": Vector2(1152,648), "SSR": true, "SSAO": true, "SSIL": true, "SDFGI": true})
+	var e =FileAccess.open("user://save/settings", FileAccess.READ)
+	var settings = e.get_var()
+	print(settings)
+	DisplayServer.window_set_mode(settings["windowmode"])
+	get_window().content_scale_size = (settings["resolution"])
+	get_tree().root.content_scale_mode = int(settings["strechmode"] )
+	get_tree().root.content_scale_aspect = int(settings["aspectmode"])
+	var env = world.environment
+	env.ssr_enabled = settings["SSR"]
+	env.ssao_enabled = settings["SSAO"]
+	env.ssil_enabled = settings["SSIL"]
+	env.sdfgi_enabled = settings["SDFGI"]
+	FileAccess.open("user://save/gamedata", FileAccess.WRITE)
+	e.close()
+	
+	
+	
+	
 	hide()
 	get_text("windowmode")
 	get_text("strechmode")
@@ -11,6 +36,15 @@ func _ready() -> void:
 	%resx.value = (get_tree().root.content_scale_size.x)
 	%resy.value = (get_tree().root.content_scale_size.y)
 
+func settingsfrommenu():
+	if pause == false:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		get_tree().paused = true
+		world.environment.adjustment_saturation = 0
+		show()
+		pause=true
+		$pause.hide()
+		$settings.show()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

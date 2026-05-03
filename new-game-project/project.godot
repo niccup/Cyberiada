@@ -15,9 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="For Millions"
-run/main_scene="uid://cv74w5igteoxc"
+run/main_scene="uid://d0rwcuium7hvs"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://bxxlehwjhmhbx"
 
 [autoload]
 
